@@ -6,6 +6,28 @@ namespace csvviewer
 {
     public class Ui
     {
+        public event Action MoveNext;
+
+        public void Run() {
+            var exit = false;
+            do {
+                Console.WriteLine();
+                Console.WriteLine("F)irst, P)rev, N)ext, L)ast, E)xit");
+
+                var key = Console.ReadKey().KeyChar.ToString().ToUpper();
+                Console.WriteLine();
+
+                switch (key) {
+                    case "E":
+                        exit = true;
+                        break;
+                    case "N":
+                        MoveNext();
+                        break;
+                }
+            } while (!exit);
+        }
+
         public void Display(IEnumerable<Record> records) {
             var columnWidths = CalculateMaxColumnWidths(records);
             var paddedRecords = PadRecords(records, columnWidths);

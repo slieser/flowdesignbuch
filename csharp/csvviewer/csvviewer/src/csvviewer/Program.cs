@@ -16,7 +16,13 @@ namespace csvviewer
                 ui.Display(records);
             };
 
+            ui.MoveNext += () => {
+                var records = interactors.MoveNext();
+                ui.Display(records);
+            };
+
             start();
+            ui.Run();
         }
     }
 }

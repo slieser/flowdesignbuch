@@ -2,15 +2,19 @@
 {
     public class CommandLine
     {
-        public static string GetFilename(string[] args) {
+        private int _pageLength;
+
+        public string GetFilename(string[] args) {
             return args[0];
         }
 
-        public static int GetPageLength(string[] args) {
-            if (args.Length > 1) {
-                return int.Parse(args[1]);
-            }
-            return 10;
+        public int GetPageLength(string[] args) {
+            _pageLength = args.Length > 1 ? int.Parse(args[1]) : 10;
+            return _pageLength;
+        }
+
+        public int GetPageLength() {
+            return _pageLength;
         }
     }
 }
