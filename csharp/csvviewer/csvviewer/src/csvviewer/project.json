@@ -1,9 +1,11 @@
 {
   "version": "1.0.0-*",
   "buildOptions": {
-    "emitEntryPoint": true
+    "emitEntryPoint": true,
+    "copyToOutput": {
+      "includeFiles": [ "persons.csv" ]
+    }
   },
-
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",

@@ -10,7 +10,7 @@
             if (args.Length > 1) {
                 return int.Parse(args[1]);
             }
-            return 5;
+            return 10;
         }
     }
 }
