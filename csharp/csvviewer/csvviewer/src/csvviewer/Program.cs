@@ -20,6 +20,10 @@ namespace csvviewer
                 var records = interactors.MoveNext();
                 ui.Display(records);
             };
+            ui.MovePrev += () => {
+                var records = interactors.MovePrev();
+                ui.Display(records);
+            };
 
             start();
             ui.Run();

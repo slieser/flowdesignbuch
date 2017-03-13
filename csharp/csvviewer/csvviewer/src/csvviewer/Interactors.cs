@@ -24,5 +24,13 @@ namespace csvviewer
             var records = Csv.CreateRecords(nextPage);
             return records;
         }
+
+        public IEnumerable<Record> MovePrev() {
+            var pageLength = commandLine.GetPageLength();
+            var lines = fileProvider.GetFileContent();
+            var nextPage = paging.ExtractPrevPage(lines, pageLength);
+            var records = Csv.CreateRecords(nextPage);
+            return records;
+        }
     }
 }
