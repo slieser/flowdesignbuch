@@ -1,6 +1,4 @@
-﻿using System.Xml;
-
-namespace Beispiele
+﻿namespace Beispiele
 {
     public class Zwischensumme
     {
@@ -19,10 +17,26 @@ namespace Beispiele
         }
     }
 
+    public class Zwischensumme2
+    {
+        private readonly State<int> _state = new State<int>();
+    
+        public int Aktuelle_Zwischensumme_berechnen(int wert) {
+            var bisherige_Summe = _state.Get();
+            var aktuelle_Summe = Aktuelle_Zwischensumme_berechnen(wert, bisherige_Summe);
+            _state.Set(aktuelle_Summe);
+            return aktuelle_Summe;
+        }
+    
+        public int Aktuelle_Zwischensumme_berechnen(int wert, int summe) {
+            return wert + summe;
+        }
+    }
+
     public class Verwender
     {
         public void Summiere() {
-            var zwischensumme = new Zwischensumme();
+            var zwischensumme = new Zwischensumme2();
             var summe = zwischensumme.Aktuelle_Zwischensumme_berechnen(1);
         }
 
@@ -34,16 +48,16 @@ namespace Beispiele
         }
     }
 
-public class State<T>
-{
-    private T _item;
-
-    public void Set(T item) {
-        _item = item;
+    public class State<T>
+    {
+        private T _item;
+    
+        public void Set(T item) {
+            _item = item;
+        }
+    
+        public T Get() {
+            return _item;
+        }
     }
-
-    public T Get() {
-        return _item;
-    }
-}
 }

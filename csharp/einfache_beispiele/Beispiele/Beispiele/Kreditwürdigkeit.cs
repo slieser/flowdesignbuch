@@ -60,6 +60,23 @@ namespace Beispiele
             };
         }
 
+        public void Verwendung4() {
+            var kunde = new Kunde();
+            var betrag = 2.39;  // ... irgendein Betrag
+            if (IstKreditwürdig(betrag, kunde)) {
+                // ... Code, der bei Kartenzahlung
+                // ausgeführt wird
+            }
+            else {
+                // ... Code, der bei Vorkasse
+                // ausgeführt wird
+            };
+        }
+
+        private bool IstKreditwürdig(double betrag, Kunde kunde) {
+            return IstKreditwürdig(betrag) || kunde.Status == Status.Gold;
+        }
+
         public class Kunde
         {
             public Status Status { get; set; }

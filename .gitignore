@@ -31,8 +31,7 @@ _ReSharper*/
 .hg
 .hgignore
 *.crunchsolution.local.xml
-Artikel/Cpp Unit Tests/examples/examples.sdf
-Artikel/Cpp Unit Tests/examples/ipch/EXAMPLES-4985189e/EXAMPLES-9359f1cb.ipch
-ipch/
+ipch*/
 *.sdf
 *.ncrunchsolution
+packages*/

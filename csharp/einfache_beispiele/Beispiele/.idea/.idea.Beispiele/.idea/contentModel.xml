@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Beispiele" t="IncludeRecursive">
+        <e p="Beispiele.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entscheidung.cs" t="Include" />
+        <e p="Kreditwürdigkeit.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Simple.cs" t="Include" />
+        <e p="TicTacToe.cs" t="Include" />
+        <e p="Zwischensumme.cs" t="Include" />
+      </e>
+      <e p="Beispiele.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_Beispiele.281423121.00" t="ExcludeRecursive" />
+  </component>
+</project>
