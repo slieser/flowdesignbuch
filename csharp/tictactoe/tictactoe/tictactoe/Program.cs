@@ -1,4 +1,5 @@
-﻿using Eto.Forms;
+﻿using System;
+using Eto.Forms;
 using tictactoe.domain;
 using tictactoe.ui;
 
@@ -7,14 +8,26 @@ namespace tictactoe
     internal class Program
     {
         public static void Main(string[] args) {
+            AppDomain.CurrentDomain.UnhandledException += (o, e) => {
+                MessageBox.Show(Environment.StackTrace);
+            };
+            
             var app = new Application();
             
             var ui = new Ui();
             var interactors = new Interactors();
 
-            var result = interactors.Start();
-            ui.Spielstand_anzeigen(result.Spielbrett, result.Meldung);
-            
+            var start = new Action(() => {
+                var result = interactors.Start();
+                ui.Spielstand_anzeigen(result.Spielbrett, result.Meldung);
+            });            
+
+            ui.Spielstein_gesetzt += feld => {
+                var result = interactors.Spielstein_setzen(feld);
+                ui.Spielstand_anzeigen(result.Spielbrett, result.Meldung);
+            };
+
+            start();
             app.Run(ui);
         }
     }

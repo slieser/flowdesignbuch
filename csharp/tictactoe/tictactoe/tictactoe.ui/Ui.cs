@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Eto.Drawing;
 using Eto.Forms;
@@ -9,6 +10,8 @@ namespace tictactoe.ui
     {
         private readonly Button[] _buttons;
         private readonly Label _message;
+
+        public event Action<int> Spielstein_gesetzt;
 
         public Ui() {
             Title = "TicTacToe";
@@ -47,7 +50,12 @@ namespace tictactoe.ui
 
         private IEnumerable<Button> CreateButtons() {
             for (var i = 0; i < 9; i++) {
-                yield return new Button { Tag = i };
+                var button = new Button();
+                var feld = i;
+                button.Click += (o, e) => {
+                    Spielstein_gesetzt?.Invoke(feld);
+                };
+                yield return button;
             }
         }
 
