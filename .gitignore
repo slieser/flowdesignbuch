@@ -35,3 +35,4 @@ ipch*/
 *.sdf
 *.ncrunchsolution
 packages*/
+node_modules*/
