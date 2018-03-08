@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace fromromannumeral
 {
-    public class Roman
+    public static class Roman
     {
         private static readonly Dictionary<string, int> Digits = new Dictionary<string, int> {
             { "I", 1 },
@@ -35,11 +35,12 @@ namespace fromromannumeral
 
         private static (int, string) GetDigitFromRight(string roman) {
             foreach (var digit in Digits) {
-                if (roman.EndsWith(digit.Key)) {
-                    var value = digit.Value;
-                    var remainder = roman.Remove(roman.Length - digit.Key.Length);
-                    return (value, remainder);
+                if (!roman.EndsWith(digit.Key)) {
+                    continue;
                 }
+                var value = digit.Value;
+                var remainder = roman.Remove(roman.Length - digit.Key.Length);
+                return (value, remainder);
             }
             throw new Exception($"No digit could be found in roman '{roman}'.");
         }

@@ -14,18 +14,18 @@
       <file leaf-file-name="Roman.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fromromannumeral/Roman.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="600">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
-                <marker date="1520503720724" expanded="true" signature="6:47" ph="..." />
-                <marker date="1520503720724" expanded="true" signature="75:1350" ph="{...}" />
-                <marker date="1520503720724" expanded="true" signature="100:1348" ph="{...}" />
-                <marker date="1520503720724" expanded="true" signature="200:543" ph="{...}" />
-                <marker date="1520503720724" expanded="true" signature="611:879" ph="{...}" />
-                <marker date="1520503720724" expanded="true" signature="679:829" ph="{...}" />
-                <marker date="1520503720724" expanded="true" signature="950:1342" ph="{...}" />
-                <marker date="1520503720724" expanded="true" signature="994:1251" ph="{...}" />
-                <marker date="1520503720724" expanded="true" signature="1043:1237" ph="{...}" />
+                <marker date="1520505416580" expanded="true" signature="6:47" ph="..." />
+                <marker date="1520505416580" expanded="true" signature="75:1376" ph="{...}" />
+                <marker date="1520505416580" expanded="true" signature="107:1374" ph="{...}" />
+                <marker date="1520505416580" expanded="true" signature="207:550" ph="{...}" />
+                <marker date="1520505416580" expanded="true" signature="618:886" ph="{...}" />
+                <marker date="1520505416580" expanded="true" signature="686:836" ph="{...}" />
+                <marker date="1520505416580" expanded="true" signature="957:1368" ph="{...}" />
+                <marker date="1520505416580" expanded="true" signature="1001:1277" ph="{...}" />
+                <marker date="1520505416580" expanded="true" signature="1051:1100" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/fromromannumeral.tests/RomanTests.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <marker date="1520503535598" expanded="true" signature="56:1502" ph="{...}" />
                 <marker date="1520503535598" expanded="true" signature="104:1500" ph="{...}" />
@@ -148,12 +148,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520502519966</updated>
-      <workItem from="1520502522777" duration="1268000" />
+      <workItem from="1520502522777" duration="1920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1268000" />
+    <option name="totallyTimeSpent" value="1920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -202,7 +202,7 @@
     <entry file="file://$PROJECT_DIR$/fromromannumeral.tests/RomanTests.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <marker date="1520503535598" expanded="true" signature="56:1502" ph="{...}" />
             <marker date="1520503535598" expanded="true" signature="104:1500" ph="{...}" />
@@ -216,18 +216,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fromromannumeral/Roman.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="600">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <marker date="1520503720724" expanded="true" signature="6:47" ph="..." />
-            <marker date="1520503720724" expanded="true" signature="75:1350" ph="{...}" />
-            <marker date="1520503720724" expanded="true" signature="100:1348" ph="{...}" />
-            <marker date="1520503720724" expanded="true" signature="200:543" ph="{...}" />
-            <marker date="1520503720724" expanded="true" signature="611:879" ph="{...}" />
-            <marker date="1520503720724" expanded="true" signature="679:829" ph="{...}" />
-            <marker date="1520503720724" expanded="true" signature="950:1342" ph="{...}" />
-            <marker date="1520503720724" expanded="true" signature="994:1251" ph="{...}" />
-            <marker date="1520503720724" expanded="true" signature="1043:1237" ph="{...}" />
+            <marker date="1520505416580" expanded="true" signature="6:47" ph="..." />
+            <marker date="1520505416580" expanded="true" signature="75:1376" ph="{...}" />
+            <marker date="1520505416580" expanded="true" signature="107:1374" ph="{...}" />
+            <marker date="1520505416580" expanded="true" signature="207:550" ph="{...}" />
+            <marker date="1520505416580" expanded="true" signature="618:886" ph="{...}" />
+            <marker date="1520505416580" expanded="true" signature="686:836" ph="{...}" />
+            <marker date="1520505416580" expanded="true" signature="957:1368" ph="{...}" />
+            <marker date="1520505416580" expanded="true" signature="1001:1277" ph="{...}" />
+            <marker date="1520505416580" expanded="true" signature="1051:1100" ph="{...}" />
           </folding>
         </state>
       </provider>
