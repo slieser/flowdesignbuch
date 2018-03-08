@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="30e19516-6e35-4e84-b8ce-7693553cfc27" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../../fromromannumeral/fromromannumeral/.idea/.idea.fromromannumeral/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../fromromannumeral/fromromannumeral/.idea/.idea.fromromannumeral/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fromromannumeral/fromromannumeral/fromromannumeral/Roman.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../fromromannumeral/fromromannumeral/fromromannumeral/Roman.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fromromannumeral/fromromannumeral/fromromannumeral.tests/RomanTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../fromromannumeral/fromromannumeral/fromromannumeral.tests/RomanTests.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

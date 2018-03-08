@@ -21,12 +21,15 @@ namespace fromromannumeral.tests
             Assert.That(Roman.FromRomanNumeral("II"), Is.EqualTo(2));
             Assert.That(Roman.FromRomanNumeral("VII"), Is.EqualTo(7));
             Assert.That(Roman.FromRomanNumeral("XV"), Is.EqualTo(15));
+            Assert.That(Roman.FromRomanNumeral("XXX"), Is.EqualTo(30));
+            Assert.That(Roman.FromRomanNumeral("LV"), Is.EqualTo(55));
         }
 
         [Test]
         public void Subtraktion() {
             Assert.That(Roman.FromRomanNumeral("IV"), Is.EqualTo(4));
             Assert.That(Roman.FromRomanNumeral("IX"), Is.EqualTo(9));
+            Assert.That(Roman.FromRomanNumeral("XL"), Is.EqualTo(40));
             Assert.That(Roman.FromRomanNumeral("CM"), Is.EqualTo(900));
         }
 

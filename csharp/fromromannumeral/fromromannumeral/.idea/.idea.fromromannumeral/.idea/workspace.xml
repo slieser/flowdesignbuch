@@ -34,15 +34,15 @@
       <file leaf-file-name="RomanTests.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fromromannumeral.tests/RomanTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="345">
+              <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
               <folding>
-                <marker date="1520503535598" expanded="true" signature="56:1502" ph="{...}" />
-                <marker date="1520503535598" expanded="true" signature="104:1500" ph="{...}" />
-                <marker date="1520503535598" expanded="true" signature="156:659" ph="{...}" />
-                <marker date="1520503535598" expanded="true" signature="707:930" ph="{...}" />
-                <marker date="1520503535598" expanded="true" signature="981:1204" ph="{...}" />
-                <marker date="1520503535598" expanded="true" signature="1260:1494" ph="{...}" />
+                <marker date="1520505509767" expanded="true" signature="56:1716" ph="{...}" />
+                <marker date="1520505509767" expanded="true" signature="104:1714" ph="{...}" />
+                <marker date="1520505509767" expanded="true" signature="156:659" ph="{...}" />
+                <marker date="1520505509767" expanded="true" signature="707:1073" ph="{...}" />
+                <marker date="1520505509767" expanded="true" signature="1124:1418" ph="{...}" />
+                <marker date="1520505509767" expanded="true" signature="1474:1708" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -58,8 +58,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/fromromannumeral.tests/Tests.cs" />
-        <option value="$PROJECT_DIR$/fromromannumeral.tests/RomanTests.cs" />
         <option value="$PROJECT_DIR$/fromromannumeral/Roman.cs" />
+        <option value="$PROJECT_DIR$/fromromannumeral.tests/RomanTests.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +119,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
+  <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -134,9 +134,6 @@
       <option name="PROJECT_KIND" value="None" />
       <option name="PROJECT_TFM" value="" />
     </configuration>
-    <list>
-      <item itemvalue=".NET Project.Default" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -148,12 +145,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520502519966</updated>
-      <workItem from="1520502522777" duration="1920000" />
+      <workItem from="1520502522777" duration="2499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1920000" />
+    <option name="totallyTimeSpent" value="2499000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -176,7 +173,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" auto_hide="true" id="Terminal" order="10" weight="0.32938075" />
       <window_info anchor="bottom" auto_hide="true" id="NuGet" order="11" weight="0.32760897" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" auto_hide="true" id="Build" order="13" weight="0.32938075" />
       <window_info anchor="right" id="Database" order="4" />
@@ -201,15 +198,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/fromromannumeral.tests/RomanTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="345">
+          <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
           <folding>
-            <marker date="1520503535598" expanded="true" signature="56:1502" ph="{...}" />
-            <marker date="1520503535598" expanded="true" signature="104:1500" ph="{...}" />
-            <marker date="1520503535598" expanded="true" signature="156:659" ph="{...}" />
-            <marker date="1520503535598" expanded="true" signature="707:930" ph="{...}" />
-            <marker date="1520503535598" expanded="true" signature="981:1204" ph="{...}" />
-            <marker date="1520503535598" expanded="true" signature="1260:1494" ph="{...}" />
+            <marker date="1520505509767" expanded="true" signature="56:1716" ph="{...}" />
+            <marker date="1520505509767" expanded="true" signature="104:1714" ph="{...}" />
+            <marker date="1520505509767" expanded="true" signature="156:659" ph="{...}" />
+            <marker date="1520505509767" expanded="true" signature="707:1073" ph="{...}" />
+            <marker date="1520505509767" expanded="true" signature="1124:1418" ph="{...}" />
+            <marker date="1520505509767" expanded="true" signature="1474:1708" ph="{...}" />
           </folding>
         </state>
       </provider>
