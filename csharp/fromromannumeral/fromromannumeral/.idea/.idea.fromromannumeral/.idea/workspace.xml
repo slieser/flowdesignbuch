@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a84e2633-bfc2-4b53-b336-396fcf278322" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Roman.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fromromannumeral/Roman.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <marker date="1520503720724" expanded="true" signature="6:47" ph="..." />
+                <marker date="1520503720724" expanded="true" signature="75:1350" ph="{...}" />
+                <marker date="1520503720724" expanded="true" signature="100:1348" ph="{...}" />
+                <marker date="1520503720724" expanded="true" signature="200:543" ph="{...}" />
+                <marker date="1520503720724" expanded="true" signature="611:879" ph="{...}" />
+                <marker date="1520503720724" expanded="true" signature="679:829" ph="{...}" />
+                <marker date="1520503720724" expanded="true" signature="950:1342" ph="{...}" />
+                <marker date="1520503720724" expanded="true" signature="994:1251" ph="{...}" />
+                <marker date="1520503720724" expanded="true" signature="1043:1237" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RomanTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fromromannumeral.tests/RomanTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <marker date="1520503535598" expanded="true" signature="56:1502" ph="{...}" />
+                <marker date="1520503535598" expanded="true" signature="104:1500" ph="{...}" />
+                <marker date="1520503535598" expanded="true" signature="156:659" ph="{...}" />
+                <marker date="1520503535598" expanded="true" signature="707:930" ph="{...}" />
+                <marker date="1520503535598" expanded="true" signature="981:1204" ph="{...}" />
+                <marker date="1520503535598" expanded="true" signature="1260:1494" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/fromromannumeral.tests/RomanTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/fromromannumeral/Roman.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/fromromannumeral.tests/Tests.cs" />
+        <option value="$PROJECT_DIR$/fromromannumeral.tests/RomanTests.cs" />
+        <option value="$PROJECT_DIR$/fromromannumeral/Roman.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="fromromannumeral (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="fromromannumeral (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="fromromannumeral" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="fromromannumeral (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="fromromannumeral.tests" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a84e2633-bfc2-4b53-b336-396fcf278322" name="Default" comment="" />
+      <created>1520502519966</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520502519966</updated>
+      <workItem from="1520502522777" duration="1268000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1268000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" auto_hide="true" id="TODO" order="6" weight="0.32938075" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" auto_hide="true" id="Event Log" order="7" side_tool="true" weight="0.32938075" />
+      <window_info anchor="bottom" auto_hide="true" id="Unit Tests" order="8" weight="0.32893" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" weight="0.32806325" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="10" weight="0.32938075" />
+      <window_info anchor="bottom" auto_hide="true" id="NuGet" order="11" weight="0.32760897" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" auto_hide="true" id="Build" order="13" weight="0.32938075" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="3" weight="0.3992095" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/fromromannumeral.tests/RomanTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1520503535598" expanded="true" signature="56:1502" ph="{...}" />
+            <marker date="1520503535598" expanded="true" signature="104:1500" ph="{...}" />
+            <marker date="1520503535598" expanded="true" signature="156:659" ph="{...}" />
+            <marker date="1520503535598" expanded="true" signature="707:930" ph="{...}" />
+            <marker date="1520503535598" expanded="true" signature="981:1204" ph="{...}" />
+            <marker date="1520503535598" expanded="true" signature="1260:1494" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fromromannumeral/Roman.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <marker date="1520503720724" expanded="true" signature="6:47" ph="..." />
+            <marker date="1520503720724" expanded="true" signature="75:1350" ph="{...}" />
+            <marker date="1520503720724" expanded="true" signature="100:1348" ph="{...}" />
+            <marker date="1520503720724" expanded="true" signature="200:543" ph="{...}" />
+            <marker date="1520503720724" expanded="true" signature="611:879" ph="{...}" />
+            <marker date="1520503720724" expanded="true" signature="679:829" ph="{...}" />
+            <marker date="1520503720724" expanded="true" signature="950:1342" ph="{...}" />
+            <marker date="1520503720724" expanded="true" signature="994:1251" ph="{...}" />
+            <marker date="1520503720724" expanded="true" signature="1043:1237" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
