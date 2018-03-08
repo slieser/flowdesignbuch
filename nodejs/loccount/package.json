@@ -1,0 +1,16 @@
+{
+  "name": "loccount",
+  "version": "1.0.0",
+  "description": "Kata LOCCount",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js"
+  },
+  "author": "Stefan Lieser",
+  "license": "ISC",
+  "dependencies": {
+    "dropstack-cli": "^2.8.0",
+    "walk": "^2.3.9"
+  }
+}
