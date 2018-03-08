@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="639212c0-589b-4371-a161-bd49c3282059" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/loccount/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+              <folding>
+                <marker date="1520412201106" expanded="true" signature="33:822" ph="{...}" />
+                <marker date="1520412201106" expanded="true" signature="62:820" ph="{...}" />
+                <marker date="1520412201106" expanded="true" signature="117:465" ph="{...}" />
+                <marker date="1520412201106" expanded="true" signature="278:346" ph="{...}" />
+                <marker date="1520412201106" expanded="true" signature="382:453" ph="{...}" />
+                <marker date="1520412201106" expanded="true" signature="514:814" ph="{...}" />
+                <marker date="1520412201106" expanded="true" signature="700:760" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandLine.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loccount/CommandLine.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1520411532313" expanded="true" signature="18:160" ph="{...}" />
+                <marker date="1520411532313" expanded="true" signature="49:158" ph="{...}" />
+                <marker date="1520411532313" expanded="true" signature="113:152" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileProvider.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loccount/FileProvider.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <marker date="1520260342822" expanded="true" signature="6:64" ph="..." />
+                <marker date="1520260342822" expanded="true" signature="84:497" ph="{...}" />
+                <marker date="1520260342822" expanded="true" signature="116:495" ph="{...}" />
+                <marker date="1520260342822" expanded="true" signature="192:339" ph="{...}" />
+                <marker date="1520260342822" expanded="true" signature="284:329" ph="{...}" />
+                <marker date="1520260342822" expanded="true" signature="402:489" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodefileProvider.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loccount/CodefileProvider.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding>
+                <marker date="1520411612948" expanded="true" signature="6:64" ph="..." />
+                <marker date="1520411612948" expanded="true" signature="84:710" ph="{...}" />
+                <marker date="1520411612948" expanded="true" signature="120:708" ph="{...}" />
+                <marker date="1520411612948" expanded="true" signature="237:478" ph="{...}" />
+                <marker date="1520411612948" expanded="true" signature="389:442" ph="{...}" />
+                <marker date="1520411612948" expanded="true" signature="559:702" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/loccount/FileProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/loccount/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/loccount/CodefileProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/loccount/CommandLine.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/loccount/FileProvider.cs" />
+        <option value="$PROJECT_DIR$/loccount/CodefileProvider.cs" />
+        <option value="$PROJECT_DIR$/loccount/CommandLine.cs" />
+        <option value="$PROJECT_DIR$/loccount/Program.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="loccount (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="loccount (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="loccount" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/loccount/bin/Debug/loccount.exe" />
+      <option name="PROGRAM_PARAMETERS" value="../../../../" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/loccount/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/loccount/loccount.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="639212c0-589b-4371-a161-bd49c3282059" name="Default" comment="" />
+      <created>1520260109385</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520260109385</updated>
+      <workItem from="1520260111536" duration="3465000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3465000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" auto_hide="true" id="TODO" order="6" weight="0.32938075" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" auto_hide="true" id="Event Log" order="7" side_tool="true" weight="0.32938075" />
+      <window_info anchor="bottom" auto_hide="true" id="Unit Tests" order="8" weight="0.32938075" />
+      <window_info active="true" anchor="bottom" auto_hide="true" id="Run" order="2" visible="true" weight="0.32760897" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="10" weight="0.32938075" />
+      <window_info anchor="bottom" auto_hide="true" id="NuGet" order="11" weight="0.32806325" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" auto_hide="true" id="Build" order="13" weight="0.32938075" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="3" weight="0.3992095" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/loccount/FileProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <marker date="1520260342822" expanded="true" signature="6:64" ph="..." />
+            <marker date="1520260342822" expanded="true" signature="84:497" ph="{...}" />
+            <marker date="1520260342822" expanded="true" signature="116:495" ph="{...}" />
+            <marker date="1520260342822" expanded="true" signature="192:339" ph="{...}" />
+            <marker date="1520260342822" expanded="true" signature="284:329" ph="{...}" />
+            <marker date="1520260342822" expanded="true" signature="402:489" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loccount/CommandLine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1520411532313" expanded="true" signature="18:160" ph="{...}" />
+            <marker date="1520411532313" expanded="true" signature="49:158" ph="{...}" />
+            <marker date="1520411532313" expanded="true" signature="113:152" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loccount/CodefileProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <marker date="1520411612948" expanded="true" signature="6:64" ph="..." />
+            <marker date="1520411612948" expanded="true" signature="84:710" ph="{...}" />
+            <marker date="1520411612948" expanded="true" signature="120:708" ph="{...}" />
+            <marker date="1520411612948" expanded="true" signature="237:478" ph="{...}" />
+            <marker date="1520411612948" expanded="true" signature="389:442" ph="{...}" />
+            <marker date="1520411612948" expanded="true" signature="559:702" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loccount/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <marker date="1520412201106" expanded="true" signature="33:822" ph="{...}" />
+            <marker date="1520412201106" expanded="true" signature="62:820" ph="{...}" />
+            <marker date="1520412201106" expanded="true" signature="117:465" ph="{...}" />
+            <marker date="1520412201106" expanded="true" signature="278:346" ph="{...}" />
+            <marker date="1520412201106" expanded="true" signature="382:453" ph="{...}" />
+            <marker date="1520412201106" expanded="true" signature="514:814" ph="{...}" />
+            <marker date="1520412201106" expanded="true" signature="700:760" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
