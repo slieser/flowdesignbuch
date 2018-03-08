@@ -36,3 +36,5 @@ ipch*/
 *.ncrunchsolution
 packages*/
 node_modules*/
+.idea/workspace.xml
+out*/*.class
