@@ -13,6 +13,8 @@ namespace tictactoe.ui
 
         public event Action<int> Spielstein_gesetzt;
 
+        public event Action Neues_Spiel;
+
         public Ui() {
             Title = "TicTacToe";
             ClientSize = new Size(260, 160);
