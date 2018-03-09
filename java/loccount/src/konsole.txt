@@ -1,0 +1,8 @@
+$ loccount /code
+/code/main.java 123, 119
+/code/projektX/ui.java 213, 190
+...
+
+Sum:
+  Total: 10.123
+  LOC:    9.786

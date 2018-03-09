@@ -1,6 +1,7 @@
 package de.lieser_online;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.function.Consumer;
 
 public class FilesystemProvider {
@@ -19,7 +20,11 @@ public class FilesystemProvider {
             if (file.isDirectory()) {
                 Walk(file.getAbsolutePath(), onFilename);
             } else if (file.getAbsolutePath().endsWith(".java")){
-                onFilename.accept(file.getAbsolutePath());
+                try {
+                    onFilename.accept(file.getCanonicalPath());
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
             }
         }
     }
