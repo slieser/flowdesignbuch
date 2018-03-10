@@ -1,21 +1,26 @@
 package de.lieser_online;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Main {
 
     public static void main(String[] args) {
         ConsoleUi ui = new ConsoleUi();
 
-	    String directory = CommandLine.GetDirectory(args);
-        FilesystemProvider.GetSourcecodeFiles(directory,
+        CountLOC(args, locstat -> ui.ShowLoc(locstat), () -> ui.ShowSum());
+    }
+
+    private static void CountLOC(String[] args, Consumer<LocStat> onLocStat, Runnable onFinished) {
+        String path = CommandLine.GetPath(args);
+        FilesystemProvider.GetSourcecodeFiles(path,
             filename -> {
                 List<String> lines = CodefileProvider.ReadFile(filename);
-                LocStat locstat = Loc.CountLoc(filename, lines);
-                ui.ShowLoc(locstat);
+                LocStat locstat = Loc.CountLocStat(filename, lines);
+                onLocStat.accept(locstat);
             },
             () -> {
-                ui.ShowSum();
+                onFinished.run();
             });
     }
 }

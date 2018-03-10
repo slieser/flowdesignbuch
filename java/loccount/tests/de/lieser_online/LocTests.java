@@ -11,7 +11,7 @@ public class LocTests {
     @Test
     public void LocStat_is_created_with_correct_values() {
         List<String> lines = Arrays.asList("code", "   ", "   // comment");
-        LocStat result = Loc.CountLoc("xyz", lines);
+        LocStat result = Loc.CountLocStat("xyz", lines);
 
         assertEquals("xyz", result.Filename);
         assertEquals(3, result.Total);
