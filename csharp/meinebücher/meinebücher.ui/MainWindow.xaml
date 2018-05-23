@@ -10,6 +10,9 @@
     <Window.Resources>
         <Ui:DateTimeFormatConverter x:Key="dateTimeFormatConverter"/>
     </Window.Resources>
+    <Window.DataContext>
+        <Ui:BookEntries/>
+    </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
