@@ -14,24 +14,24 @@ namespace meinebücher
 
             void start() {
                 var bücher = interactors.Start();
-                mainWindow.Aktualisiere_Bücher(bücher);
+                mainWindow.Update_books(bücher);
             }
 
-            mainWindow.Neues_Buch += titel => {
+            mainWindow.New_book += titel => {
                 var bücher = interactors.Neues_Buch(titel);
-                mainWindow.Aktualisiere_Bücher(bücher);
+                mainWindow.Update_books(bücher);
             };
-            mainWindow.Buch_verleihen += (id, name) => {
+            mainWindow.Lend_book += (id, name) => {
                 var bücher = interactors.Buch_verleihen(id, name);
-                mainWindow.Aktualisiere_Bücher(bücher);
+                mainWindow.Update_books(bücher);
             };
-            mainWindow.Buch_zurückgeben += (id) => {
+            mainWindow.Book_got_back += (id) => {
                 var bücher = interactors.Buch_zurückgegeben(id);
-                mainWindow.Aktualisiere_Bücher(bücher);
+                mainWindow.Update_books(bücher);
             };
-            mainWindow.Buch_löschen += (id) => {
+            mainWindow.Remove_book += (id) => {
                 var bücher = interactors.Buch_löschen(id);
-                mainWindow.Aktualisiere_Bücher(bücher);
+                mainWindow.Update_books(bücher);
             };
 
             start();

@@ -48,7 +48,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bucheintrag.cs" />
+    <Compile Include="BookEntry.cs" />
     <Compile Include="DateTimeFormatConverter.cs" />
     <Compile Include="InputBox.cs" />
     <Compile Include="InputBoxDialog.xaml.cs">

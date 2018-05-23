@@ -6,21 +6,21 @@ namespace meinebücher.logic
 {
     public class Buchverleih
     {
-        public IEnumerable<Buch> Erstelle_Buchliste(IEnumerable<Event> events) {
-            var result = new List<Buch>();
+        public IEnumerable<Book> Erstelle_Buchliste(IEnumerable<Event> events) {
+            var result = new List<Book>();
             foreach (var buchEvent in events) {
                 EventAusführen(buchEvent, result);
             }
             return result;
         }
 
-        private void EventAusführen(Event buchEvent, List<Buch> buchliste) {
+        private void EventAusführen(Event buchEvent, List<Book> buchliste) {
             if (buchEvent.GetType() == typeof(AngelegtEvent)) {
                 var e = (AngelegtEvent)buchEvent;
-                var neuesBuch = new Buch {
+                var neuesBuch = new Book {
                     CorrelationId = e.CorrelationId,
-                    Titel = e.Titel,
-                    Ausleiher = "",
+                    Title = e.Titel,
+                    Lender = "",
                     IstAusleihbar = true
                 };
                 buchliste.Add(neuesBuch);
@@ -28,15 +28,15 @@ namespace meinebücher.logic
             if (buchEvent.GetType() == typeof(VerliehenEvent)) {
                 var e = (VerliehenEvent)buchEvent;
                 var buch = buchliste.Find(b => b.CorrelationId == e.CorrelationId);
-                buch.Ausleiher = e.Ausleiher;
-                buch.Leihdatum = e.Leihdatum;
+                buch.Lender = e.Ausleiher;
+                buch.LendingDate = e.Leihdatum;
                 buch.IstAusleihbar = false;
             }
             if (buchEvent.GetType() == typeof(ZurückgegebenEvent)) {
                 var e = (ZurückgegebenEvent)buchEvent;
                 var buch = buchliste.Find(b => b.CorrelationId == e.CorrelationId);
-                buch.Ausleiher = "";
-                buch.Leihdatum = DateTime.MinValue;
+                buch.Lender = "";
+                buch.LendingDate = DateTime.MinValue;
                 buch.IstAusleihbar = true;
             }
             if (buchEvent.GetType() == typeof(GelöschtEvent)) {

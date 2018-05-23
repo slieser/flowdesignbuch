@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="AngelegtEvent.cs" />
     <Compile Include="VerliehenEvent.cs" />
-    <Compile Include="Buch.cs" />
+    <Compile Include="Book.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="GelöschtEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

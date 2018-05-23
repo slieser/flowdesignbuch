@@ -18,16 +18,16 @@
         
         <DataGrid Grid.Row="0" x:Name="dataGrid" AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Titel" Binding="{Binding Titel}"/>
-                <DataGridTextColumn Header="Ausleiher" Binding="{Binding Ausleiher}"/>
-                <DataGridTextColumn Header="Verliehen am" Binding="{Binding Leihdatum, Converter={StaticResource dateTimeFormatConverter}}" />
+                <DataGridTextColumn Header="Title" Binding="{Binding Title}"/>
+                <DataGridTextColumn Header="Lender" Binding="{Binding Lender}"/>
+                <DataGridTextColumn Header="Lended at" Binding="{Binding LendingDate, Converter={StaticResource dateTimeFormatConverter}}" />
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" Grid.Row="1" >
-            <Button x:Name="btnNeu" Content="Neues Buch" Margin="10" Padding="5" />
-            <Button x:Name="btnVerleihen" Content="Verleihen" Margin="10" Padding="5" />
-            <Button x:Name="btnZurück" Content="Zurücknehmen" Margin="10" Padding="5" />
-            <Button x:Name="btnLöschen" Content="Buch löschen" Margin="10" Padding="5" />
+            <Button x:Name="btnNew" Content="New book" Margin="10" Padding="5" />
+            <Button x:Name="btnLend" Content="Lend" Margin="10" Padding="5" />
+            <Button x:Name="btnGetBack" Content="Get back" Margin="10" Padding="5" />
+            <Button x:Name="btnRemove" Content="Remove" Margin="10" Padding="5" />
         </StackPanel>
     </Grid>
 </Window>

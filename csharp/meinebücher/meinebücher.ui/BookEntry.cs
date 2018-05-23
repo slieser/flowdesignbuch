@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace meinebücher.ui
+{
+    public class BookEntry
+    {
+        public string Title { get; set; }
+
+        public string Lender { get; set; }
+
+        public DateTime LendingDate { get; set; }
+
+        public Guid Id { get; set; }
+    }
+}

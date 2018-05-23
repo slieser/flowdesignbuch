@@ -9,63 +9,63 @@ namespace meinebücher.ui
     {
         public MainWindow() {
             InitializeComponent();
-            btnNeu.Click += (o, e) => {
-                var titel = InputBox.Show("Titel:");
-                if (!string.IsNullOrEmpty(titel)) {
-                    Neues_Buch(titel);
+            btnNew.Click += (o, e) => {
+                var title = InputBox.Show("Title:");
+                if (!string.IsNullOrEmpty(title)) {
+                    New_book(title);
                 }
             };
-            btnVerleihen.Click += (o, e) => {
-                var id = Id_des_selektierten_Buchs();
+            btnLend.Click += (o, e) => {
+                var id = Id_of_selected_book();
                 if (!id.HasValue) {
                     return;
                 }
                 var name = InputBox.Show("Name:");
                 if (!string.IsNullOrEmpty(name)) {
-                    Buch_verleihen(id.Value, name);
+                    Lend_book(id.Value, name);
                 }
             };
-            btnZurück.Click += (o, e) => {
-                var id = Id_des_selektierten_Buchs();
+            btnGetBack.Click += (o, e) => {
+                var id = Id_of_selected_book();
                 if (!id.HasValue) {
                     return;
                 }
-                Buch_zurückgeben(id.Value);
+                Book_got_back(id.Value);
             };
-            btnLöschen.Click += (o, e) => {
-                var id = Id_des_selektierten_Buchs();
+            btnRemove.Click += (o, e) => {
+                var id = Id_of_selected_book();
                 if (!id.HasValue) {
                     return;
                 }
-                Buch_löschen(id.Value);
+                Remove_book(id.Value);
             };
         }
 
-        public void Aktualisiere_Bücher(IEnumerable<Buch> bücher) {
-            var items = new List<Bucheintrag>();
-            foreach (var buch in bücher) {
-                var item = new Bucheintrag {
-                    Id = buch.CorrelationId,
-                    Titel = buch.Titel,
-                    Ausleiher = buch.Ausleiher,
-                    Leihdatum = buch.Leihdatum
+        public void Update_books(IEnumerable<Book> books) {
+            var items = new List<BookEntry>();
+            foreach (var book in books) {
+                var item = new BookEntry {
+                    Id = book.CorrelationId,
+                    Title = book.Title,
+                    Lender = book.Lender,
+                    LendingDate = book.LendingDate
                 };
                 items.Add(item);
             }
             dataGrid.DataContext = items;
         }
 
-        private Guid? Id_des_selektierten_Buchs() {
-            var item = dataGrid.SelectedItem as Bucheintrag;
+        private Guid? Id_of_selected_book() {
+            var item = dataGrid.SelectedItem as BookEntry;
             return item?.Id;
         }
 
-        public event Action<string> Neues_Buch;
+        public event Action<string> New_book;
 
-        public event Action<Guid, string> Buch_verleihen;
+        public event Action<Guid, string> Lend_book;
 
-        public event Action<Guid> Buch_zurückgeben;
+        public event Action<Guid> Book_got_back;
 
-        public event Action<Guid> Buch_löschen;
+        public event Action<Guid> Remove_book;
     }
 }
