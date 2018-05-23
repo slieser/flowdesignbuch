@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using meinebücher.contracts;
 
@@ -42,16 +43,14 @@ namespace meinebücher.ui
         }
 
         public void Update_books(IEnumerable<Book> books) {
-            var items = new List<BookEntry>();
-            foreach (var book in books) {
-                var item = new BookEntry {
+            var items = books.Select(book => new BookEntry
+                {
                     Id = book.CorrelationId,
                     Title = book.Title,
                     Lender = book.Lender,
                     LendingDate = book.LendingDate
-                };
-                items.Add(item);
-            }
+                })
+                .ToList();
             dataGrid.DataContext = items;
         }
 
