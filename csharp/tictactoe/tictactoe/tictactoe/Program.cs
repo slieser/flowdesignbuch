@@ -19,12 +19,12 @@ namespace tictactoe
 
             var start = new Action(() => {
                 var result = interactors.Start();
-                ui.Spielstand_anzeigen(result.Spielbrett, result.Meldung);
+                ui.Show_score(result.Spielbrett, result.Meldung);
             });            
 
-            ui.Spielstein_gesetzt += feld => {
+            ui.Token_set += feld => {
                 var result = interactors.Spielstein_setzen(feld);
-                ui.Spielstand_anzeigen(result.Spielbrett, result.Meldung);
+                ui.Show_score(result.Spielbrett, result.Meldung);
             };
 
             start();

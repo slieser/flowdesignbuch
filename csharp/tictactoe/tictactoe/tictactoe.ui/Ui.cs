@@ -11,9 +11,9 @@ namespace tictactoe.ui
         private readonly Button[] _buttons;
         private readonly Label _message;
 
-        public event Action<int> Spielstein_gesetzt;
+        public event Action<int> Token_set;
 
-        public event Action Neues_Spiel;
+        public event Action New_game;
 
         public Ui() {
             Title = "TicTacToe";
@@ -55,17 +55,17 @@ namespace tictactoe.ui
                 var button = new Button();
                 var feld = i;
                 button.Click += (o, e) => {
-                    Spielstein_gesetzt?.Invoke(feld);
+                    Token_set?.Invoke(feld);
                 };
                 yield return button;
             }
         }
 
-        public void Spielstand_anzeigen(char[] spielbrett, string meldung) {
+        public void Show_score(char[] board, string message) {
             for (var i = 0; i < 9; i++) {
-                _buttons[i].Text = spielbrett[i].ToString();
+                _buttons[i].Text = board[i].ToString();
             }
-            _message.Text = meldung;
+            _message.Text = message;
         }
     }
 }
