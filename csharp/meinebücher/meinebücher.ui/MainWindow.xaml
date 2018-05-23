@@ -1,0 +1,33 @@
+﻿<Window x:Class="meinebücher.ui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:meinebücher"
+        xmlns:Ui="clr-namespace:meinebücher.ui"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Ui:DateTimeFormatConverter x:Key="dateTimeFormatConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="48"/>
+        </Grid.RowDefinitions>
+        
+        <DataGrid Grid.Row="0" x:Name="dataGrid" AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Titel" Binding="{Binding Titel}"/>
+                <DataGridTextColumn Header="Ausleiher" Binding="{Binding Ausleiher}"/>
+                <DataGridTextColumn Header="Verliehen am" Binding="{Binding Leihdatum, Converter={StaticResource dateTimeFormatConverter}}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" >
+            <Button x:Name="btnNeu" Content="Neues Buch" Margin="10" Padding="5" />
+            <Button x:Name="btnVerleihen" Content="Verleihen" Margin="10" Padding="5" />
+            <Button x:Name="btnZurück" Content="Zurücknehmen" Margin="10" Padding="5" />
+            <Button x:Name="btnLöschen" Content="Buch löschen" Margin="10" Padding="5" />
+        </StackPanel>
+    </Grid>
+</Window>
