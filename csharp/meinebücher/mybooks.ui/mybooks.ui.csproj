@@ -92,7 +92,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\meinebücher.contracts\mybooks.contracts.csproj">
+    <ProjectReference Include="..\mybooks.contracts\mybooks.contracts.csproj">
       <Project>{715f7d43-7461-42d2-9a4d-c26de563da48}</Project>
       <Name>mybooks.contracts</Name>
     </ProjectReference>

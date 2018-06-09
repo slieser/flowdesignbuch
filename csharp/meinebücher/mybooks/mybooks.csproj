@@ -77,19 +77,19 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\meinebücher.contracts\mybooks.contracts.csproj">
+    <ProjectReference Include="..\mybooks.contracts\mybooks.contracts.csproj">
       <Project>{715F7D43-7461-42D2-9A4D-C26DE563DA48}</Project>
       <Name>mybooks.contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\meinebücher.eventstoreprovider\mybooks.eventstoreprovider.csproj">
+    <ProjectReference Include="..\mybooks.eventstoreprovider\mybooks.eventstoreprovider.csproj">
       <Project>{4db1d12a-6d8f-4050-84c7-008c6e2aa70c}</Project>
       <Name>mybooks.eventstoreprovider</Name>
     </ProjectReference>
-    <ProjectReference Include="..\meinebücher.logic\mybooks.logic.csproj">
+    <ProjectReference Include="..\mybooks.logic\mybooks.logic.csproj">
       <Project>{3e94a834-ce45-4709-b773-fd254242201a}</Project>
       <Name>mybooks.logic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\meinebücher.ui\mybooks.ui.csproj">
+    <ProjectReference Include="..\mybooks.ui\mybooks.ui.csproj">
       <Project>{04fd50dc-4908-4c5b-878c-ca6e1161fefb}</Project>
       <Name>mybooks.ui</Name>
     </ProjectReference>
