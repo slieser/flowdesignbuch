@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace meinebücher.contracts
+namespace mybooks.contracts
 {
     public class Book
     {
@@ -12,6 +12,6 @@ namespace meinebücher.contracts
 
         public DateTime LendingDate { get; set; }
 
-        public bool IstAusleihbar { get; set; }
+        public bool CanBeLended { get; set; }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows;
-using meinebücher.ui;
+using mybooks.ui;
 
-namespace meinebücher
+namespace mybooks
 {
     public static class Program
     {
@@ -13,25 +13,25 @@ namespace meinebücher
             var app = new Application { MainWindow = mainWindow };
 
             void start() {
-                var bücher = interactors.Start();
-                mainWindow.Update_books(bücher);
+                var books = interactors.Start();
+                mainWindow.Update_books(books);
             }
 
             mainWindow.New_book += titel => {
-                var bücher = interactors.Neues_Buch(titel);
-                mainWindow.Update_books(bücher);
+                var books = interactors.New_book(titel);
+                mainWindow.Update_books(books);
             };
             mainWindow.Lend_book += (id, name) => {
-                var bücher = interactors.Buch_verleihen(id, name);
-                mainWindow.Update_books(bücher);
+                var books = interactors.Lend_book(id, name);
+                mainWindow.Update_books(books);
             };
             mainWindow.Book_got_back += (id) => {
-                var bücher = interactors.Buch_zurückgegeben(id);
-                mainWindow.Update_books(bücher);
+                var books = interactors.Book_got_back(id);
+                mainWindow.Update_books(books);
             };
             mainWindow.Remove_book += (id) => {
-                var bücher = interactors.Buch_löschen(id);
-                mainWindow.Update_books(bücher);
+                var books = interactors.Remove_book(id);
+                mainWindow.Update_books(books);
             };
 
             start();

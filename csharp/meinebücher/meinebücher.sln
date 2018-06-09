@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meinebücher", "meinebücher\meinebücher.csproj", "{96C0C1EC-9C6F-4930-948C-18E7CC91F22B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks", "meinebücher\mybooks.csproj", "{96C0C1EC-9C6F-4930-948C-18E7CC91F22B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meinebücher.ui", "meinebücher.ui\meinebücher.ui.csproj", "{04FD50DC-4908-4C5B-878C-CA6E1161FEFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.ui", "meinebücher.ui\mybooks.ui.csproj", "{04FD50DC-4908-4C5B-878C-CA6E1161FEFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meinebücher.contracts", "meinebücher.contracts\meinebücher.contracts.csproj", "{715F7D43-7461-42D2-9A4D-C26DE563DA48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.contracts", "meinebücher.contracts\mybooks.contracts.csproj", "{715F7D43-7461-42D2-9A4D-C26DE563DA48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meinebücher.eventstoreprovider", "meinebücher.eventstoreprovider\meinebücher.eventstoreprovider.csproj", "{4DB1D12A-6D8F-4050-84C7-008C6E2AA70C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.eventstoreprovider", "meinebücher.eventstoreprovider\mybooks.eventstoreprovider.csproj", "{4DB1D12A-6D8F-4050-84C7-008C6E2AA70C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meinebücher.logic", "meinebücher.logic\meinebücher.logic.csproj", "{3E94A834-CE45-4709-B773-FD254242201A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.logic", "meinebücher.logic\mybooks.logic.csproj", "{3E94A834-CE45-4709-B773-FD254242201A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +42,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95D6272B-0945-4410-8DF9-7CBCD2B5E988}
 	EndGlobalSection
 EndGlobal

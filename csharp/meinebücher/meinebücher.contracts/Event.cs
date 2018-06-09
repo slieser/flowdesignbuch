@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace meinebücher.contracts
+namespace mybooks.contracts
 {
     public class Event
     {

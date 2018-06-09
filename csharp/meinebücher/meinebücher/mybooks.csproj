@@ -4,17 +4,19 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{04FD50DC-4908-4C5B-878C-CA6E1161FEFB}</ProjectGuid>
-    <OutputType>library</OutputType>
+    <ProjectGuid>{96C0C1EC-9C6F-4930-948C-18E7CC91F22B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>meinebücher.ui</RootNamespace>
-    <AssemblyName>meinebücher.ui</AssemblyName>
+    <RootNamespace>mybooks</RootNamespace>
+    <AssemblyName>mybooks</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,6 +26,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -48,16 +51,8 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookEntries.cs" />
-    <Compile Include="BookEntry.cs" />
-    <Compile Include="DateTimeFormatConverter.cs" />
-    <Compile Include="InputBox.cs" />
-    <Compile Include="InputBoxDialog.xaml.cs">
-      <DependentUpon>InputBoxDialog.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Interactors.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -82,19 +77,21 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="InputBoxDialog.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\meinebücher.contracts\meinebücher.contracts.csproj">
-      <Project>{715f7d43-7461-42d2-9a4d-c26de563da48}</Project>
-      <Name>meinebücher.contracts</Name>
+    <ProjectReference Include="..\meinebücher.contracts\mybooks.contracts.csproj">
+      <Project>{715F7D43-7461-42D2-9A4D-C26DE563DA48}</Project>
+      <Name>mybooks.contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\meinebücher.eventstoreprovider\mybooks.eventstoreprovider.csproj">
+      <Project>{4db1d12a-6d8f-4050-84c7-008c6e2aa70c}</Project>
+      <Name>mybooks.eventstoreprovider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\meinebücher.logic\mybooks.logic.csproj">
+      <Project>{3e94a834-ce45-4709-b773-fd254242201a}</Project>
+      <Name>mybooks.logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\meinebücher.ui\mybooks.ui.csproj">
+      <Project>{04fd50dc-4908-4c5b-878c-ca6e1161fefb}</Project>
+      <Name>mybooks.ui</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

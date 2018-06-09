@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using meinebücher.contracts;
+using mybooks.contracts;
 
-namespace meinebücher.ui
+namespace mybooks.ui
 {
     public class BookEntries : List<BookEntry>
     {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using meinebücher.contracts;
+using mybooks.contracts;
 
-namespace meinebücher.ui
+namespace mybooks.ui
 {
     public partial class MainWindow : Window
     {

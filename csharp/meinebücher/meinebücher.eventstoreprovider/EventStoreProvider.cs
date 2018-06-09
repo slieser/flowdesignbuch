@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using meinebücher.contracts;
+using mybooks.contracts;
 using NEventStore;
 
-namespace meinebücher.eventstoreprovider
+namespace mybooks.eventstoreprovider
 {
     public class EventStoreProvider
     {
@@ -16,17 +16,17 @@ namespace meinebücher.eventstoreprovider
                 .Build();
         }
 
-        public IEnumerable<Event> Lese_alle_Events() {
-            using (var stream = store.OpenStream("bücher", 0)) {
+        public IEnumerable<Event> Read_all_events() {
+            using (var stream = store.OpenStream("books", 0)) {
                 foreach (var e in stream.CommittedEvents) {
                     yield return (Event)e.Body;
                 }
             }
         }
 
-        public void Speichere_Event(Event buchEvent) {
-            using (var stream = store.OpenStream("bücher", 0)) {
-                stream.Add(new EventMessage { Body = buchEvent });
+        public void Save_event(Event bookEvent) {
+            using (var stream = store.OpenStream("books", 0)) {
+                stream.Add(new EventMessage { Body = bookEvent });
                 stream.CommitChanges(Guid.NewGuid());
             }
         }

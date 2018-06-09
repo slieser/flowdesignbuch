@@ -1,4 +1,4 @@
-﻿namespace meinebücher.ui
+﻿namespace mybooks.ui
 {
     public static class InputBox
     {

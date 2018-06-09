@@ -1,51 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
-using meinebücher.contracts;
-using meinebücher.eventstoreprovider;
-using meinebücher.logic;
+using mybooks.contracts;
+using mybooks.eventstoreprovider;
+using mybooks.logic;
 
-namespace meinebücher
+namespace mybooks
 {
     public class Interactors
     {
         private readonly EventStoreProvider eventStoreProvider = new EventStoreProvider();
-        private readonly Buchverleih buchverleih = new Buchverleih();
+        private readonly Booklending _booklending = new Booklending();
 
         public IEnumerable<Book> Start() {
-            var events = eventStoreProvider.Lese_alle_Events();
-            var bücher = buchverleih.Erstelle_Buchliste(events);
+            var events = eventStoreProvider.Read_all_events();
+            var bücher = _booklending.Create_list_of_books(events);
             return bücher;
         }
 
-        public IEnumerable<Book> Neues_Buch(string titel) {
-            var buchAngelegtEvent = buchverleih.Buch_anlegen(titel);
-            eventStoreProvider.Speichere_Event(buchAngelegtEvent);
-            var events = eventStoreProvider.Lese_alle_Events();
-            var bücher = buchverleih.Erstelle_Buchliste(events);
+        public IEnumerable<Book> New_book(string titel) {
+            var buchAngelegtEvent = _booklending.Create_book(titel);
+            eventStoreProvider.Save_event(buchAngelegtEvent);
+            var events = eventStoreProvider.Read_all_events();
+            var bücher = _booklending.Create_list_of_books(events);
             return bücher;
         }
 
-        public IEnumerable<Book> Buch_verleihen(Guid id, string name) {
-            var buchVerliehenEvent = buchverleih.Buch_verleihen(id, name);
-            eventStoreProvider.Speichere_Event(buchVerliehenEvent);
-            var events = eventStoreProvider.Lese_alle_Events();
-            var bücher = buchverleih.Erstelle_Buchliste(events);
+        public IEnumerable<Book> Lend_book(Guid id, string name) {
+            var buchVerliehenEvent = _booklending.Lend_book(id, name);
+            eventStoreProvider.Save_event(buchVerliehenEvent);
+            var events = eventStoreProvider.Read_all_events();
+            var bücher = _booklending.Create_list_of_books(events);
             return bücher;
         }
 
-        public IEnumerable<Book> Buch_zurückgegeben(Guid id) {
-            var buchZurückgegebenEvent = buchverleih.Buch_zurückgeben(id);
-            eventStoreProvider.Speichere_Event(buchZurückgegebenEvent);
-            var events = eventStoreProvider.Lese_alle_Events();
-            var bücher = buchverleih.Erstelle_Buchliste(events);
+        public IEnumerable<Book> Book_got_back(Guid id) {
+            var buchZurückgegebenEvent = _booklending.Return_book(id);
+            eventStoreProvider.Save_event(buchZurückgegebenEvent);
+            var events = eventStoreProvider.Read_all_events();
+            var bücher = _booklending.Create_list_of_books(events);
             return bücher;
         }
 
-        public IEnumerable<Book> Buch_löschen(Guid id) {
-            var buchGelöschtEvent = buchverleih.Buch_löschen(id);
-            eventStoreProvider.Speichere_Event(buchGelöschtEvent);
-            var events = eventStoreProvider.Lese_alle_Events();
-            var bücher = buchverleih.Erstelle_Buchliste(events);
+        public IEnumerable<Book> Remove_book(Guid id) {
+            var buchGelöschtEvent = _booklending.Delete_book(id);
+            eventStoreProvider.Save_event(buchGelöschtEvent);
+            var events = eventStoreProvider.Read_all_events();
+            var bücher = _booklending.Create_list_of_books(events);
             return bücher;
         }
     }

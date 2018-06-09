@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace meinebücher.ui
+namespace mybooks.ui
 {
     public class BookEntry
     {

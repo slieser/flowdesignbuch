@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace meinebücher.ui
+namespace mybooks.ui
 {
     public partial class InputBoxDialog : Window
     {
