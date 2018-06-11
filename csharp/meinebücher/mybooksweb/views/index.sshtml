@@ -7,12 +7,47 @@
 <body>
 @Partial['_navbar.sshtml'];
 <div class="container">
+    <script>
+        $(document).ready(function() {
+            var table = $('#myTable').DataTable();
+
+            $('#myTable tbody').on( 'click', 'tr', function () {
+                if ( $(this).hasClass('selected') ) {
+                    $(this).removeClass('selected');
+                }
+                else {
+                    table.$('tr.selected').removeClass('selected');
+                    $(this).addClass('selected');
+                }
+            });
+
+            $('#btnDelete').click( function () {
+                alert( table.rows('.selected').data().length +' row(s) selected' );
+            });
+        });    
+    </script>
+
     <h2>Your books</h2>
-    <div class="list-group">
-        @Each
-        <a href="/termin/@Current.Id" class="list-group-item list-group-item-action">@Current.Title</a>
-        @EndEach
-    </div>
+    <table class="table table-bordered table-hover" id="myTable">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Lender</th>
+                <th scope="col">Lended at</th>
+            </tr>
+        </thead>
+        <tbody>
+            @Each             
+            <tr>
+                <th>@Current.Title</th>
+                <th>@Current.Lender</th>
+                <th>@Current.LendingDate</th>
+            </tr>
+            @EndEach
+        </tbody>
+    </table>
+    
+    <button id="btnDelete">Delete</button>
 </div>
 </body>
 </html>
