@@ -17,8 +17,8 @@ namespace mybooks
                 mainWindow.Update_books(books);
             }
 
-            mainWindow.New_book += titel => {
-                var books = interactors.New_book(titel);
+            mainWindow.New_book += title => {
+                var books = interactors.New_book(title);
                 mainWindow.Update_books(books);
             };
             mainWindow.Lend_book += (id, name) => {
