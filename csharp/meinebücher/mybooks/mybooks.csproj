@@ -51,7 +51,6 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interactors.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -84,6 +83,10 @@
     <ProjectReference Include="..\mybooks.eventstoreprovider\mybooks.eventstoreprovider.csproj">
       <Project>{4db1d12a-6d8f-4050-84c7-008c6e2aa70c}</Project>
       <Name>mybooks.eventstoreprovider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mybooks.integration\mybooks.integration.csproj">
+      <Project>{6c409c47-f894-4682-a058-5cd2b9e2605e}</Project>
+      <Name>mybooks.integration</Name>
     </ProjectReference>
     <ProjectReference Include="..\mybooks.logic\mybooks.logic.csproj">
       <Project>{3e94a834-ce45-4709-b773-fd254242201a}</Project>

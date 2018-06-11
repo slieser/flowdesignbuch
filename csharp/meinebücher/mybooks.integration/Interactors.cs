@@ -8,8 +8,8 @@ namespace mybooks
 {
     public class Interactors
     {
-        private readonly EventStoreProvider _eventStoreProvider = 
-            new EventStoreProvider();
+        private readonly IEventStoreProvider _eventStoreProvider = 
+            new EventStoreProviderDummy();
         private readonly Booklending _booklending = 
             new Booklending();
 

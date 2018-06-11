@@ -5,7 +5,7 @@ using NEventStore;
 
 namespace mybooks.eventstoreprovider
 {
-    public class EventStoreProvider
+    public class EventStoreProvider : IEventStoreProvider
     {
         private readonly IStoreEvents store;
 

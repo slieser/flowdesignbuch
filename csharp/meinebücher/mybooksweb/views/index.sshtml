@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @Partial['_head.html'];
+    <title>My Books</title>
+</head>
+<body>
+@Partial['_navbar.sshtml'];
+<div class="container">
+    <h2>Your books</h2>
+    <div class="list-group">
+        @Each
+        <a href="/termin/@Current.Id" class="list-group-item list-group-item-action">@Current.Title</a>
+        @EndEach
+    </div>
+</div>
+</body>
+</html>

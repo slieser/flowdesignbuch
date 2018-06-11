@@ -4,7 +4,7 @@ using mybooks.contracts;
 
 namespace mybooks.eventstoreprovider
 {
-    public class EventStoreProviderDummy
+    public class EventStoreProviderDummy : IEventStoreProvider
     {
         private readonly List<Event> _events = new List<Event> {
             new CreatedEvent {
