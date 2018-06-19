@@ -6,9 +6,7 @@ namespace mybooksweb
 {
     public class HomeModule : NancyModule
     {
-        public HomeModule() {
-            var interactors = new Interactors();
-
+        public HomeModule(Interactors interactors) {
             Get["/"] = _ => {
                 var books = interactors.Start();
                 return View["index.sshtml", books];

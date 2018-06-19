@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BooksApiModule.cs" />
+    <Compile Include="Bootstrapper.cs" />
     <Compile Include="HomeModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,6 +62,10 @@
     <ProjectReference Include="..\mybooks.contracts\mybooks.contracts.csproj">
       <Project>{715f7d43-7461-42d2-9a4d-c26de563da48}</Project>
       <Name>mybooks.contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mybooks.eventstoreprovider\mybooks.eventstoreprovider.csproj">
+      <Project>{4db1d12a-6d8f-4050-84c7-008c6e2aa70c}</Project>
+      <Name>mybooks.eventstoreprovider</Name>
     </ProjectReference>
     <ProjectReference Include="..\mybooks.integration\mybooks.integration.csproj">
       <Project>{6c409c47-f894-4682-a058-5cd2b9e2605e}</Project>

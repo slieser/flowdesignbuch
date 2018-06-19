@@ -8,10 +8,12 @@ namespace mybooks
 {
     public class Interactors
     {
-        private readonly IEventStoreProvider _eventStoreProvider = 
-            new EventStoreProvider();
-        private readonly Booklending _booklending = 
-            new Booklending();
+        private readonly IEventStoreProvider _eventStoreProvider;
+        private readonly Booklending _booklending = new Booklending();
+
+        public Interactors(IEventStoreProvider eventStoreProvider) {
+            _eventStoreProvider = eventStoreProvider;
+        }
 
         public IEnumerable<Book> Start() {
             var events = _eventStoreProvider.Read_all_events();
