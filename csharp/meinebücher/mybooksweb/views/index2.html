@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>My Books</title>
+    <link rel="stylesheet" href="https://unpkg.com/buefy/lib/buefy.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@latest/dist/vue.js"></script>
+    <script src="https://unpkg.com/buefy"></script>
+    
+    <style>
+        .container {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+
+    <div id="app">
+        <p>{{ message }}</p>
+        <button v-on:click="refreshMessage">Update</button>
+
+        <b-table :data="books" focusable :selected.sync="selectedBooks" ></b-table>
+        
+        <button v-on:click="deleteBook">Delete</button>
+    
+    </div>
+
+    <script>
+        Vue.use(Buefy);
+        
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!',
+                books: [
+                    { Id: 1, Title: "Flow Design", Lender: "Paul", LendedAt: "2018-01-02"},
+                    { Id: 2, Title: "Clean Code", Lender: "", LendedAt: ""},
+                    { Id: 3, Title: "Refactoring Legacy Code", Lender: "Jakob", LendedAt: "2018-04-12"}
+                ],
+                selectedBooks: []
+            },
+            methods: {
+                refreshMessage: function (event) {
+                    const self = this;
+                    fetch("/message").then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (result) {
+                        self.message = result;
+                    })
+                    .catch(function (err) {
+                        alert(err);
+                    });
+                },
+                deleteBook: function (event) {
+                    let id = this.$refs.myTable.selected.Id;
+                    alert(id + ' is selected');
+                },
+                rowClicked: function (record, index) {
+                    this.$refs.myTable.selected.index = index;
+                }
+            }
+        });
+    </script>
+    </div>
+</body>
+</html>

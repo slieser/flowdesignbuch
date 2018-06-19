@@ -22,7 +22,8 @@
             });
 
             $('#btnDelete').click( function () {
-                alert( table.rows('.selected').data().length +' row(s) selected' );
+                var rows = table.rows('.selected').data();
+                alert(rows[0].attr["id"] + ' selected');
             });
         });    
     </script>
@@ -38,7 +39,7 @@
         </thead>
         <tbody>
             @Each             
-            <tr>
+            <tr id="@Current.CorrelationId">
                 <th>@Current.Title</th>
                 <th>@Current.Lender</th>
                 <th>@Current.LendingDate</th>
