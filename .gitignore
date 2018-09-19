@@ -61,3 +61,7 @@ out*/
 
 # Rider
 **/.idea/.idea*
+
+# CLion
+**/cmake-build-debug
+
