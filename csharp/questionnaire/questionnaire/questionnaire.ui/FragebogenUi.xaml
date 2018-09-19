@@ -1,0 +1,23 @@
+﻿<Window x:Class="questionnaire.ui.FragebogenUi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:questionnaire.ui"
+        mc:Ignorable="d"
+        Title="Questionnaire" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="64"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="_panel"/>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Auswerten" Margin="10" Padding="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
