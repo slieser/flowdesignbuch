@@ -14,10 +14,13 @@ namespace questionnaire.tests
         
         [Test]
         public void Integrationstest() {
-            var aufgaben = Interactors.Start().ToArray();
+            var (aufg, auswertbar) = Interactors.Start();
+            var aufgaben = aufg.ToArray();
             
+            Assert.IsFalse(auswertbar);
+
             Assert.That(aufgaben.Length, Is.EqualTo(2));
-            
+
             Assert.That(aufgaben[0].Frage, Is.EqualTo("Welches Tier ist ein Säugetier?"));
             Assert.That(aufgaben[0].Antwortmöglichkeiten.Count, Is.EqualTo(3));
             Assert.That(aufgaben[0].Antwortmöglichkeiten[0].Antwort, Is.EqualTo("Katze"));

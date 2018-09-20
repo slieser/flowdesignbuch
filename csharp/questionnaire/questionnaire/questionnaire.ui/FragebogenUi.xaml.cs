@@ -11,7 +11,7 @@ namespace questionnaire.ui
             InitializeComponent();
         }
 
-        public void Update(IEnumerable<Aufgabe> aufgaben) {
+        public void Update(IEnumerable<Aufgabe> aufgaben, bool auswertbar) {
             _panel.Children.Clear();
             foreach (var aufgabe in aufgaben) {
                 var panel = new StackPanel {Orientation = Orientation.Vertical, Margin = new Thickness(10) };
@@ -23,6 +23,7 @@ namespace questionnaire.ui
                 }
                 _panel.Children.Add(panel);
             }
+            _btnAuswerten.IsEnabled = auswertbar;
         }
     }
 }

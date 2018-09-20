@@ -6,11 +6,11 @@ namespace questionnaire
 {
     public class Interactors
     {
-        public static IEnumerable<Aufgabe> Start() {
+        public static (IEnumerable<Aufgabe> aufgaben, bool auswertbar) Start() {
             var zeilen = FragebogenProvider.Fragebogendatei_einlesen();
             var gruppierteZeilen = FragebogenProvider.Nach_Aufgaben_gruppieren(zeilen);
             var aufgaben = FragebogenProvider.Aufgaben_erstellen(gruppierteZeilen);
-            return aufgaben;
+            return (aufgaben, false);
         }
     }
 }

@@ -11,14 +11,14 @@ namespace questionnaire
         [STAThread]
         public static void Main(string[] args) {
             var ui = new FragebogenUi();
-            var aufgaben = Interactors.Start();
-            ui.Update(aufgaben);
+            var (aufgaben, auswertbar) = Interactors.Start();
+            ui.Update(aufgaben, auswertbar);
 
-            var app = new Application {MainWindow = ui};
+            var app = new Application{MainWindow = ui};
             app.Run(ui);
         }
 
-        private static void Show(IEnumerable<Aufgabe> aufgaben) {
+        private static void Show(IEnumerable<Aufgabe> aufgaben, bool auswertbar) {
             foreach (var aufgabe in aufgaben) {
                 Console.WriteLine($"Frage: {aufgabe.Frage}");
                 foreach (var antwortmöglichkeit in aufgabe.Antwortmöglichkeiten) {
@@ -26,6 +26,7 @@ namespace questionnaire
                     Console.WriteLine($" - {antwortmöglichkeit.Antwort}{korrekt}");
                 }
             }
+            Console.WriteLine(auswertbar ? "Auswertbar" : "Nicht auswertbar");
         }
     }
 }

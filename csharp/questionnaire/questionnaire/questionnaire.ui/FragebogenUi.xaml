@@ -17,7 +17,7 @@
         </ScrollViewer>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <Button Content="Auswerten" Margin="10" Padding="10"/>
+            <Button  x:Name="_btnAuswerten" Content="Auswerten" Margin="10" Padding="10"/>
         </StackPanel>
     </Grid>
 </Window>
