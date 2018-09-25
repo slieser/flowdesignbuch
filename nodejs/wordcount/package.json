@@ -10,10 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.1.2",
-    "readline-sync": "^1.4.7",
+    "npm": "^6.4.1",
+    "readline-sync": "^1.4.9",
     "rewire": "^3.0.2"
   },
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "mocha": "^4.1.0"
   }
 }
