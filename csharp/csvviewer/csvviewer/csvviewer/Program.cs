@@ -12,11 +12,11 @@
             }
 
             ui.MoveNext += () => {
-                var records = interactors.MoveNext();
+                var records = interactors.NextPage();
                 ui.Display(records);
             };
             ui.MovePrev += () => {
-                var records = interactors.MovePrev();
+                var records = interactors.PrevPage();
                 ui.Display(records);
             };
 

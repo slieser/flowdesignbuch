@@ -17,7 +17,7 @@ namespace csvviewer
             return records;
         }
 
-        public IEnumerable<Record> MoveNext() {
+        public IEnumerable<Record> NextPage() {
             var pageLength = commandLine.GetPageLength();
             var lines = fileProvider.GetFileContent();
             var nextPage = paging.ExtractNextPage(lines, pageLength);
@@ -25,7 +25,7 @@ namespace csvviewer
             return records;
         }
 
-        public IEnumerable<Record> MovePrev() {
+        public IEnumerable<Record> PrevPage() {
             var pageLength = commandLine.GetPageLength();
             var lines = fileProvider.GetFileContent();
             var nextPage = paging.ExtractPrevPage(lines, pageLength);
