@@ -1,16 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{92B6D93C-19FE-4A5A-870A-6358ADFA538D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0CF32B7-DAC9-499C-90CA-39FDE0B3C441}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "csvviewer", "src\csvviewer\csvviewer.xproj", "{6576469D-21E5-47CE-A015-F8A0E0413514}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csvviewer", "csvviewer\csvviewer.csproj", "{56008996-0AF3-4338-BEBF-C398350D8005}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,15 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6576469D-21E5-47CE-A015-F8A0E0413514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6576469D-21E5-47CE-A015-F8A0E0413514}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6576469D-21E5-47CE-A015-F8A0E0413514}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6576469D-21E5-47CE-A015-F8A0E0413514}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{6576469D-21E5-47CE-A015-F8A0E0413514} = {92B6D93C-19FE-4A5A-870A-6358ADFA538D}
+		{56008996-0AF3-4338-BEBF-C398350D8005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56008996-0AF3-4338-BEBF-C398350D8005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56008996-0AF3-4338-BEBF-C398350D8005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56008996-0AF3-4338-BEBF-C398350D8005}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

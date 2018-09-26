@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asynchronous", "asynchronous\asynchronous.csproj", "{799A9203-1A15-4567-92BA-2DC84C2E1FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoapp", "demoapp\demoapp.csproj", "{49D878DA-948D-42EB-B123-75C6ABA9A030}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{799A9203-1A15-4567-92BA-2DC84C2E1FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799A9203-1A15-4567-92BA-2DC84C2E1FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799A9203-1A15-4567-92BA-2DC84C2E1FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799A9203-1A15-4567-92BA-2DC84C2E1FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49D878DA-948D-42EB-B123-75C6ABA9A030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49D878DA-948D-42EB-B123-75C6ABA9A030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49D878DA-948D-42EB-B123-75C6ABA9A030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49D878DA-948D-42EB-B123-75C6ABA9A030}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
