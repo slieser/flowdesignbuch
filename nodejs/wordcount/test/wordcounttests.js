@@ -12,3 +12,9 @@ describe("wordcount.CountWords", () => {
         expect(wordcount.CountWords(["a", "a", "a", "a"])).to.equal(4)
     });
 });
+
+describe("wordcount.FilterStopwords", () => {
+    it("filters the stopwords", () => {
+        expect(wordcount.FilterStopwords(["a", "b", "a", "c"], ["a", "x"])).to.deep.equal(["b", "c"])
+    });
+});

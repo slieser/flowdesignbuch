@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b36d8397-2ab3-4a9c-9994-71a7a0c8709f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wordcount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordcount/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wordcount/test/wordcounttests.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/test/wordcounttests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordcount/wordcount.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/wordcount.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wordwrap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordwrap/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
