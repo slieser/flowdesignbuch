@@ -1,6 +1,6 @@
 const ui = require("./consoleui.js");
-const wordcount = require("./wordcount.js");
+const interactors = require("./interactors.js");
 
 let text = ui.GetText();
-let numberOfWords = wordcount.CountWords(text);
+let numberOfWords = interactors.CountWords(text);
 ui.ShowResult(numberOfWords);
