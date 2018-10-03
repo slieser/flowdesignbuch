@@ -47,6 +47,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuswertungUi.xaml.cs">
+      <DependentUpon>AuswertungUi.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FragebogenUi.xaml.cs">
       <DependentUpon>FragebogenUi.xaml</DependentUpon>
     </Compile>
@@ -73,6 +76,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="AuswertungUi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FragebogenUi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

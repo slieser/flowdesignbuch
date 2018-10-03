@@ -1,0 +1,20 @@
+﻿<Window x:Class="questionnaire.ui.AuswertungUi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:questionnaire.ui"
+        mc:Ignorable="d"
+        Title="Auswertung" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="128"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="_label" Grid.Row="0"/>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="_panel" Orientation="Vertical"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

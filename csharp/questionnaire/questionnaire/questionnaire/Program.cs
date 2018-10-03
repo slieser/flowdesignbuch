@@ -25,7 +25,10 @@ namespace questionnaire
 
             ui.Auswerten += () => {
                 var auswertung = interactors.Auswerten();
-
+                var auswertungUi = new AuswertungUi();
+                auswertungUi.Update(auswertung);
+                auswertungUi.ShowDialog();
+                Start();
             };
 
             Start();
