@@ -25,5 +25,12 @@ namespace questionnaire
             var (aufgaben, auswertbar) = _fragebogen.Auswertbarkeit_ermitteln();
             return (aufgaben, auswertbar);
         }
+
+        public Auswertung Auswerten() {
+            var aufgaben = _fragebogen.Aufgaben_holen();
+            var ergebnisse = _fragebogen.Ergebnisse_erstellen(aufgaben);
+            var (anzahl, richtig) = _fragebogen.Ergebnisse_zählen(ergebnisse);
+            return _fragebogen.Auswertung_erstellen(ergebnisse, anzahl, richtig);
+        }
     }
 }

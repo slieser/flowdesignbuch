@@ -8,10 +8,13 @@ namespace questionnaire.ui
 {
     public partial class FragebogenUi : Window
     {
-        public event Action<int> Antwort_gegeben; 
+        public event Action<int> Antwort_gegeben;
+
+        public event Action Auswerten;
 
         public FragebogenUi() {
             InitializeComponent();
+            _btnAuswerten.Click += (o, e) => Auswerten();
         }
 
         public void Update(IEnumerable<Aufgabe> aufgaben, bool auswertbar) {

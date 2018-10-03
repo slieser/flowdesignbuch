@@ -41,6 +41,8 @@
   <ItemGroup>
     <Compile Include="Antwortmöglichkeit.cs" />
     <Compile Include="Aufgabe.cs" />
+    <Compile Include="Auswertung.cs" />
+    <Compile Include="Ergebnis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

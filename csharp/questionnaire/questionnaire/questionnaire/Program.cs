@@ -23,6 +23,11 @@ namespace questionnaire
                 ui.Update(aufgaben, auswertbar);
             };
 
+            ui.Auswerten += () => {
+                var auswertung = interactors.Auswerten();
+
+            };
+
             Start();
             var app = new Application{MainWindow = ui};
             app.Run(ui);

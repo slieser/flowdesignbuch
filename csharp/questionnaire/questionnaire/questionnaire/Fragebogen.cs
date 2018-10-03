@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using questionnaire.contracts;
 
 namespace questionnaire
@@ -50,6 +51,51 @@ namespace questionnaire
                 }
             }
             return (_aufgaben, true);
+        }
+
+        public IEnumerable<Aufgabe> Aufgaben_holen() {
+            return _aufgaben;
+        }
+
+        public IEnumerable<Ergebnis> Ergebnisse_erstellen(IEnumerable<Aufgabe> aufgaben) {
+            foreach (var aufgabe in aufgaben) {
+                yield return Ergebnis_erstellen(aufgabe);
+            }
+        }
+
+        private Ergebnis Ergebnis_erstellen(Aufgabe aufgabe) {
+            return new Ergebnis {
+                Frage = aufgabe.Frage,
+                GegebeneAntwort = GegebeneAntwort(aufgabe),
+                RichtigeAntwort = RichtigeAntwort(aufgabe),
+                IstKorrekt = IstKorrekt(aufgabe)
+            };
+        }
+
+        private static string GegebeneAntwort(Aufgabe aufgabe) {
+            return aufgabe.Antwortmöglichkeiten.Find(a => a.IstGegeben).Antwort;
+        }
+
+        private static string RichtigeAntwort(Aufgabe aufgabe) {
+            return aufgabe.Antwortmöglichkeiten.Find(a => a.IstKorrekt).Antwort;
+        }
+
+        private static bool IstKorrekt(Aufgabe aufgabe) {
+            return aufgabe.Antwortmöglichkeiten.FirstOrDefault(a => a.IstKorrekt && a.IstGegeben) != null;
+        }
+
+        public (int anzahl, int richtig) Ergebnisse_zählen(IEnumerable<Ergebnis> ergebnisse) {
+            var anzahl = ergebnisse.Count();
+            var richtig = ergebnisse.Count(e => e.IstKorrekt);
+            return (anzahl, richtig);
+        }
+
+        public Auswertung Auswertung_erstellen(IEnumerable<Ergebnis> ergebnisse, int anzahl, int richtig) {
+            return new Auswertung {
+                AnzahlAufgaben = anzahl,
+                RichtigeAufgaben = richtig,
+                Ergebnisse = ergebnisse.ToArray()
+            };
         }
     }
 }
