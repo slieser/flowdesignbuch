@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using questionnaire.contracts;
@@ -7,6 +8,8 @@ namespace questionnaire.ui
 {
     public partial class FragebogenUi : Window
     {
+        public event Action<int> Antwort_gegeben; 
+
         public FragebogenUi() {
             InitializeComponent();
         }
@@ -18,7 +21,12 @@ namespace questionnaire.ui
                 var label = new Label {Content = aufgabe.Frage};
                 panel.Children.Add(label);
                 foreach (var antwortmöglichkeit in aufgabe.Antwortmöglichkeiten) {
-                    var radio = new RadioButton {Content = antwortmöglichkeit.Antwort};
+                    var radio = new RadioButton {
+                        Content = antwortmöglichkeit.Antwort,
+                        Tag = antwortmöglichkeit.Id,
+                        IsChecked = antwortmöglichkeit.IstGegeben
+                    };
+                    radio.Checked += (o, e) => Antwort_gegeben((int)radio.Tag);
                     panel.Children.Add(radio);
                 }
                 _panel.Children.Add(panel);

@@ -7,14 +7,17 @@ namespace questionnaire.tests
     [TestFixture]
     public class InteractorsTests
     {
+        private Interactors _sut;
+
         [SetUp]
         public void Setup() {
             Directory.SetCurrentDirectory(TestContext.CurrentContext.TestDirectory);
+            _sut = new Interactors();
         }
         
         [Test]
         public void Integrationstest() {
-            var (aufg, auswertbar) = Interactors.Start();
+            var (aufg, auswertbar) = _sut.Start();
             var aufgaben = aufg.ToArray();
             
             Assert.IsFalse(auswertbar);

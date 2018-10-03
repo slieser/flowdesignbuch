@@ -11,9 +11,19 @@ namespace questionnaire
         [STAThread]
         public static void Main(string[] args) {
             var ui = new FragebogenUi();
-            var (aufgaben, auswertbar) = Interactors.Start();
-            ui.Update(aufgaben, auswertbar);
+            var interactors = new Interactors();
 
+            void Start() {
+                var (aufgaben, auswertbar) = interactors.Start();
+                ui.Update(aufgaben, auswertbar);
+            }
+
+            ui.Antwort_gegeben += id => {
+                var (aufgaben, auswertbar) = interactors.Antwort_gegeben(id);
+                ui.Update(aufgaben, auswertbar);
+            };
+
+            Start();
             var app = new Application{MainWindow = ui};
             app.Run(ui);
         }

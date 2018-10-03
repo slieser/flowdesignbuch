@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using questionnaire.contracts;
@@ -54,6 +55,15 @@ namespace questionnaire.ressources
                 result.Add(antwortmöglichkeit);
             }
             return result;
+        }
+
+        public static void Ids_zuweisen(IEnumerable<Aufgabe> aufgaben) {
+            var id = 0;
+            foreach (var aufgabe in aufgaben) {
+                foreach (var antwortmöglichkeit in aufgabe.Antwortmöglichkeiten) {
+                    antwortmöglichkeit.Id = ++id;
+                }
+            }
         }
     }
 }
