@@ -1,0 +1,34 @@
+﻿<Window x:Class="wecker.gui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wecker" Height="200" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel  Grid.Column="0" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Stretch">
+            <RadioButton x:Name="radioWeckzeit" Content="Weckzeit" Margin="10" FontSize="12"/>
+            <TextBox x:Name="txtWeckzeit" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Width="60"/>
+        </StackPanel>
+
+        <StackPanel  Grid.Column="0" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Stretch">
+            <RadioButton x:Name="radioRestzeit" Content="Restzeit" Margin="10" FontSize="12"/>
+            <TextBox x:Name="txtRestzeit" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Width="60"/>
+        </StackPanel>
+        
+        <Button x:Name="btnStart" Grid.Column="1" Grid.Row="0" Content="Start" Margin="5" Padding="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="btnStopp" Grid.Column="1" Grid.Row="1" Content="Stopp" Margin="5" Padding="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+    <Label x:Name="lblUhrzeit" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Content="Uhrzeit" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Label x:Name="lblRestzeit" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Content="Restzeit" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</Window>

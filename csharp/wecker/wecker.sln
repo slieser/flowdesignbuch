@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wecker.gui", "wecker.gui\wecker.gui.csproj", "{DAE6DDDA-2AC2-4BAC-895D-75811C04FAB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wecker.app", "wecker.app\wecker.app.csproj", "{5CF25C92-0D09-4A64-975F-ABA23BEAF87D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wecker.logik", "wecker.logik\wecker.logik.csproj", "{BC40762E-7497-466A-BD2C-95E179608EC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAE6DDDA-2AC2-4BAC-895D-75811C04FAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE6DDDA-2AC2-4BAC-895D-75811C04FAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE6DDDA-2AC2-4BAC-895D-75811C04FAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE6DDDA-2AC2-4BAC-895D-75811C04FAB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF25C92-0D09-4A64-975F-ABA23BEAF87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF25C92-0D09-4A64-975F-ABA23BEAF87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF25C92-0D09-4A64-975F-ABA23BEAF87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF25C92-0D09-4A64-975F-ABA23BEAF87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC40762E-7497-466A-BD2C-95E179608EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC40762E-7497-466A-BD2C-95E179608EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC40762E-7497-466A-BD2C-95E179608EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC40762E-7497-466A-BD2C-95E179608EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
