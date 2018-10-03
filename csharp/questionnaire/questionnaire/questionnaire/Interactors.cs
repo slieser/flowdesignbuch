@@ -13,6 +13,7 @@ namespace questionnaire
             var zeilen = FragebogenProvider.Fragebogendatei_einlesen();
             var gruppierteZeilen = FragebogenProvider.Nach_Aufgaben_gruppieren(zeilen);
             var aufgaben = FragebogenProvider.Aufgaben_erstellen(gruppierteZeilen).ToArray();
+            FragebogenProvider.Weiß_nicht_ergänzen(aufgaben);
             FragebogenProvider.Ids_zuweisen(aufgaben);
             _fragebogen.Aufgaben_setzen(aufgaben);
             return (aufgaben, false);

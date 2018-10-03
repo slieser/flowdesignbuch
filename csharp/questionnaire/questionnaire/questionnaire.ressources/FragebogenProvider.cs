@@ -65,5 +65,13 @@ namespace questionnaire.ressources
                 }
             }
         }
+
+        public static void Weiß_nicht_ergänzen(Aufgabe[] aufgaben) {
+            foreach (var aufgabe in aufgaben) {
+                aufgabe.Antwortmöglichkeiten.Add(new Antwortmöglichkeit{
+                    Antwort = "Weiß nicht"
+                });
+            }
+        }
     }
 }
