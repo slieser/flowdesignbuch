@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "csvviewer": {
-      "commandName": "Project",
-      "commandLineArgs": "persons.csv 5"
-    }
-  }
-}

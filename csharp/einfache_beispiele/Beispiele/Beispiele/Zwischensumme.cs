@@ -1,6 +1,6 @@
 ﻿namespace Beispiele
 {
-    public class Zwischensumme
+    public class Zwischensumme2
     {
         private int _summe;
 
@@ -17,9 +17,9 @@
         }
     }
 
-    public class Zwischensumme2
+    public class Zwischensumme
     {
-        private readonly State<int> _state = new State<int>();
+        internal readonly State<int> _state = new State<int>();
     
         public int Aktuelle_Zwischensumme_berechnen(int wert) {
             var bisherige_Summe = _state.Get();
@@ -36,12 +36,12 @@
     public class Verwender
     {
         public void Summiere() {
-            var zwischensumme = new Zwischensumme2();
+            var zwischensumme = new Zwischensumme();
             var summe = zwischensumme.Aktuelle_Zwischensumme_berechnen(1);
         }
 
         public void Summiere_mit_Zustand() {
-            var zwischensumme = new Zwischensumme();
+            var zwischensumme = new Zwischensumme2();
             var state = new State<int>();
 
             var summe = zwischensumme.Aktuelle_Zwischensumme_berechnen(1, state);
