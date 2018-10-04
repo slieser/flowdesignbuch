@@ -15,15 +15,15 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel  Grid.Column="0" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Stretch">
+        <DockPanel  Grid.Column="0" Grid.Row="0"  >
             <RadioButton x:Name="radioWeckzeit" Content="Weckzeit" Margin="10" FontSize="12"/>
             <TextBox x:Name="txtWeckzeit" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Width="60"/>
-        </StackPanel>
+        </DockPanel>
 
-        <StackPanel  Grid.Column="0" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Stretch">
+        <DockPanel  Grid.Column="0" Grid.Row="1"  >
             <RadioButton x:Name="radioRestzeit" Content="Restzeit" Margin="10" FontSize="12"/>
             <TextBox x:Name="txtRestzeit" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Width="60"/>
-        </StackPanel>
+        </DockPanel>
         
         <Button x:Name="btnStart" Grid.Column="1" Grid.Row="0" Content="Start" Margin="5" Padding="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button x:Name="btnStopp" Grid.Column="1" Grid.Row="1" Content="Stopp" Margin="5" Padding="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>

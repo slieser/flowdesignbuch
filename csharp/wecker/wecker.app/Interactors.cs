@@ -9,7 +9,8 @@ namespace wecker.app
         private readonly Synchronizer _sync = new Synchronizer();
 
         public void Start(Action<bool, bool> onZustand, Action<DateTime> onTimer) {
-            onZustand(true, false);
+            var (startbar, stoppbar) = Wecker.Wecker_gestoppt();
+            onZustand(startbar, stoppbar);
 
             _timer = new TimerProvider();
             _timer.Tick += () => {
@@ -21,41 +22,35 @@ namespace wecker.app
         }
 
         public void Start_mit_Weckzeit(DateTime weckzeit, Action<bool, bool> onZustand, Action<TimeSpan> onRestzeit) {
-            onZustand(false, true);
+            var (startbar, stoppbar) = Wecker.Wecker_gestartet();
+            onZustand(startbar, stoppbar);
 
             _timer.Start(() => {
                 var uhrzeit = UhrzeitProvider.Aktuelle_Uhrzeit();
-                var restzeit = Restzeit_berechnen(uhrzeit, weckzeit);
+                var restzeit = Wecker.Restzeit_berechnen(uhrzeit, weckzeit);
                 _sync.Process(() => onRestzeit(restzeit));
 
-                Wenn_Restzeit_abgelaufen(restzeit, () => {
+                Wecker.Wenn_Restzeit_abgelaufen(restzeit, () => {
                     _timer.Stopp();
-                    var media_Player = new Media_Player();
-                    media_Player.Alarm_abspielen();
-                    _sync.Process(() => onZustand(true, false));
+                    Media_Player.Alarm_abspielen();
+                    _sync.Process(() => {
+                        (startbar, stoppbar) = Wecker.Wecker_gestoppt();
+                        onZustand(startbar, stoppbar);
+                    });
                 });
             });
         }
 
         public void Start_mit_Restzeit(TimeSpan restzeit, Action<bool, bool> onZustand, Action<TimeSpan> onRestzeit) {
             var uhrzeit = UhrzeitProvider.Aktuelle_Uhrzeit();
-            var weckzeit = uhrzeit + restzeit;
+            var weckzeit = Wecker.Weckzeit_berechnen(restzeit, uhrzeit);
             Start_mit_Weckzeit(weckzeit, onZustand, onRestzeit);
-        }
-
-        private TimeSpan Restzeit_berechnen(DateTime uhrzeit, DateTime weckzeit) {
-            return weckzeit - uhrzeit;
-        }
-
-        private void Wenn_Restzeit_abgelaufen(TimeSpan restzeit, Action continueWith) {
-            if (restzeit <= new TimeSpan()) {
-                continueWith();
-            }
         }
 
         public void Stopp(Action<bool, bool> onZustand) {
             _timer.Stopp();
-            onZustand(true, false);
+            var (startbar, stoppbar) = Wecker.Wecker_gestoppt();
+            onZustand(startbar, stoppbar);
         }
     }
 }

@@ -2,9 +2,9 @@
 
 namespace wecker.logik
 {
-    public class Media_Player
+    public static class Media_Player
     {
-        public void Alarm_abspielen() {
+        public static void Alarm_abspielen() {
             var player = new SoundPlayer {
                 SoundLocation = @"C:\Windows\media\Alarm02.wav"
             };
