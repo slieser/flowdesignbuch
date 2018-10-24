@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4500e4d4-6294-4d39-bd2e-d9a3954bcde5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beispiele.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beispiele/Zwischensumme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele/Zwischensumme.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beispiele/Beispiele.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele/Beispiele.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../nebenläufigkeit/nebenläufigkeit/.idea/.idea.nebenläufigkeit/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../nebenläufigkeit/nebenläufigkeit/.idea/.idea.nebenläufigkeit/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../nebenläufigkeit/nebenläufigkeit/.idea/.idea.nebenläufigkeit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../nebenläufigkeit/nebenläufigkeit/.idea/.idea.nebenläufigkeit/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,35 +18,37 @@
     <session id="981937259">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="4" />
+          <entry key="cs" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="4" />
+          <entry key="C#" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="157" />
+          <entry key="cs" value="304" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="157" />
+          <entry key="C#" value="304" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
@@ -60,6 +63,28 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+              <folding>
+                <marker date="1538742651231" expanded="true" signature="19:901" ph="{...}" />
+                <marker date="1538742651231" expanded="true" signature="53:482" ph="{...}" />
+                <marker date="1538742651231" expanded="true" signature="88:202" ph="{...}" />
+                <marker date="1538742651231" expanded="true" signature="233:293" ph="{...}" />
+                <marker date="1538742651231" expanded="true" signature="324:384" ph="{...}" />
+                <marker date="1538742651231" expanded="true" signature="415:476" ph="{...}" />
+                <marker date="1538742651231" expanded="true" signature="516:899" ph="{...}" />
+                <marker date="1538742651231" expanded="true" signature="551:611" ph="{...}" />
+                <marker date="1538742651231" expanded="true" signature="642:706" ph="{...}" />
+                <marker date="1538742651231" expanded="true" signature="737:801" ph="{...}" />
+                <marker date="1538742651231" expanded="true" signature="832:893" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -67,6 +92,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Beispiele/Simple.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele/Entscheidung.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,6 +108,7 @@
         <option value="$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" />
         <option value="$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" />
         <option value="$PROJECT_DIR$/Beispiele/Zwischensumme.cs" />
+        <option value="$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs" />
       </list>
     </option>
   </component>
@@ -96,13 +123,14 @@
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -115,22 +143,12 @@
               <item name="Beispiele" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Beispiele" type="24d0babc:SolutionExplorerModelNode" />
             </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Beispiele" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Beispiele" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Properties" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Beispiele" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Beispiele.Tests" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -150,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
+  <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -169,9 +187,6 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue=".NET Project.Default" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -186,11 +201,12 @@
       <workItem from="1513935460392" duration="2120000" />
       <workItem from="1515145019247" duration="1625000" />
       <workItem from="1538049765177" duration="1311000" />
+      <workItem from="1538741574857" duration="1260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5056000" />
+    <option name="totallyTimeSpent" value="6316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -205,11 +221,9 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" weight="0.32939634" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -218,11 +232,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info active="true" anchor="bottom" id="Unit Tests" order="8" visible="true" weight="0.32939634" />
+      <window_info anchor="bottom" id="Unit Tests" order="8" weight="0.32939634" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.32939634" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -259,16 +275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="30" selection-start-line="16" selection-end-line="30" />
-          <folding>
-            <marker date="1515145513185" expanded="true" signature="60:257" ph="{...}" />
-            <marker date="1515145513185" expanded="true" signature="95:182" ph="{...}" />
-            <marker date="1515145513185" expanded="true" signature="214:251" ph="{...}" />
-            <marker date="1515145513185" expanded="true" signature="277:586" ph="{...}" />
-            <marker date="1515145513185" expanded="true" signature="365:452" ph="{...}" />
-            <marker date="1515145513185" expanded="true" signature="493:580" ph="{...}" />
-            <marker date="1515145513185" expanded="true" signature="611:772" ph="{...}" />
-            <marker date="1515145513185" expanded="true" signature="648:766" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -276,53 +282,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <marker date="1538219652997" expanded="true" signature="19:1596" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="53:420" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="151:217" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="299:414" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="452:943" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="590:814" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="893:937" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="971:1389" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="1009:1148" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="1193:1383" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="1416:1594" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="1485:1522" ph="{...}" />
-            <marker date="1538219652997" expanded="true" signature="1551:1588" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beispiele/Entscheidung.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1513935425311" expanded="true" signature="34:898" ph="{...}" />
-            <marker date="1513935425311" expanded="true" signature="66:896" ph="{...}" />
-            <marker date="1513935425311" expanded="true" signature="139:278" ph="{...}" />
-            <marker date="1513935425311" expanded="true" signature="164:211" ph="{...}" />
-            <marker date="1513935425311" expanded="true" signature="211:268" ph="{...}" />
-            <marker date="1513935425311" expanded="true" signature="319:447" ph="{...}" />
-            <marker date="1513935425311" expanded="true" signature="500:545" ph="{...}" />
-            <marker date="1513935425311" expanded="true" signature="601:890" ph="{...}" />
-            <marker date="1513935425311" expanded="true" signature="626:672" ph="{...}" />
-            <marker date="1513935425311" expanded="true" signature="672:728" ph="{...}" />
-            <marker date="1513935425311" expanded="true" signature="741:839" ph="/* syntaktisch falsch, da beim Verlassen beide ... */" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-          <folding>
-            <marker date="1538219568853" expanded="false" signature="6:101" ph="..." />
-            <marker date="1538219568853" expanded="true" signature="154:341" ph="/* General Information about an assembly is controlled through the following ... */" />
-            <marker date="1538219568853" expanded="true" signature="646:856" ph="/* Setting ComVisible to false makes the types in this assembly not visible ... */" />
-            <marker date="1538219568853" expanded="true" signature="1031:1358" ph="/* Version information for an assembly consists of the following four values: ... */" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -335,6 +304,26 @@
             <marker date="1538219615173" expanded="true" signature="63:378" ph="{...}" />
             <marker date="1538219615173" expanded="true" signature="119:376" ph="{...}" />
             <marker date="1538219615173" expanded="true" signature="168:370" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+          <folding>
+            <marker date="1538742651231" expanded="true" signature="19:901" ph="{...}" />
+            <marker date="1538742651231" expanded="true" signature="53:482" ph="{...}" />
+            <marker date="1538742651231" expanded="true" signature="88:202" ph="{...}" />
+            <marker date="1538742651231" expanded="true" signature="233:293" ph="{...}" />
+            <marker date="1538742651231" expanded="true" signature="324:384" ph="{...}" />
+            <marker date="1538742651231" expanded="true" signature="415:476" ph="{...}" />
+            <marker date="1538742651231" expanded="true" signature="516:899" ph="{...}" />
+            <marker date="1538742651231" expanded="true" signature="551:611" ph="{...}" />
+            <marker date="1538742651231" expanded="true" signature="642:706" ph="{...}" />
+            <marker date="1538742651231" expanded="true" signature="737:801" ph="{...}" />
+            <marker date="1538742651231" expanded="true" signature="832:893" ph="{...}" />
           </folding>
         </state>
       </provider>
