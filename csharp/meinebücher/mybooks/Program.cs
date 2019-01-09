@@ -12,7 +12,7 @@ namespace mybooks
             var interactors = new Interactors();
             var app = new Application { MainWindow = mainWindow };
 
-            void start() {
+            void Start() {
                 var books = interactors.Start();
                 mainWindow.Update_books(books);
             }
@@ -34,7 +34,7 @@ namespace mybooks
                 mainWindow.Update_books(books);
             };
 
-            start();
+            Start();
             app.Run(mainWindow);
         }
     }

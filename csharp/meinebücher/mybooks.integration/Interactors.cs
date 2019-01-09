@@ -11,7 +11,10 @@ namespace mybooks
         private readonly IEventStoreProvider _eventStoreProvider;
         private readonly Booklending _booklending = new Booklending();
 
-        public Interactors(IEventStoreProvider eventStoreProvider) {
+        public Interactors() : this(new EventStoreProvider()) {
+        }
+
+        internal Interactors(IEventStoreProvider eventStoreProvider) {
             _eventStoreProvider = eventStoreProvider;
         }
 
