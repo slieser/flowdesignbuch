@@ -1,9 +1,9 @@
-from consoleui import showOneLOCstat
+from consoleui import ShowLocStat, ShowTotal
 from interactors import start
 
 
 def main():
-    start(showOneLOCstat)
+    start(ShowLocStat, ShowTotal)
 
 if __name__ == "__main__":
     main()

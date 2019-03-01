@@ -5,4 +5,4 @@ def CreateLOCstat(filename, lines):
     return result
 
 def isLoc(line):
-    return (line.lstrip() != "")
+    return (line.lstrip() != "") & (not line.lstrip().startswith("#"))
