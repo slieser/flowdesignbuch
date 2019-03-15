@@ -1,6 +1,7 @@
 import os
 
 def FindSourcefiles(path, onSourcefile, onFinished):
+    path = os.path.abspath(path)
     _FindSourceFiles(path, onSourcefile)
     onFinished()
 

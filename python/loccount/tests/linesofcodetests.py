@@ -10,8 +10,14 @@ class isLoc_Tests(unittest.TestCase):
     def test_blank(self):
         self.assertEqual(isLoc(" "), False)
 
+    def test_multiple_blanks(self):
+        self.assertEqual(isLoc("   "), False)
+
     def test_tab(self):
         self.assertEqual(isLoc("\t"), False)
+
+    def test_multiple_tabs(self):
+        self.assertEqual(isLoc("\t\t\t"), False)
 
     def test_whitespace(self):
         self.assertEqual(isLoc(" \t \t"), False)
