@@ -1,17 +1,29 @@
 #include <iostream>
+#include <filesystem>
 
 void GetSourceCodeFiles(
         std::string directory,
         std::function<void(std::string filename)> onFilename,
         std::function<void()> onFinished) {
-    onFilename("datei1.txt");
-    onFilename("datei2.txt");
-    onFilename("datei3.txt");
+
+    std::filesystem::recursive_directory_iterator iter(directory);
+    std::filesystem::recursive_directory_iterator end;
+
+    while (iter != end)
+    {
+        onFilename(iter->path().string());
+
+        error_code ec;
+        iter.increment(ec);
+        if (ec) {
+            std::cerr << "Error While Accessing : " << iter->path().string() << " :: " << ec.message() << '\n';
+        }
+    }
     onFinished();
 }
 
 int main() {
-    GetSourceCodeFiles("./",
+    GetSourceCodeFiles("./*.cpp",
             [](std::string filename) {
                 std::cout << filename << std::endl;
             },
