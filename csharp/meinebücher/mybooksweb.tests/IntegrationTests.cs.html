@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>csharp/meinebücher/mybooksweb.tests/IntegrationTests.cs</title>
+<link rel="stylesheet" type="text/css" href="highlight.css">
+</head>
+<body class="hl">
+<pre class="hl"><span class="hl kwa">using</span> System<span class="hl opt">;</span>
+<span class="hl kwa">using</span> mybooks<span class="hl opt">.</span>contracts<span class="hl opt">;</span>
+<span class="hl kwa">using</span> Nancy<span class="hl opt">;</span>
+<span class="hl kwa">using</span> Nancy<span class="hl opt">.</span>Testing<span class="hl opt">;</span>
+<span class="hl kwa">using</span> Newtonsoft<span class="hl opt">.</span>Json<span class="hl opt">;</span>
+<span class="hl kwa">using</span> NUnit<span class="hl opt">.</span>Framework<span class="hl opt">;</span>
+
+<span class="hl kwa">namespace</span> mybooksweb<span class="hl opt">.</span>tests
+<span class="hl opt">{</span>
+    <span class="hl opt">[</span>TestFixture<span class="hl opt">]</span>
+    <span class="hl kwa">public class</span> IntegrationTests
+    <span class="hl opt">{</span>
+        <span class="hl kwa">private</span> Browser _browser<span class="hl opt">;</span>
+
+        <span class="hl opt">[</span>SetUp<span class="hl opt">]</span>
+        <span class="hl kwa">public void</span> <span class="hl kwd">Setup</span><span class="hl opt">() {</span>
+            <span class="hl kwa">var</span> bootstrapper <span class="hl opt">=</span> <span class="hl kwa">new</span> <span class="hl kwd">Bootstrapper</span><span class="hl opt">();</span>
+            _browser <span class="hl opt">=</span> <span class="hl kwa">new</span> <span class="hl kwd">Browser</span><span class="hl opt">(</span>bootstrapper<span class="hl opt">);</span>
+        <span class="hl opt">}</span>
+        
+        <span class="hl opt">[</span>Test<span class="hl opt">]</span>
+        <span class="hl kwa">public void</span> <span class="hl kwd">Get_books_is_empty_at_the_beginning</span><span class="hl opt">() {</span>
+            <span class="hl kwa">var</span> result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Get</span><span class="hl opt">(</span><span class="hl str">&quot;/books&quot;</span><span class="hl opt">,</span> with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+        
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>result<span class="hl opt">.</span>StatusCode<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span>
+                        HttpStatusCode<span class="hl opt">.</span>OK<span class="hl opt">));</span>
+            <span class="hl kwa">var</span> books <span class="hl opt">=</span> JsonConvert<span class="hl opt">.</span>DeserializeObject<span class="hl opt">&lt;</span>Book<span class="hl opt">[]&gt;</span>
+                        <span class="hl opt">(</span>result<span class="hl opt">.</span>Body<span class="hl opt">.</span><span class="hl kwd">AsString</span><span class="hl opt">());</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">,</span> Is<span class="hl opt">.</span>Empty<span class="hl opt">);</span>
+        <span class="hl opt">}</span>
+
+        <span class="hl opt">[</span>Test<span class="hl opt">]</span>
+        <span class="hl kwa">public void</span> <span class="hl kwd">A_book_can_be_added</span><span class="hl opt">() {</span>
+            <span class="hl kwa">var</span> result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">(</span><span class="hl str">&quot;/books?title=Pumuckl&quot;</span><span class="hl opt">,</span>
+                         with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>result<span class="hl opt">.</span>StatusCode<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span>
+                        HttpStatusCode<span class="hl opt">.</span>OK<span class="hl opt">));</span>
+            <span class="hl kwa">var</span> books <span class="hl opt">=</span> JsonConvert<span class="hl opt">.</span>DeserializeObject<span class="hl opt">&lt;</span>Book<span class="hl opt">[]&gt;</span>
+                        <span class="hl opt">(</span>result<span class="hl opt">.</span>Body<span class="hl opt">.</span><span class="hl kwd">AsString</span><span class="hl opt">());</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">.</span>Length<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl num">1</span><span class="hl opt">));</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>Title<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl str">&quot;Pumuckl&quot;</span><span class="hl opt">)</span>
+                        <span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>CorrelationId<span class="hl opt">,</span> Is<span class="hl opt">.</span>Not<span class="hl opt">.</span>Null<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>CanBeLended<span class="hl opt">,</span> Is<span class="hl opt">.</span>True<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>Lender<span class="hl opt">,</span> Is<span class="hl opt">.</span>Empty<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>LendingDate<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl kwa">new</span> 
+                        <span class="hl kwd">DateTime</span><span class="hl opt">()));</span>
+        <span class="hl opt">}</span>
+
+        <span class="hl opt">[</span>Test<span class="hl opt">]</span>
+        <span class="hl kwa">public void</span> <span class="hl kwd">A_new_book_can_be_retrieved</span><span class="hl opt">() {</span>
+            <span class="hl kwa">var</span> result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">(</span><span class="hl str">&quot;/books?title=Pumuckl&quot;</span><span class="hl opt">,</span>
+                         with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+            result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Get</span><span class="hl opt">(</span><span class="hl str">&quot;/books&quot;</span><span class="hl opt">,</span> with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>result<span class="hl opt">.</span>StatusCode<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span>
+                        HttpStatusCode<span class="hl opt">.</span>OK<span class="hl opt">));</span>
+            <span class="hl kwa">var</span> books <span class="hl opt">=</span> JsonConvert<span class="hl opt">.</span>DeserializeObject<span class="hl opt">&lt;</span>Book<span class="hl opt">[]&gt;</span>
+                        <span class="hl opt">(</span>result<span class="hl opt">.</span>Body<span class="hl opt">.</span><span class="hl kwd">AsString</span><span class="hl opt">());</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">.</span>Length<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl num">1</span><span class="hl opt">));</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>Title<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl str">&quot;Pumuckl&quot;</span><span class="hl opt">)</span>
+                        <span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>CorrelationId<span class="hl opt">,</span> Is<span class="hl opt">.</span>Not<span class="hl opt">.</span>Null<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>CanBeLended<span class="hl opt">,</span> Is<span class="hl opt">.</span>True<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>Lender<span class="hl opt">,</span> Is<span class="hl opt">.</span>Empty<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>LendingDate<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl kwa">new</span> 
+                        <span class="hl kwd">DateTime</span><span class="hl opt">()));</span>
+        <span class="hl opt">}</span>
+
+        <span class="hl opt">[</span>Test<span class="hl opt">]</span>
+        <span class="hl kwa">public void</span> <span class="hl kwd">Multiple_books_can_be_added</span><span class="hl opt">() {</span>
+            <span class="hl kwa">var</span> result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">(</span><span class="hl str">&quot;/books?title=Pumuckl&quot;</span><span class="hl opt">,</span>
+                         with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+            _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">(</span><span class="hl str">&quot;/books?title=Book 2&quot;</span><span class="hl opt">,</span> with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+            result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">(</span><span class="hl str">&quot;/books?title=Book 3&quot;</span><span class="hl opt">,</span> 
+                     with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>result<span class="hl opt">.</span>StatusCode<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span>
+                        HttpStatusCode<span class="hl opt">.</span>OK<span class="hl opt">));</span>
+            <span class="hl kwa">var</span> books <span class="hl opt">=</span> JsonConvert<span class="hl opt">.</span>DeserializeObject<span class="hl opt">&lt;</span>Book<span class="hl opt">[]&gt;</span>
+                        <span class="hl opt">(</span>result<span class="hl opt">.</span>Body<span class="hl opt">.</span><span class="hl kwd">AsString</span><span class="hl opt">());</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">.</span>Length<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl num">3</span><span class="hl opt">));</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>Title<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl str">&quot;Pumuckl&quot;</span><span class="hl opt">)</span>
+                        <span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">1</span><span class="hl opt">].</span>Title<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl str">&quot;Book 2&quot;</span><span class="hl opt">))</span>
+                        <span class="hl opt">;</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">2</span><span class="hl opt">].</span>Title<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl str">&quot;Book 3&quot;</span><span class="hl opt">))</span>
+                        <span class="hl opt">;</span>
+        <span class="hl opt">}</span>
+        
+        <span class="hl opt">[</span>Test<span class="hl opt">]</span>
+        <span class="hl kwa">public void</span> <span class="hl kwd">A_book_can_be_deleted</span><span class="hl opt">() {</span>
+            <span class="hl kwa">var</span> result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">(</span><span class="hl str">&quot;/books?title=Pumuckl&quot;</span><span class="hl opt">,</span>
+                         with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+            <span class="hl kwa">var</span> books <span class="hl opt">=</span> JsonConvert<span class="hl opt">.</span>DeserializeObject<span class="hl opt">&lt;</span>Book<span class="hl opt">[]&gt;</span>
+                        <span class="hl opt">(</span>result<span class="hl opt">.</span>Body<span class="hl opt">.</span><span class="hl kwd">AsString</span><span class="hl opt">());</span>
+            result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Delete</span><span class="hl opt">($</span><span class="hl str">&quot;/books?id={books[0].</span>
+<span class="hl str">                     CorrelationId}&quot;</span><span class="hl opt">,</span> with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>result<span class="hl opt">.</span>StatusCode<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span>
+                        HttpStatusCode<span class="hl opt">.</span>OK<span class="hl opt">));</span>
+            books <span class="hl opt">=</span> JsonConvert<span class="hl opt">.</span>DeserializeObject<span class="hl opt">&lt;</span>Book<span class="hl opt">[]&gt;(</span>
+                    result<span class="hl opt">.</span>Body<span class="hl opt">.</span><span class="hl kwd">AsString</span><span class="hl opt">());</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">.</span>Length<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl num">0</span><span class="hl opt">));</span>
+        <span class="hl opt">}</span>
+        
+        <span class="hl opt">[</span>Test<span class="hl opt">]</span>
+        <span class="hl kwa">public void</span> <span class="hl kwd">A_book_can_be_lended</span><span class="hl opt">() {</span>
+            <span class="hl kwa">var</span> result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">(</span><span class="hl str">&quot;/books?title=Pumuckl&quot;</span><span class="hl opt">,</span>
+                         with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+            <span class="hl kwa">var</span> books <span class="hl opt">=</span> JsonConvert<span class="hl opt">.</span>DeserializeObject<span class="hl opt">&lt;</span>Book<span class="hl opt">[]&gt;</span>
+                        <span class="hl opt">(</span>result<span class="hl opt">.</span>Body<span class="hl opt">.</span><span class="hl kwd">AsString</span><span class="hl opt">());</span>
+            result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">($</span><span class="hl str">&quot;/books/{books[0].</span>
+<span class="hl str">                     CorrelationId}/lend?name=Paul&quot;</span><span class="hl opt">,</span> with <span class="hl opt">=&gt;</span> 
+                     <span class="hl opt">{</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>result<span class="hl opt">.</span>StatusCode<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span>
+                        HttpStatusCode<span class="hl opt">.</span>OK<span class="hl opt">));</span>
+            books <span class="hl opt">=</span> JsonConvert<span class="hl opt">.</span>DeserializeObject<span class="hl opt">&lt;</span>Book<span class="hl opt">[]&gt;(</span>
+                    result<span class="hl opt">.</span>Body<span class="hl opt">.</span><span class="hl kwd">AsString</span><span class="hl opt">());</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">.</span>Length<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl num">1</span><span class="hl opt">));</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>Title<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl str">&quot;Pumuckl&quot;</span><span class="hl opt">)</span>
+                        <span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>CorrelationId<span class="hl opt">,</span> Is<span class="hl opt">.</span>Not<span class="hl opt">.</span>Null<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>CanBeLended<span class="hl opt">,</span> Is<span class="hl opt">.</span>False<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>Lender<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl str">&quot;Paul&quot;</span><span class="hl opt">));</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>LendingDate<span class="hl opt">.</span>
+                        <span class="hl kwd">ToShortDateString</span><span class="hl opt">(),</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span>
+                        DateTime<span class="hl opt">.</span>Now<span class="hl opt">.</span><span class="hl kwd">ToShortDateString</span><span class="hl opt">()));</span>
+        <span class="hl opt">}</span>
+        
+        <span class="hl opt">[</span>Test<span class="hl opt">]</span>
+        <span class="hl kwa">public void</span> <span class="hl kwd">A_lended_book_can_be_given_back</span><span class="hl opt">() {</span>
+            <span class="hl kwa">var</span> result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">(</span><span class="hl str">&quot;/books?title=Pumuckl&quot;</span><span class="hl opt">,</span>
+                         with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+            <span class="hl kwa">var</span> books <span class="hl opt">=</span> JsonConvert<span class="hl opt">.</span>DeserializeObject<span class="hl opt">&lt;</span>Book<span class="hl opt">[]&gt;</span>
+                        <span class="hl opt">(</span>result<span class="hl opt">.</span>Body<span class="hl opt">.</span><span class="hl kwd">AsString</span><span class="hl opt">());</span>
+            _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">($</span><span class="hl str">&quot;/books/</span><span class="hl ipl">{books[0].CorrelationId}</span>
+<span class="hl str">                         /lend?name=Paul&quot;</span><span class="hl opt">,</span> with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+            result <span class="hl opt">=</span> _browser<span class="hl opt">.</span><span class="hl kwd">Put</span><span class="hl opt">($</span><span class="hl str">&quot;/books/{books[0].</span>
+<span class="hl str">                     CorrelationId}/back&quot;</span><span class="hl opt">,</span> with <span class="hl opt">=&gt; {</span>
+                with<span class="hl opt">.</span><span class="hl kwd">HttpRequest</span><span class="hl opt">();</span>
+            <span class="hl opt">});</span>
+
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>result<span class="hl opt">.</span>StatusCode<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span>
+                        HttpStatusCode<span class="hl opt">.</span>OK<span class="hl opt">));</span>
+            books <span class="hl opt">=</span> JsonConvert<span class="hl opt">.</span>DeserializeObject<span class="hl opt">&lt;</span>Book<span class="hl opt">[]&gt;(</span>
+                    result<span class="hl opt">.</span>Body<span class="hl opt">.</span><span class="hl kwd">AsString</span><span class="hl opt">());</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">.</span>Length<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl num">1</span><span class="hl opt">));</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>Title<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl str">&quot;Pumuckl&quot;</span><span class="hl opt">)</span>
+                        <span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>CorrelationId<span class="hl opt">,</span> Is<span class="hl opt">.</span>Not<span class="hl opt">.</span>Null<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>CanBeLended<span class="hl opt">,</span> Is<span class="hl opt">.</span>True<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>Lender<span class="hl opt">,</span> Is<span class="hl opt">.</span>Empty<span class="hl opt">);</span>
+            Assert<span class="hl opt">.</span><span class="hl kwd">That</span><span class="hl opt">(</span>books<span class="hl opt">[</span><span class="hl num">0</span><span class="hl opt">].</span>LendingDate<span class="hl opt">,</span> Is<span class="hl opt">.</span><span class="hl kwd">EqualTo</span><span class="hl opt">(</span><span class="hl kwa">new</span> 
+                        <span class="hl kwd">DateTime</span><span class="hl opt">()));</span>
+        <span class="hl opt">}</span>
+    <span class="hl opt">}</span>
+<span class="hl opt">}</span>
+</pre>
+</body>
+</html>
+<!--HTML generated by highlight 3.53, http://www.andre-simon.de/-->
