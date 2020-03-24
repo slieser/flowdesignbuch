@@ -48,7 +48,7 @@ namespace haushaltsbuch.logic.tests
 
         [Test]
         public void Buchungsdatum_ist_nicht_gegeben() {
-            Kommandozeile.now = () => new DateTime(2014, 1, 2);
+            Kommandozeile._now = () => new DateTime(2014, 1, 2);
             var tuple = Kommandozeile.Datum_übernehmen(new Buchung(), new [] { "" });
             Assert.That(tuple.Buchung.Buchungsdatum, Is.EqualTo(new DateTime(2014, 1, 2)));
             Assert.That(tuple.Args, Is.Not.Empty);

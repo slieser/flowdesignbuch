@@ -17,27 +17,27 @@ namespace haushaltsbuch.tests
         [Test]
         public void Integrationstest() {
             var result = Interactors.Buchung_ausführen(new[]{"einzahlung", "500"});
-            Assert.That(result.Saldo, Is.EqualTo(500));
+            Assert.That(result.TheSaldo, Is.EqualTo(500));
             Assert.That(result.Bezeichnung, Is.Null);
             Assert.That(result.Betrag, Is.EqualTo(0));
 
             result = Interactors.Buchung_ausführen(new[]{"einzahlung", "300"});
-            Assert.That(result.Saldo, Is.EqualTo(800));
+            Assert.That(result.TheSaldo, Is.EqualTo(800));
             Assert.That(result.Bezeichnung, Is.Null);
             Assert.That(result.Betrag, Is.EqualTo(0));
 
             result = Interactors.Buchung_ausführen(new[]{"auszahlung", "200", "Miete"});
-            Assert.That(result.Saldo, Is.EqualTo(600));
+            Assert.That(result.TheSaldo, Is.EqualTo(600));
             Assert.That(result.Bezeichnung, Is.EqualTo("Miete"));
             Assert.That(result.Betrag, Is.EqualTo(200));
 
             result = Interactors.Buchung_ausführen(new[]{"auszahlung", "100", "Miete"});
-            Assert.That(result.Saldo, Is.EqualTo(500));
+            Assert.That(result.TheSaldo, Is.EqualTo(500));
             Assert.That(result.Bezeichnung, Is.EqualTo("Miete"));
             Assert.That(result.Betrag, Is.EqualTo(300));
 
             result = Interactors.Buchung_ausführen(new[]{"auszahlung", "50", "Lebenshaltung"});
-            Assert.That(result.Saldo, Is.EqualTo(450));
+            Assert.That(result.TheSaldo, Is.EqualTo(450));
             Assert.That(result.Bezeichnung, Is.EqualTo("Lebenshaltung"));
             Assert.That(result.Betrag, Is.EqualTo(50));
 

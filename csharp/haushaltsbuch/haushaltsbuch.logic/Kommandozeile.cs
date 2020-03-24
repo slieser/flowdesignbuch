@@ -7,8 +7,19 @@ namespace haushaltsbuch.logic
 {
     public static class Kommandozeile
     {
-        internal static Func<DateTime> now = () => DateTime.Now;
- 
+        internal static Func<DateTime> _now = () => DateTime.Now;
+
+        public static void Kommando_feststellen(IEnumerable<string> args,
+            Action<IEnumerable<string>> onÜbersichtKommando,
+            Action<IEnumerable<string>> onAnderesKommando) {
+            if (args.First().ToLower() == "übersicht") {
+                onÜbersichtKommando(args.Skip(1));
+            }
+            else {
+                onAnderesKommando(args);
+            }
+        }
+
         public static Buchung Buchung_aus_Parametern_erstellen(IEnumerable<string> args) {
             var tuple = Buchung_zu_Kommando_erstellen(args);
             tuple = Datum_übernehmen(tuple.Buchung, tuple.Args);
@@ -17,17 +28,6 @@ namespace haushaltsbuch.logic
             tuple = Memo_übernehmen(tuple.Buchung, tuple.Args);
 
             return tuple.Buchung;
-        }
-
-        public static void Kommando_Übersicht_prüfen(IEnumerable<string> args,
-            Action<IEnumerable<string>> ist_Übersicht_Kommando,
-            Action<IEnumerable<string>> ist_nicht_Übersicht_Kommando) {
-            if (args.First().ToLower() == "übersicht") {
-                ist_Übersicht_Kommando(args.Skip(1));
-            }
-            else {
-                ist_nicht_Übersicht_Kommando(args);
-            }
         }
 
         public static DateTime Monat_ermitteln(IEnumerable<string> args) {
@@ -44,14 +44,12 @@ namespace haushaltsbuch.logic
         }
 
         internal static (Buchung Buchung, string[] Args) Datum_übernehmen(Buchung buchung, IEnumerable<string> args) {
-            DateTime buchungsdatum;
-
-            if (DateTime.TryParse(args.First(), out buchungsdatum)) {
+            if (DateTime.TryParse(args.First(), out var buchungsdatum)) {
                 buchung.Buchungsdatum = buchungsdatum;
                 return (buchung, args.Skip(1).ToArray());
             }
 
-            buchung.Buchungsdatum = now();
+            buchung.Buchungsdatum = _now();
             return (buchung, args.ToArray());
         }
 
