@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using haushaltsbuch.buchungsprovider;
 using haushaltsbuch.contracts;
@@ -8,14 +7,14 @@ namespace haushaltsbuch
 {
     public static class Interactors
     {
-        public static (double saldo, string kategorie, double betrag) Buchung_ausführen(IEnumerable<string> args) {
+        public static KategorieMitSaldo Buchung_ausführen(IEnumerable<string> args) {
             var buchung = Kommandozeile.Buchung_aus_Parametern_erstellen(args);
             Buchungsprovider.Save(buchung);
             var buchungen = Buchungsprovider.Load_All();
 
             var saldo = Buchhaltung.Saldo(buchung, buchungen);
             var kategorie = Buchhaltung.Kategorie_berechnen(buchung, buchungen);
-            return (saldo, kategorie.Bezeichnung, kategorie.Betrag);
+            return new KategorieMitSaldo { Saldo = saldo, Bezeichnung = kategorie.Bezeichnung, Betrag = kategorie.Betrag };
         }
 
         public static IEnumerable<Kategorie> Übersicht_ausführen(IEnumerable<string> args) {

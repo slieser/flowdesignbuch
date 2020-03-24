@@ -17,29 +17,29 @@ namespace haushaltsbuch.tests
         [Test]
         public void Integrationstest() {
             var result = Interactors.Buchung_ausführen(new[]{"einzahlung", "500"});
-            Assert.That(result.saldo, Is.EqualTo(500));
-            Assert.That(result.kategorie, Is.Null);
-            Assert.That(result.betrag, Is.EqualTo(0));
+            Assert.That(result.Saldo, Is.EqualTo(500));
+            Assert.That(result.Bezeichnung, Is.Null);
+            Assert.That(result.Betrag, Is.EqualTo(0));
 
             result = Interactors.Buchung_ausführen(new[]{"einzahlung", "300"});
-            Assert.That(result.saldo, Is.EqualTo(800));
-            Assert.That(result.kategorie, Is.Null);
-            Assert.That(result.betrag, Is.EqualTo(0));
+            Assert.That(result.Saldo, Is.EqualTo(800));
+            Assert.That(result.Bezeichnung, Is.Null);
+            Assert.That(result.Betrag, Is.EqualTo(0));
 
             result = Interactors.Buchung_ausführen(new[]{"auszahlung", "200", "Miete"});
-            Assert.That(result.saldo, Is.EqualTo(600));
-            Assert.That(result.kategorie, Is.EqualTo("Miete"));
-            Assert.That(result.betrag, Is.EqualTo(200));
+            Assert.That(result.Saldo, Is.EqualTo(600));
+            Assert.That(result.Bezeichnung, Is.EqualTo("Miete"));
+            Assert.That(result.Betrag, Is.EqualTo(200));
 
             result = Interactors.Buchung_ausführen(new[]{"auszahlung", "100", "Miete"});
-            Assert.That(result.saldo, Is.EqualTo(500));
-            Assert.That(result.kategorie, Is.EqualTo("Miete"));
-            Assert.That(result.betrag, Is.EqualTo(300));
+            Assert.That(result.Saldo, Is.EqualTo(500));
+            Assert.That(result.Bezeichnung, Is.EqualTo("Miete"));
+            Assert.That(result.Betrag, Is.EqualTo(300));
 
             result = Interactors.Buchung_ausführen(new[]{"auszahlung", "50", "Lebenshaltung"});
-            Assert.That(result.saldo, Is.EqualTo(450));
-            Assert.That(result.kategorie, Is.EqualTo("Lebenshaltung"));
-            Assert.That(result.betrag, Is.EqualTo(50));
+            Assert.That(result.Saldo, Is.EqualTo(450));
+            Assert.That(result.Bezeichnung, Is.EqualTo("Lebenshaltung"));
+            Assert.That(result.Betrag, Is.EqualTo(50));
 
             var monat = DateTime.Now.Month.ToString();
             var jahr = DateTime.Now.Year.ToString();

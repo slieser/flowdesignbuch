@@ -11,8 +11,8 @@ namespace haushaltsbuch
                     ConsoleUi.Übersicht_anzeigen(kategorien);
                 },
                 a => {
-                    var (saldo, kategorie, betrag) = Interactors.Buchung_ausführen(a);
-                    ConsoleUi.Kategorie_anzeigen(saldo, kategorie, betrag);
+                    var kategorieMitSaldo = Interactors.Buchung_ausführen(a);
+                    ConsoleUi.Kategorie_anzeigen(kategorieMitSaldo);
                 });
         }
     }

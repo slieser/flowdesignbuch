@@ -12,9 +12,9 @@ namespace haushaltsbuch
             }
         }
 
-        public static void Kategorie_anzeigen(double saldo, string kategorie, double betrag) {
-            Console.WriteLine("Kassenbestand: {0:F} EUR", saldo);
-            Console.WriteLine("{0}: {1:F} EUR", kategorie, betrag);
+        public static void Kategorie_anzeigen(KategorieMitSaldo kategorieMitSaldo) {
+            Console.WriteLine("Kassenbestand: {0:F} EUR", kategorieMitSaldo.Saldo);
+            Console.WriteLine("{0}: {1:F} EUR", kategorieMitSaldo.Bezeichnung, kategorieMitSaldo.Betrag);
         }
     }
 }
