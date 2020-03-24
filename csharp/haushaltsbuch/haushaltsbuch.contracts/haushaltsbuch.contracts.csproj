@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Buchung.cs" />
     <Compile Include="Buchungstypen.cs" />
+    <Compile Include="Kategorie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

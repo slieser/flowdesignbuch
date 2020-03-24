@@ -44,10 +44,10 @@ namespace haushaltsbuch.tests
             var monat = DateTime.Now.Month.ToString();
             var jahr = DateTime.Now.Year.ToString();
             var result2 = Interactors.Übersicht_ausführen(new[]{monat, jahr}).ToArray();
-            Assert.That(result2[0].Item1, Is.EqualTo("Miete"));
-            Assert.That(result2[0].Item2, Is.EqualTo(300));
-            Assert.That(result2[1].Item1, Is.EqualTo("Lebenshaltung"));
-            Assert.That(result2[1].Item2, Is.EqualTo(50));
+            Assert.That(result2[0].Bezeichnung, Is.EqualTo("Miete"));
+            Assert.That(result2[0].Betrag, Is.EqualTo(300));
+            Assert.That(result2[1].Bezeichnung, Is.EqualTo("Lebenshaltung"));
+            Assert.That(result2[1].Betrag, Is.EqualTo(50));
         }
     }
 }

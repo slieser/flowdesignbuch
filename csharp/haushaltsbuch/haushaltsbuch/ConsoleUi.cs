@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
+using haushaltsbuch.contracts;
 
 namespace haushaltsbuch
 {
     public static class ConsoleUi
     {
-        public static void Übersicht_anzeigen(IEnumerable<Tuple<string, double>> kategorien) {
-            foreach (var tuple in kategorien) {
-                Console.WriteLine("{0}: {1:F} EUR", tuple.Item1, tuple.Item2);
+        public static void Übersicht_anzeigen(IEnumerable<Kategorie> kategorien) {
+            foreach (var kategorie in kategorien) {
+                Console.WriteLine("{0}: {1:F} EUR", kategorie.Bezeichnung, kategorie.Betrag);
             }
         }
 

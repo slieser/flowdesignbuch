@@ -51,6 +51,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\haushaltsbuch.contracts\haushaltsbuch.contracts.csproj">
+      <Project>{c42b654d-670c-40b0-b7fb-1224963a30e4}</Project>
+      <Name>haushaltsbuch.contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\haushaltsbuch\haushaltsbuch.csproj">
       <Project>{a943c6d9-c013-431a-b092-5c7571dc2327}</Project>
       <Name>haushaltsbuch</Name>

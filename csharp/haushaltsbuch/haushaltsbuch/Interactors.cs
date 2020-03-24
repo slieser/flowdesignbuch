@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using haushaltsbuch.buchungsprovider;
+using haushaltsbuch.contracts;
 using haushaltsbuch.logic;
 
 namespace haushaltsbuch
@@ -13,11 +14,11 @@ namespace haushaltsbuch
             var buchungen = Buchungsprovider.Load_All();
 
             var saldo = Buchhaltung.Saldo(buchung, buchungen);
-            var (kategorie, betrag) = Buchhaltung.Kategorie_berechnen(buchung, buchungen);
-            return (saldo, kategorie, betrag);
+            var kategorie = Buchhaltung.Kategorie_berechnen(buchung, buchungen);
+            return (saldo, kategorie.Bezeichnung, kategorie.Betrag);
         }
 
-        public static IEnumerable<Tuple<string, double>> Übersicht_ausführen(IEnumerable<string> args) {
+        public static IEnumerable<Kategorie> Übersicht_ausführen(IEnumerable<string> args) {
             var monat = Kommandozeile.Monat_ermitteln(args);
             var buchungen = Buchungsprovider.Load_All();
             var kategorien = Buchhaltung.Alle_Kategorien_bilden(buchungen, monat);

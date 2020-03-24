@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace kanbanboard
 {
-    class Program
+    public static class Program
     {
         static void Main(string[] args) {
             var interactor = new Interactor();
@@ -49,7 +49,7 @@ namespace kanbanboard
         }
     }
 
-    public class Kanban
+    public static class Kanban
     {
         public static int GetColumnIndexForNewTicket() {
             return 0;
@@ -64,7 +64,7 @@ namespace kanbanboard
         }
     }
 
-    public class Id
+    public static class Id
     {
         public static string New() {
             return Guid.NewGuid().ToString();
@@ -98,7 +98,7 @@ namespace kanbanboard
         }
     }
 
-    public class BoardConfig
+    public static class BoardConfig
     {
         public static IEnumerable<Column> Read() {
             yield return new Column { Titel = "ready", WIPLimit = 0};

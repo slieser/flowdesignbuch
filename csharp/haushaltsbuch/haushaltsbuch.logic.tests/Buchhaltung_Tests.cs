@@ -71,8 +71,8 @@ namespace haushaltsbuch.logic.tests
 
             var tuple = Buchhaltung.Kategorie_berechnen(buchung, buchungen);
 
-            Assert.That(tuple.Item1, Is.EqualTo("abc"));
-            Assert.That(tuple.Item2, Is.EqualTo(30.0));
+            Assert.That(tuple.Bezeichnung, Is.EqualTo("abc"));
+            Assert.That(tuple.Betrag, Is.EqualTo(30.0));
         }
     }
 }

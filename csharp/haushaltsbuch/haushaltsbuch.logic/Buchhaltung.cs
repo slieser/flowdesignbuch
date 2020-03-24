@@ -24,24 +24,24 @@ namespace haushaltsbuch.logic
             return saldo;
         }
 
-        public static (string kategorie, double betrag) Kategorie_berechnen(Buchung buchung, IEnumerable<Buchung> buchungen) {
+        public static Kategorie Kategorie_berechnen(Buchung buchung, IEnumerable<Buchung> buchungen) {
             var buchungen_der_kategorie = buchungen
                 .Where(b => b.Buchungstyp == Buchungstypen.Auszahlung &&
                             b.Kategorie == buchung.Kategorie &&
                             b.Buchungsdatum.Month == buchung.Buchungsdatum.Month &&
                             b.Buchungsdatum.Year == buchung.Buchungsdatum.Year);
             var betrag = buchungen_der_kategorie.Sum(b => b.Betrag);
-            return (buchung.Kategorie, betrag);
+            return new Kategorie{ Bezeichnung = buchung.Kategorie, Betrag = betrag };
         }
 
-        public static IEnumerable<Tuple<string, double>> Alle_Kategorien_bilden(IEnumerable<Buchung> buchungen, DateTime monat) {
+        public static IEnumerable<Kategorie> Alle_Kategorien_bilden(IEnumerable<Buchung> buchungen, DateTime monat) {
             var nach_kategorie_gruppierte_buchungen = buchungen
                 .Where(b => b.Buchungstyp == Buchungstypen.Auszahlung &&
                             b.Buchungsdatum.Month == monat.Month &&
                             b.Buchungsdatum.Year == monat.Year)
                 .GroupBy(b => b.Kategorie);
             return nach_kategorie_gruppierte_buchungen
-                .Select(kategorie => new Tuple<string, double>(kategorie.Key, kategorie.Sum(b => b.Betrag)));
+                .Select(kategorie => new Kategorie { Bezeichnung = kategorie.Key, Betrag = kategorie.Sum(b => b.Betrag)});
         }
     }
 }
