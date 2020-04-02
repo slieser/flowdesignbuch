@@ -2,147 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30e19516-6e35-4e84-b8ce-7693553cfc27" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.ui/Ui.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.ui/Ui.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../nodejs/loccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/loccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../nodejs/wordwrap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/wordwrap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../haushaltsbuch/haushaltsbuch/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../haushaltsbuch/haushaltsbuch/Program.cs" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tictactoe/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <marker date="1526982637339" expanded="false" signature="6:74" ph="..." />
-                <marker date="1526982637339" expanded="true" signature="95:907" ph="{...}" />
-                <marker date="1526982637339" expanded="true" signature="124:905" ph="{...}" />
-                <marker date="1526982637339" expanded="true" signature="178:899" ph="{...}" />
-                <marker date="1526982637339" expanded="true" signature="248:320" ph="{...}" />
-                <marker date="1526982637339" expanded="true" signature="511:642" ph="{...}" />
-                <marker date="1526982637339" expanded="true" signature="694:841" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Interactors.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tictactoe.domain/Interactors.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-              <folding>
-                <marker date="1519987429466" expanded="true" signature="26:1307" ph="{...}" />
-                <marker date="1519987429466" expanded="true" signature="57:1305" ph="{...}" />
-                <marker date="1519987429466" expanded="true" signature="191:506" ph="{...}" />
-                <marker date="1519987429466" expanded="true" signature="587:1299" ph="{...}" />
-                <marker date="1519987429466" expanded="true" signature="799:887" ph="{...}" />
-                <marker date="1519987429466" expanded="true" signature="921:1244" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ui.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tictactoe.ui/Ui.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
-              <folding>
-                <marker date="1526982701628" expanded="false" signature="6:102" ph="..." />
-                <marker date="1526982701628" expanded="true" signature="126:2211" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="155:2209" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="352:1331" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="464:697" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="549:683" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="825:1320" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="947:1306" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="1404:1641" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="1536:1598" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="1695:1980" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="1737:1970" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="1854:1918" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="2043:2203" ph="{...}" />
-                <marker date="1526982701628" expanded="true" signature="2085:2156" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Meldungen.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tictactoe.domain/Meldungen.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-              <folding>
-                <marker date="1519985353296" expanded="true" signature="26:315" ph="{...}" />
-                <marker date="1519985353296" expanded="true" signature="55:313" ph="{...}" />
-                <marker date="1519985353296" expanded="true" signature="122:188" ph="{...}" />
-                <marker date="1519985353296" expanded="true" signature="247:307" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicTacToe.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <marker date="1519987634417" expanded="true" signature="41:1029" ph="{...}" />
-                <marker date="1519987634417" expanded="true" signature="77:1027" ph="{...}" />
-                <marker date="1519987634417" expanded="true" signature="189:374" ph="{...}" />
-                <marker date="1519987634417" expanded="true" signature="273:333" ph="{...}" />
-                <marker date="1519987634417" expanded="true" signature="423:458" ph="{...}" />
-                <marker date="1519987634417" expanded="true" signature="567:734" ph="{...}" />
-                <marker date="1519987634417" expanded="true" signature="618:661" ph="{...}" />
-                <marker date="1519987634417" expanded="true" signature="661:724" ph="{...}" />
-                <marker date="1519987634417" expanded="true" signature="821:903" ph="{...}" />
-                <marker date="1519987634417" expanded="true" signature="963:1021" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsoleUi.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-              <folding>
-                <marker date="1518599650048" expanded="true" signature="37:608" ph="{...}" />
-                <marker date="1518599650048" expanded="true" signature="66:606" ph="{...}" />
-                <marker date="1518599650048" expanded="true" signature="148:600" ph="{...}" />
-                <marker date="1518599650048" expanded="true" signature="230:517" ph="{...}" />
-                <marker date="1518599650048" expanded="true" signature="314:422" ph="{...}" />
-                <marker date="1518599650048" expanded="true" signature="422:503" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/tictactoe/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/tictactoe.domain/Interactors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tictactoe.domain/Meldungen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tictactoe.domain/Interactors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tictactoe.ui/Ui.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tictactoe/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -159,57 +35,24 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectId" id="1ZoCwWNqqoMbU9t1GBP4oKhKuCw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="SolutionExplorer" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="tictactoe (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected=".NET Project.tictactoe">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
@@ -219,12 +62,16 @@
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="None" />
       <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
     </configuration>
     <configuration name="tictactoe" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/tictactoe/bin/Debug/tictactoe.exe" />
@@ -233,12 +80,16 @@
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/tictactoe/tictactoe.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="Console" />
       <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7" />
+      <method v="2">
+        <option name="Build" />
+      </method>
     </configuration>
     <list>
       <item itemvalue=".NET Project.Default" />
@@ -264,481 +115,14 @@
       <workItem from="1519984518545" duration="4511000" />
       <workItem from="1520256327176" duration="1076000" />
       <workItem from="1526982507981" duration="1079000" />
+      <workItem from="1585496303457" duration="4000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12035000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info anchor="bottom" auto_hide="true" id="TODO" order="6" weight="0.32938075" />
-      <window_info anchor="right" id="Errors In Solution" order="5" />
-      <window_info anchor="bottom" auto_hide="true" id="Event Log" order="13" side_tool="true" weight="0.32938075" />
-      <window_info anchor="bottom" auto_hide="true" id="Unit Tests" order="13" weight="0.32938075" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" weight="0.32806325" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="13" weight="0.32938075" />
-      <window_info anchor="bottom" auto_hide="true" id="NuGet" order="13" weight="0.32806325" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" auto_hide="true" id="Debug" order="3" weight="0.3992095" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Key Promoter X" order="3" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" auto_hide="true" id="Entity Framework" order="0" side_tool="true" weight="0.32893" />
-      <window_info anchor="bottom" auto_hide="true" id="Build" order="13" weight="0.32938075" />
-      <window_info anchor="bottom" id="Message" order="0" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tictactoe/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <marker date="1526982637339" expanded="false" signature="6:74" ph="..." />
-            <marker date="1526982637339" expanded="true" signature="95:907" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="124:905" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="178:899" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="248:320" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="511:642" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="694:841" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/Interactors.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <marker date="1519987429466" expanded="true" signature="26:1307" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="57:1305" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="191:506" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="587:1299" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="799:887" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="921:1244" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/Meldungen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding>
-            <marker date="1519985353296" expanded="true" signature="26:315" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="55:313" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="122:188" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="247:307" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <marker date="1519987634417" expanded="true" signature="41:1029" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="77:1027" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="189:374" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="273:333" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="423:458" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="567:734" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="618:661" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="661:724" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="821:903" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="963:1021" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <marker date="1518599650048" expanded="true" signature="37:608" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="66:606" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="148:600" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="230:517" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="314:422" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="422:503" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.ui/Ui.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <marker date="1526982701628" expanded="false" signature="6:102" ph="..." />
-            <marker date="1526982701628" expanded="true" signature="126:2211" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="155:2209" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="352:1331" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="464:697" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="549:683" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="825:1320" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="947:1306" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1404:1641" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1536:1598" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1695:1980" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1737:1970" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1854:1918" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="2043:2203" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="2085:2156" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <marker date="1526982637339" expanded="false" signature="6:74" ph="..." />
-            <marker date="1526982637339" expanded="true" signature="95:907" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="124:905" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="178:899" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="248:320" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="511:642" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="694:841" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/Interactors.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <marker date="1519987429466" expanded="true" signature="26:1307" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="57:1305" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="191:506" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="587:1299" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="799:887" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="921:1244" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.ui/Ui.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <marker date="1526982701628" expanded="false" signature="6:102" ph="..." />
-            <marker date="1526982701628" expanded="true" signature="126:2211" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="155:2209" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="352:1331" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="464:697" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="549:683" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="825:1320" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="947:1306" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1404:1641" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1536:1598" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1695:1980" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1737:1970" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1854:1918" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="2043:2203" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="2085:2156" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/Meldungen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding>
-            <marker date="1519985353296" expanded="true" signature="26:315" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="55:313" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="122:188" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="247:307" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <marker date="1518599650048" expanded="true" signature="37:608" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="66:606" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="148:600" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="230:517" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="314:422" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="422:503" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="20" selection-end-line="28" />
-          <folding>
-            <marker date="1519987634417" expanded="true" signature="41:1029" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="77:1027" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="189:374" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="273:333" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="423:458" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="567:734" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="618:661" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="661:724" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="821:903" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="963:1021" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/Interactors.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-end-line="20" />
-          <folding>
-            <marker date="1519987429466" expanded="true" signature="26:1307" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="57:1305" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="191:506" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="587:1299" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="799:887" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="921:1244" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <marker date="1526982637339" expanded="false" signature="6:74" ph="..." />
-            <marker date="1526982637339" expanded="true" signature="95:907" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="124:905" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="178:899" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="248:320" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="511:642" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="694:841" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/Meldungen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-end-line="9" />
-          <folding>
-            <marker date="1519985353296" expanded="true" signature="26:315" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="55:313" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="122:188" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="247:307" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-end-line="18" />
-          <folding>
-            <marker date="1519987634417" expanded="true" signature="41:1029" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="77:1027" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="189:374" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="273:333" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="423:458" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="567:734" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="618:661" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="661:724" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="821:903" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="963:1021" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <marker date="1518599650048" expanded="true" signature="37:608" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="66:606" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="148:600" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="230:517" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="314:422" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="422:503" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.ui/Ui.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <marker date="1526982701628" expanded="false" signature="6:102" ph="..." />
-            <marker date="1526982701628" expanded="true" signature="126:2211" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="155:2209" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="352:1331" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="464:697" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="549:683" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="825:1320" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="947:1306" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1404:1641" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1536:1598" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1695:1980" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1737:1970" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1854:1918" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="2043:2203" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="2085:2156" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <marker date="1518599650048" expanded="true" signature="37:608" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="66:606" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="148:600" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="230:517" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="314:422" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="422:503" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <marker date="1518599650048" expanded="true" signature="37:608" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="66:606" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="148:600" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="230:517" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="314:422" ph="{...}" />
-            <marker date="1518599650048" expanded="true" signature="422:503" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/Meldungen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding>
-            <marker date="1519985353296" expanded="true" signature="26:315" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="55:313" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="122:188" ph="{...}" />
-            <marker date="1519985353296" expanded="true" signature="247:307" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <marker date="1519987634417" expanded="true" signature="41:1029" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="77:1027" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="189:374" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="273:333" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="423:458" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="567:734" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="618:661" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="661:724" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="821:903" ph="{...}" />
-            <marker date="1519987634417" expanded="true" signature="963:1021" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.domain/Interactors.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <marker date="1519987429466" expanded="true" signature="26:1307" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="57:1305" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="191:506" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="587:1299" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="799:887" ph="{...}" />
-            <marker date="1519987429466" expanded="true" signature="921:1244" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <marker date="1526982637339" expanded="false" signature="6:74" ph="..." />
-            <marker date="1526982637339" expanded="true" signature="95:907" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="124:905" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="178:899" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="248:320" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="511:642" ph="{...}" />
-            <marker date="1526982637339" expanded="true" signature="694:841" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tictactoe.ui/Ui.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
-          <folding>
-            <marker date="1526982701628" expanded="false" signature="6:102" ph="..." />
-            <marker date="1526982701628" expanded="true" signature="126:2211" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="155:2209" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="352:1331" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="464:697" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="549:683" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="825:1320" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="947:1306" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1404:1641" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1536:1598" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1695:1980" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1737:1970" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="1854:1918" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="2043:2203" ph="{...}" />
-            <marker date="1526982701628" expanded="true" signature="2085:2156" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
