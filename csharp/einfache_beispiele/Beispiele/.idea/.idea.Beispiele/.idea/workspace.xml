@@ -4,100 +4,31 @@
     <list default="true" id="4500e4d4-6294-4d39-bd2e-d9a3954bcde5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beispiele/Beispiele.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele/Beispiele.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../nebenläufigkeit/nebenläufigkeit/.idea/.idea.nebenläufigkeit/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../nebenläufigkeit/nebenläufigkeit/.idea/.idea.nebenläufigkeit/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../nebenläufigkeit/nebenläufigkeit/.idea/.idea.nebenläufigkeit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../nebenläufigkeit/nebenläufigkeit/.idea/.idea.nebenläufigkeit/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beispiele/Zwischensumme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele/Zwischensumme.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/wecker/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/ConsoleUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/ConsoleUi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/Interactors.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/Interactors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/TimerProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/TimerProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/Wecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/Wecker.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="981937259">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cs" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="C#" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cs" value="304" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="C#" value="304" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <marker date="1538219615173" expanded="false" signature="6:36" ph="..." />
-                <marker date="1538219615173" expanded="true" signature="63:378" ph="{...}" />
-                <marker date="1538219615173" expanded="true" signature="119:376" ph="{...}" />
-                <marker date="1538219615173" expanded="true" signature="168:370" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-              <folding>
-                <marker date="1538742651231" expanded="true" signature="19:901" ph="{...}" />
-                <marker date="1538742651231" expanded="true" signature="53:482" ph="{...}" />
-                <marker date="1538742651231" expanded="true" signature="88:202" ph="{...}" />
-                <marker date="1538742651231" expanded="true" signature="233:293" ph="{...}" />
-                <marker date="1538742651231" expanded="true" signature="324:384" ph="{...}" />
-                <marker date="1538742651231" expanded="true" signature="415:476" ph="{...}" />
-                <marker date="1538742651231" expanded="true" signature="516:899" ph="{...}" />
-                <marker date="1538742651231" expanded="true" signature="551:611" ph="{...}" />
-                <marker date="1538742651231" expanded="true" signature="642:706" ph="{...}" />
-                <marker date="1538742651231" expanded="true" signature="737:801" ph="{...}" />
-                <marker date="1538742651231" expanded="true" signature="832:893" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Beispiele/Simple.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Beispiele/Kreditwürdigkeit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Beispiele/Entscheidung.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Beispiele/Zwischensumme.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Beispiele/Entscheidung.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Beispiele/Zwischensumme.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Beispiele/Kreditwürdigkeit.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -106,67 +37,36 @@
         <option value="$PROJECT_DIR$/Beispiele/Simple.cs" />
         <option value="$PROJECT_DIR$/Beispiele.Tests/Tests.cs" />
         <option value="$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" />
+        <option value="$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs" />
         <option value="$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" />
         <option value="$PROJECT_DIR$/Beispiele/Zwischensumme.cs" />
-        <option value="$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectId" id="1a4XRv3x3eWyWqpBrFRjCU0xzmi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="SolutionExplorer" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Beispiele" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Beispiele" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Beispiele" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
@@ -184,7 +84,7 @@
       <option name="PROJECT_KIND" value="None" />
       <option name="PROJECT_TFM" value="" />
       <method v="2">
-        <option name="Build" enabled="true" />
+        <option name="Build" />
       </method>
     </configuration>
   </component>
@@ -202,56 +102,15 @@
       <workItem from="1515145019247" duration="1625000" />
       <workItem from="1538049765177" duration="1311000" />
       <workItem from="1538741574857" duration="1260000" />
+      <workItem from="1585995840003" duration="853000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6316000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info anchor="bottom" id="Unit Tests" order="8" weight="0.32939634" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="14" weight="0.32939634" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Key Promoter X" order="5" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -262,71 +121,5 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Beispiele/Kreditwürdigkeit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beispiele/Simple.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" selection-start-line="16" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beispiele/Zwischensumme.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beispiele/Entscheidung.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <marker date="1538219615173" expanded="false" signature="6:36" ph="..." />
-            <marker date="1538219615173" expanded="true" signature="63:378" ph="{...}" />
-            <marker date="1538219615173" expanded="true" signature="119:376" ph="{...}" />
-            <marker date="1538219615173" expanded="true" signature="168:370" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding>
-            <marker date="1538742651231" expanded="true" signature="19:901" ph="{...}" />
-            <marker date="1538742651231" expanded="true" signature="53:482" ph="{...}" />
-            <marker date="1538742651231" expanded="true" signature="88:202" ph="{...}" />
-            <marker date="1538742651231" expanded="true" signature="233:293" ph="{...}" />
-            <marker date="1538742651231" expanded="true" signature="324:384" ph="{...}" />
-            <marker date="1538742651231" expanded="true" signature="415:476" ph="{...}" />
-            <marker date="1538742651231" expanded="true" signature="516:899" ph="{...}" />
-            <marker date="1538742651231" expanded="true" signature="551:611" ph="{...}" />
-            <marker date="1538742651231" expanded="true" signature="642:706" ph="{...}" />
-            <marker date="1538742651231" expanded="true" signature="737:801" ph="{...}" />
-            <marker date="1538742651231" expanded="true" signature="832:893" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

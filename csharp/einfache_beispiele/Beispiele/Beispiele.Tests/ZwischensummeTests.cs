@@ -8,7 +8,7 @@ namespace Beispiele.Tests
     {
         [Test]
         public void Test() {
-            var sut = new Zwischensumme();
+            var sut = new Zwischensumme3();
             sut._state.Set(42);
 
             var result = sut.Aktuelle_Zwischensumme_berechnen(8);

@@ -15,4 +15,9 @@ public class TimerProvider {
             }
         }, 1000, 1000);
     }
+
+    public void Stop() {
+        timer.cancel();
+        timer = null;
+    }
 }
