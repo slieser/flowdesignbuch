@@ -4,7 +4,9 @@ namespace tictactoe.ui
 {
     public class ConsoleUi
     {
-        public void Spielstand_anzeigen(char[] spielbrett, string meldung) {
+        public event Action<int> Spielstein_setzen;
+        
+        public void Spielbrett_anzeigen(char[] spielbrett, string meldung) {
             Console.WriteLine("-+-+-");
             for (var i = 0; i < 9; i++) {
                 Console.Write(spielbrett[i]);
@@ -18,6 +20,20 @@ namespace tictactoe.ui
             }
             Console.WriteLine();
             Console.WriteLine(meldung);
+        }
+
+        public void Run() {
+            var running = true;
+            do {
+                var s = Console.ReadLine();
+                if (string.IsNullOrEmpty(s)) {
+                    running = false;
+                }
+                else {
+                    var field = int.Parse(s);
+                    Spielstein_setzen(field);
+                }
+            } while (running);
         }
     }
 }

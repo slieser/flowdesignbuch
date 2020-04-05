@@ -44,6 +44,18 @@
         </e>
         <e p="tictactoe.csproj" t="IncludeRecursive" />
       </e>
+      <e p="tictactoe.console" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net47" t="Include">
+              <e p="tictactoe.console.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="tictactoe.console.csproj" t="IncludeRecursive" />
+      </e>
       <e p="tictactoe.domain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Interactors.cs" t="Include" />

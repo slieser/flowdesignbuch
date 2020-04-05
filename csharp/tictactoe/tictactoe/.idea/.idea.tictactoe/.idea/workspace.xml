@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30e19516-6e35-4e84-b8ce-7693553cfc27" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../haushaltsbuch/haushaltsbuch/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../haushaltsbuch/haushaltsbuch/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mvvm/mvvm/.idea/.idea.mvvm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mvvm/mvvm/.idea/.idea.mvvm/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mvvm/mvvm/.idea/.idea.mvvm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mvvm/mvvm/.idea/.idea.mvvm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tictactoe.sln" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tictactoe/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,7 @@
     <setting file="file://$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tictactoe.domain/Meldungen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tictactoe.console/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tictactoe.domain/Interactors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tictactoe.ui/Ui.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tictactoe/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,12 +33,13 @@
         <option value="$PROJECT_DIR$/tictactoe.ui/Class1.cs" />
         <option value="$PROJECT_DIR$/tictactoe.domain/Class1.cs" />
         <option value="$PROJECT_DIR$/tictactoe.domain/ConsoleUi.cs" />
-        <option value="$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs" />
         <option value="$PROJECT_DIR$/tictactoe.domain/Meldungen.cs" />
-        <option value="$PROJECT_DIR$/tictactoe/Program.cs" />
         <option value="$PROJECT_DIR$/tictactoe.domain/Interactors.cs" />
         <option value="$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs" />
         <option value="$PROJECT_DIR$/tictactoe.ui/Ui.cs" />
+        <option value="$PROJECT_DIR$/tictactoe/Program.cs" />
+        <option value="$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs" />
+        <option value="$PROJECT_DIR$/tictactoe.console/Program.cs" />
       </list>
     </option>
   </component>
@@ -54,7 +62,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
-  <component name="RunManager" selected=".NET Project.tictactoe">
+  <component name="RunManager" selected=".NET Project.tictactoe.console">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -91,12 +99,32 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="tictactoe.console" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/tictactoe.console/bin/Debug/net47/tictactoe.console.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tictactoe.console/bin/Debug/net47" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/tictactoe.console/tictactoe.console.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue=".NET Project.Default" />
       <item itemvalue=".NET Project.tictactoe" />
+      <item itemvalue=".NET Project.tictactoe.console" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue=".NET Project.tictactoe.console" />
         <item itemvalue=".NET Project.tictactoe" />
       </list>
     </recent_temporary>
@@ -116,13 +144,36 @@
       <workItem from="1520256327176" duration="1076000" />
       <workItem from="1526982507981" duration="1079000" />
       <workItem from="1585496303457" duration="4000" />
+      <workItem from="1586074978073" duration="954000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom" timestamp="1586075860871">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1586075860871" />
+    <state width="1398" height="221" key="GridCell.Tab.0.center" timestamp="1586075860870">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="221" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1586075860870" />
+    <state width="1398" height="221" key="GridCell.Tab.0.left" timestamp="1586075860870">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="221" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1586075860870" />
+    <state width="1398" height="221" key="GridCell.Tab.0.right" timestamp="1586075860871">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="221" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1586075860871" />
+    <state x="320" y="200" key="Rider.ProjectTemplateDialog.Size" timestamp="1586075301530">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="200" key="Rider.ProjectTemplateDialog.Size/0.23.1440.877@0.23.1440.877" timestamp="1586075301530" />
   </component>
 </project>
