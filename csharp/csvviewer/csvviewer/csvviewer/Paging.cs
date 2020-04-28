@@ -12,14 +12,20 @@ namespace csvviewer
             return lines.Take(pageLength + 1);
         }
 
+        public IEnumerable<string> ExtractPrevPage(IEnumerable<string> lines, int pageLength) {
+            DecrementPageNo(pageLength);
+            var linesToSkip = CalculateLinesToSkip(pageLength);
+            return ExtractLinesForPage(lines, pageLength, linesToSkip);
+        }
+
         public IEnumerable<string> ExtractNextPage(IEnumerable<string> lines, int pageLength) {
             IncrementPageNo(pageLength, lines.Count());
             var linesToSkip = CalculateLinesToSkip(pageLength);
             return ExtractLinesForPage(lines, pageLength, linesToSkip);
         }
 
-        public IEnumerable<string> ExtractPrevPage(IEnumerable<string> lines, int pageLength) {
-            DecrementPageNo(pageLength);
+        public IEnumerable<string> ExtractLastPage(IEnumerable<string> lines, int pageLength) {
+            _pageNo = lines.Count() / pageLength + 1;
             var linesToSkip = CalculateLinesToSkip(pageLength);
             return ExtractLinesForPage(lines, pageLength, linesToSkip);
         }

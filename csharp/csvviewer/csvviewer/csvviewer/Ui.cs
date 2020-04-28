@@ -6,8 +6,11 @@ namespace csvviewer
 {
     public class Ui
     {
-        public event Action MoveNext;
+        public event Action MoveFirst;
         public event Action MovePrev;
+        public event Action MoveNext;
+        public event Action MoveLast;
+
 
         public void Run() {
             var exit = false;
@@ -22,11 +25,17 @@ namespace csvviewer
                     case "E":
                         exit = true;
                         break;
-                    case "N":
-                        MoveNext();
+                    case "F":
+                        MoveFirst();
                         break;
                     case "P":
                         MovePrev();
+                        break;
+                    case "N":
+                        MoveNext();
+                        break;
+                    case "L":
+                        MoveLast();
                         break;
                 }
             } while (!exit);

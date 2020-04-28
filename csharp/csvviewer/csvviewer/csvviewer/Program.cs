@@ -11,12 +11,20 @@
                 ui.Display(records);
             }
 
-            ui.MoveNext += () => {
-                var records = interactors.NextPage();
+            ui.MoveFirst += () => {
+                var records = interactors.FirstPage();
                 ui.Display(records);
             };
             ui.MovePrev += () => {
                 var records = interactors.PrevPage();
+                ui.Display(records);
+            };
+            ui.MoveNext += () => {
+                var records = interactors.NextPage();
+                ui.Display(records);
+            };
+            ui.MoveLast += () => {
+                var records = interactors.LastPage();
                 ui.Display(records);
             };
 

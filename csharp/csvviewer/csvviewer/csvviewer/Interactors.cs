@@ -17,10 +17,10 @@ namespace csvviewer
             return records;
         }
 
-        public IEnumerable<Record> NextPage() {
+        public IEnumerable<Record> FirstPage() {
             var pageLength = commandLine.GetPageLength();
             var lines = fileProvider.GetFileContent();
-            var nextPage = paging.ExtractNextPage(lines, pageLength);
+            var nextPage = paging.ExtractFirstPage(lines, pageLength);
             var records = Csv.CreateRecords(nextPage);
             return records;
         }
@@ -29,6 +29,22 @@ namespace csvviewer
             var pageLength = commandLine.GetPageLength();
             var lines = fileProvider.GetFileContent();
             var nextPage = paging.ExtractPrevPage(lines, pageLength);
+            var records = Csv.CreateRecords(nextPage);
+            return records;
+        }
+
+        public IEnumerable<Record> NextPage() {
+            var pageLength = commandLine.GetPageLength();
+            var lines = fileProvider.GetFileContent();
+            var nextPage = paging.ExtractNextPage(lines, pageLength);
+            var records = Csv.CreateRecords(nextPage);
+            return records;
+        }
+
+        public IEnumerable<Record> LastPage() {
+            var pageLength = commandLine.GetPageLength();
+            var lines = fileProvider.GetFileContent();
+            var nextPage = paging.ExtractLastPage(lines, pageLength);
             var records = Csv.CreateRecords(nextPage);
             return records;
         }
