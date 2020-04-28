@@ -2,6 +2,8 @@ package de.lieser_online;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.function.Consumer;
 
 public class FilesystemProvider {
@@ -28,16 +30,15 @@ public class FilesystemProvider {
             }
         }
     }
-/*
-    public static void GetSourcecodeFiles(String directory, Consumer<String> onFilename, Runnable onFinished) {
+
+    public static void GetSourcecodeFiles2(String directory, Consumer<String> onFilename, Runnable onFinished) {
         try {
             Files.walk(Paths.get(directory))
                 .filter(path -> Files.isRegularFile(path) && path.toString().endsWith(".java"))
-                .forEach((path) -> onFilename.accept(path.toAbsolutePath().toString()));
+                .forEach((filename) -> onFilename.accept(filename.toAbsolutePath().toString()));
             onFinished.run();
         } catch (Exception e) {
             throw new RuntimeException();
         }
     }
-*/
 }
