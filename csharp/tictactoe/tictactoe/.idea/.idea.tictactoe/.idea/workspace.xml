@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="30e19516-6e35-4e84-b8ce-7693553cfc27" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../../mvvm/mvvm/.idea/.idea.mvvm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mvvm/mvvm/.idea/.idea.mvvm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mvvm/mvvm/.idea/.idea.mvvm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mvvm/mvvm/.idea/.idea.mvvm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.sln" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +54,7 @@
         <option value="$PROJECT_DIR$/tictactoe/Program.cs" />
         <option value="$PROJECT_DIR$/tictactoe.ui/ConsoleUi.cs" />
         <option value="$PROJECT_DIR$/tictactoe.console/Program.cs" />
+        <option value="$PROJECT_DIR$/tictactoe.ui/ConsoleUi2.cs" />
       </list>
     </option>
   </component>
@@ -60,7 +75,13 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="iOSSettingsPageId" />
   </component>
   <component name="RunManager" selected=".NET Project.tictactoe.console">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
@@ -144,36 +165,53 @@
       <workItem from="1520256327176" duration="1076000" />
       <workItem from="1526982507981" duration="1079000" />
       <workItem from="1585496303457" duration="4000" />
-      <workItem from="1586074978073" duration="954000" />
+      <workItem from="1586074978073" duration="2412000" />
+      <workItem from="1586078369921" duration="784000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="221" key="GridCell.Tab.0.bottom" timestamp="1586075860871">
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom" timestamp="1586078336732">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1586075860871" />
-    <state width="1398" height="221" key="GridCell.Tab.0.center" timestamp="1586075860870">
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1586078336732" />
+    <state width="1398" height="221" key="GridCell.Tab.0.center" timestamp="1586078336731">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1586075860870" />
-    <state width="1398" height="221" key="GridCell.Tab.0.left" timestamp="1586075860870">
+    <state width="1398" height="221" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1586078336731" />
+    <state width="1398" height="221" key="GridCell.Tab.0.left" timestamp="1586078336731">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1586075860870" />
-    <state width="1398" height="221" key="GridCell.Tab.0.right" timestamp="1586075860871">
+    <state width="1398" height="221" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1586078336731" />
+    <state width="1398" height="221" key="GridCell.Tab.0.right" timestamp="1586078336732">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1586075860871" />
-    <state x="320" y="200" key="Rider.ProjectTemplateDialog.Size" timestamp="1586075301530">
+    <state width="1398" height="221" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1586078336732" />
+    <state x="320" y="200" key="Rider.ProjectTemplateDialog.Size" timestamp="1586078558064">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="200" key="Rider.ProjectTemplateDialog.Size/0.23.1440.877@0.23.1440.877" timestamp="1586075301530" />
+    <state x="320" y="200" key="Rider.ProjectTemplateDialog.Size/0.23.1440.877@0.23.1440.877" timestamp="1586078558064" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1586078432319">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1586078432319" />
   </component>
 </project>

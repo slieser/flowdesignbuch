@@ -20,6 +20,70 @@ namespace syntax.hierarchie
     }
 }
 
+namespace syntax.hierarchie.noX
+{
+    public class MyClass
+    {
+        public int F(int x) {
+            var q = F1(x);
+            var r = F2(q);
+            var y = F3(r);
+            return y;
+        }
+
+        private int F1(int x) {
+            return x + 1;
+        }
+
+        private int F2(int q) {
+            return q * 2;
+        }
+        private int F3(int r) {
+            return r - 3;
+        }
+    }
+}
+
+namespace syntax.hierarchie.noY
+{
+    public class MyClass
+    {
+        private MyClass1 _myClass1;
+        private MyClass2 _myClass2;
+        private MyClass3 _myClass3;
+
+        public MyClass() {
+            _myClass1 = new MyClass1();
+            _myClass2 = new MyClass2();
+            _myClass3 = new MyClass3();
+        }
+
+        public int F(int x) {
+            var q = _myClass1.F1(x);
+            var r = _myClass2.F2(q);
+            var y = _myClass3.F3(r);
+            return y;
+        }
+    }
+
+    public class MyClass1 {
+        public int F1(int x) {
+            return x + 1;
+        }
+    }
+
+    public class MyClass2 {
+        public int F2(int q) {
+            return q * 2;
+        }
+    }
+
+    public class MyClass3 {
+        public int F3(int r) {
+            return r - 3;
+        }
+    }
+}
 namespace syntax.hierarchie.no2
 {
     public class MyClass
