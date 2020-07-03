@@ -1,0 +1,48 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="400" Height="600"
+        x:Class="mystocks.MainWindow"
+        Title="My Stocks">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <TextBox Grid.Row="0" x:Name="txtSuchbegriff"/>
+        <ComboBox Grid.Row="1" x:Name="cmbTitelauswahl" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="1">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Name}" Margin="3" />
+                            <TextBlock Text="{Binding Symbol}" Margin="3" />
+                        </StackPanel>
+                        <TextBlock Text="{Binding Börse}" Margin="3" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ListBox Grid.Row="2" x:Name="lstWertpapiere" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="1">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Name}" Margin="3"/>
+                            <TextBlock Text="{Binding Symbol}" Margin="3"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Kurs}" Margin="3"/>
+                            <TextBlock Text="{Binding Absolut}" Margin="3"/>
+                            <TextBlock Text="{Binding Relativ}" Margin="3"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
