@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @Partial['_head.html'];
+    <title>My Books</title>
+</head>
+<body>
+@Partial['_navbar.sshtml'];
+<div class="container">
+    <script>
+        $(document).ready(function() {
+            var table = $('#myTable').DataTable();
+
+            $('#myTable tbody').on( 'click', 'tr', function () {
+                if ( $(this).hasClass('selected') ) {
+                    $(this).removeClass('selected');
+                }
+                else {
+                    table.$('tr.selected').removeClass('selected');
+                    $(this).addClass('selected');
+                }
+            });
+
+            $('#btnDelete').click( function () {
+                var rows = table.rows('.selected').data();
+                alert(rows[0].attr["id"] + ' selected');
+            });
+        });    
+    </script>
+
+    <h2>Your books</h2>
+    <table class="table table-bordered table-hover" id="myTable">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Lender</th>
+                <th scope="col">Lended at</th>
+            </tr>
+        </thead>
+        <tbody>
+            @Each             
+            <tr id="@Current.CorrelationId">
+                <th>@Current.Title</th>
+                <th>@Current.Lender</th>
+                <th>@Current.LendingDate</th>
+            </tr>
+            @EndEach
+        </tbody>
+    </table>
+    
+    <button id="btnDelete">Delete</button>
+</div>
+</body>
+</html>
