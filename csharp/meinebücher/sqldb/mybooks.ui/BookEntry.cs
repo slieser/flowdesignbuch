@@ -10,6 +10,6 @@ namespace mybooks.ui
 
         public DateTime LendingDate { get; set; }
 
-        public Guid Id { get; set; }
+        public long Id { get; set; }
     }
 }

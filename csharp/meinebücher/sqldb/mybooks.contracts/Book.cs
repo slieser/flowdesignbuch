@@ -4,7 +4,7 @@ namespace mybooks.contracts
 {
     public class Book
     {
-        public Guid CorrelationId { get; set; }
+        public long Id { get; set; }
 
         public string Title { get; set; }
 

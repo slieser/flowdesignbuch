@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Windows;
 using mybooks.contracts;
 
@@ -47,17 +48,17 @@ namespace mybooks.ui
             dataGrid.DataContext = items;
         }
 
-        private Guid? Id_of_selected_book() {
+        private long? Id_of_selected_book() {
             var item = dataGrid.SelectedItem as BookEntry;
             return item?.Id;
         }
 
         public event Action<string> New_book;
 
-        public event Action<Guid, string> Lend_book;
+        public event Action<long, string> Lend_book;
 
-        public event Action<Guid> Book_got_back;
+        public event Action<long> Book_got_back;
 
-        public event Action<Guid> Remove_book;
+        public event Action<long> Remove_book;
     }
 }

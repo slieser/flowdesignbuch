@@ -9,7 +9,7 @@ namespace mybooks.ui
         public void Update(IEnumerable<Book> books) {
             var items = books.Select(book => new BookEntry
                 {
-                    Id = book.CorrelationId,
+                    Id = book.Id,
                     Title = book.Title,
                     Lender = book.Lender,
                     LendingDate = book.LendingDate

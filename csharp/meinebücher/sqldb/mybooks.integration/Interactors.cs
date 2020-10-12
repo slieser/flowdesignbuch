@@ -1,58 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
 using mybooks.contracts;
-using mybooks.eventstoreprovider;
+using mybooks.dbprovider;
 using mybooks.logic;
 
 namespace mybooks
 {
     public class Interactors
     {
-        private readonly IEventStoreProvider _eventStoreProvider;
+        private readonly BooksRepository _booksRepository;
         private readonly Booklending _booklending = new Booklending();
 
-        public Interactors() : this(new EventStoreProvider()) {
+        public Interactors() : this(new BooksRepository()) {
         }
 
-        internal Interactors(IEventStoreProvider eventStoreProvider) {
-            _eventStoreProvider = eventStoreProvider;
+        internal Interactors(BooksRepository booksRepository) {
+            _booksRepository = booksRepository;
         }
 
         public IEnumerable<Book> Start() {
-            var events = _eventStoreProvider.Read_all_events();
-            var books = _booklending.Create_list_of_books(events);
+            var books = _booksRepository.LoadAll();
             return books;
         }
 
         public IEnumerable<Book> New_book(string titel) {
-            var bookCreatedEvent = _booklending.Create_book(titel);
-            _eventStoreProvider.Save_event(bookCreatedEvent);
-            var events = _eventStoreProvider.Read_all_events();
-            var books = _booklending.Create_list_of_books(events);
+            var book = _booklending.Create_book(titel);
+            _booksRepository.TryAdd(book);
+            var books = _booksRepository.LoadAll();
             return books;
         }
 
-        public IEnumerable<Book> Lend_book(Guid id, string name) {
-            var bookLendedEvent = _booklending.Lend_book(id, name);
-            _eventStoreProvider.Save_event(bookLendedEvent);
-            var events = _eventStoreProvider.Read_all_events();
-            var books = _booklending.Create_list_of_books(events);
+        public IEnumerable<Book> Lend_book(long id, string name) {
+            var book = _booksRepository.GetById(id);
+            book = _booklending.Lend_book(book, name);
+            _booksRepository.TryUpdate(book);
+            var books = _booksRepository.LoadAll();
             return books;
         }
 
-        public IEnumerable<Book> Book_got_back(Guid id) {
-            var bookReturnedEvent = _booklending.Return_book(id);
-            _eventStoreProvider.Save_event(bookReturnedEvent);
-            var events = _eventStoreProvider.Read_all_events();
-            var books = _booklending.Create_list_of_books(events);
+        public IEnumerable<Book> Book_got_back(long id) {
+            var book = _booksRepository.GetById(id);
+            book = _booklending.Return_book(book);
+            _booksRepository.TryUpdate(book);
+            var books = _booksRepository.LoadAll();
             return books;
         }
 
-        public IEnumerable<Book> Remove_book(Guid id) {
-            var bookDeletedEvent = _booklending.Delete_book(id);
-            _eventStoreProvider.Save_event(bookDeletedEvent);
-            var events = _eventStoreProvider.Read_all_events();
-            var books = _booklending.Create_list_of_books(events);
+        public IEnumerable<Book> Remove_book(long id) {
+            _booksRepository.DeleteById(id);
+            var books = _booksRepository.LoadAll();
             return books;
         }
     }

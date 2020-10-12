@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>mybooks.integration</RootNamespace>
     <AssemblyName>mybooks.integration</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,14 +47,17 @@
       <Project>{715f7d43-7461-42d2-9a4d-c26de563da48}</Project>
       <Name>mybooks.contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\mybooks.eventstoreprovider\mybooks.eventstoreprovider.csproj">
+    <ProjectReference Include="..\mybooks.eventstoreprovider\mybooks.dbprovider.csproj">
       <Project>{4db1d12a-6d8f-4050-84c7-008c6e2aa70c}</Project>
-      <Name>mybooks.eventstoreprovider</Name>
+      <Name>mybooks.dbprovider</Name>
     </ProjectReference>
     <ProjectReference Include="..\mybooks.logic\mybooks.logic.csproj">
       <Project>{3e94a834-ce45-4709-b773-fd254242201a}</Project>
       <Name>mybooks.logic</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
