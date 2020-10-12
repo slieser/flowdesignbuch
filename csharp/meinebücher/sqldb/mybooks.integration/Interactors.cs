@@ -23,8 +23,8 @@ namespace mybooks
             return books;
         }
 
-        public IEnumerable<Book> New_book(string titel) {
-            var book = _booklending.Create_book(titel);
+        public IEnumerable<Book> New_book(string title) {
+            var book = _booklending.Create_book(title);
             _booksRepository.TryAdd(book);
             var books = _booksRepository.LoadAll();
             return books;
@@ -47,7 +47,7 @@ namespace mybooks
         }
 
         public IEnumerable<Book> Remove_book(long id) {
-            _booksRepository.DeleteById(id);
+            _booksRepository.TryDeleteById(id);
             var books = _booksRepository.LoadAll();
             return books;
         }

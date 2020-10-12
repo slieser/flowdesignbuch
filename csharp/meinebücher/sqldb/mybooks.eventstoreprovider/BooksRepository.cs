@@ -29,17 +29,22 @@ namespace mybooks.dbprovider
 
         public bool TryAdd(Book book) {
             var sql = "INSERT INTO Books (Title, Lender, LendingDate, CanBeLended) Values (@Title, @Lender, @LendingDate, @CanBeLended)";
-            return TryExecute(book, sql);
+            return TryExecute(sql, book);
         }
 
         public bool TryUpdate(Book book) {
             var sql = "UPDATE Books SET Title = @Title, Lender = @Lender, LendingDate = @LendingDate, CanBeLended = @CanBeLended WHERE Id = @Id;";
-            return TryExecute(book, sql);
+            return TryExecute(sql, book);
         }
 
-        private bool TryExecute(Book book, string sql) {
+        public bool TryDeleteById(long id) {
+            var sql = "DELETE FROM Books WHERE Id = @Id;";
+            return TryExecute(sql, new{Id = id});
+        }
+        
+        private bool TryExecute(string sql, object parameter) {
             try {
-                var rowsAffected = _connection.Execute(sql, book);
+                var rowsAffected = _connection.Execute(sql, parameter);
                 if (rowsAffected != 1) throw new Exception($"Rows affected should be 1 but was {rowsAffected}");
             }
             catch (MySqlException e) {
@@ -72,11 +77,6 @@ namespace mybooks.dbprovider
             return result;
         }
 
-        public void DeleteById(in long id) {
-            var sql = "DELETE FROM Books WHERE Id = @Id;";
-            var rowsAffected = _connection.Execute(sql, new {Id = id});
-            if (rowsAffected != 1) throw new Exception($"Rows affected should be 1 but was {rowsAffected}");
-        }
 
         public IEnumerable<Book> LoadAll() {
             const string select = "SELECT Id, Title, Lender, LendingDate, CanBeLended FROM Books";
