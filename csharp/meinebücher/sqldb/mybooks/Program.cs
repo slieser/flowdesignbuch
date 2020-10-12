@@ -26,7 +26,7 @@ namespace mybooks
                 mainWindow.Update_books(books);
             };
             mainWindow.Book_got_back += (id) => {
-                var books = interactors.Book_got_back(id);
+                var books = interactors.Return_book(id);
                 mainWindow.Update_books(books);
             };
             mainWindow.Remove_book += (id) => {

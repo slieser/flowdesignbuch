@@ -38,7 +38,7 @@ namespace mybooks
             return books;
         }
 
-        public IEnumerable<Book> Book_got_back(long id) {
+        public IEnumerable<Book> Return_book(long id) {
             var book = _booksRepository.GetById(id);
             book = _booklending.Return_book(book);
             _booksRepository.TryUpdate(book);
