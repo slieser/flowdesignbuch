@@ -11,6 +11,7 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
         
         <TextBox Grid.Row="0" x:Name="txtSuchbegriff"/>
@@ -45,5 +46,8 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <StackPanel Grid.Row="3">
+            <Button Content="Entfernen" x:Name="btnRemove"/>
+        </StackPanel>
     </Grid>
 </Window>

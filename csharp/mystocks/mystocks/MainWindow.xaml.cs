@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
@@ -13,6 +12,8 @@ namespace mystocks
         public event Action<string> SuchbegriffGeändert;
         
         public event Action<string> TitelAusgewählt;
+
+        public event Action<string> TitelEntfernen;
         
         public MainWindow()
         {
@@ -36,6 +37,16 @@ namespace mystocks
                 }
                 var symbol = ((Titel) cmbTitel.SelectedItem).Symbol;
                 TitelAusgewählt?.Invoke(symbol);
+            };
+
+            var lstWertpapiere = this.FindControl<ListBox>("lstWertpapiere");
+            var btnRemove = this.FindControl<Button>("btnRemove");
+            btnRemove.Click += (o, e) => {
+                if (lstWertpapiere.SelectedItem == null) {
+                    return;
+                }
+                var symbol = ((Wertpapier) lstWertpapiere.SelectedItem).Symbol;
+                TitelEntfernen(symbol);
             };
         }
 

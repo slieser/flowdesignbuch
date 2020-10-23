@@ -30,5 +30,13 @@ namespace mystocks
             var wertpapiere = _kursProvider.KurseErmitteln(alleSymbole);
             return wertpapiere;
         }
+
+        public IEnumerable<Wertpapier> TitelEntfernen(string symbol) {
+            var symbole = _favoritenProvider.FavoritenLaden();
+            var alleSymbole = _favoritenProvider.FavoritEntfernen(
+                symbole, symbol, s => _favoritenProvider.FavoritenSpeichern(s));
+            var wertpapiere = _kursProvider.KurseErmitteln(alleSymbole);
+            return wertpapiere;
+        }
     }
 }

@@ -32,5 +32,16 @@ namespace mystocks.provider
             onChange(alleSymbole);
             return alleSymbole;
         }
+
+        public IEnumerable<string> FavoritEntfernen(IEnumerable<string> symbole, string symbol, Action<IEnumerable<string>> onChange) {
+            if (!symbole.Any(s => s.Equals(symbol, StringComparison.CurrentCultureIgnoreCase))) {
+                return symbole;
+            }
+
+            var alleSymbole = symbole.ToList();
+            alleSymbole.Remove(symbol);
+            onChange(alleSymbole);
+            return alleSymbole;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Avalonia;
+﻿using System;
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Logging.Serilog;
 
@@ -23,6 +24,10 @@ namespace mystocks
             };
             mainWindow.TitelAusgewählt += symbol => {
                 var wertpapiere = interactors.TitelHinzufügen(symbol);
+                mainWindow.WertpapiereAktualisieren(wertpapiere);
+            };
+            mainWindow.TitelEntfernen += symbol => {
+                var wertpapiere = interactors.TitelEntfernen(symbol);
                 mainWindow.WertpapiereAktualisieren(wertpapiere);
             };
 
