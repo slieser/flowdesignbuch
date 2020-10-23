@@ -4,6 +4,7 @@ namespace mystocks.data
     {
         public string Name { get; set; }
         public string Symbol { get; set; }
+        public string Börse { get; set; }
         public string Kurs { get; set; }
         public string Absolut { get; set; }
         public string Relativ { get; set; }

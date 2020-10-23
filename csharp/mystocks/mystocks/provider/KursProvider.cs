@@ -26,6 +26,7 @@ namespace mystocks.provider
                 return new Wertpapier {
                     Name = werte.FullExchangeName,
                     Symbol = werte.Symbol,
+                    Börse = werte.FullExchangeName,
                     Kurs = werte.RegularMarketPrice.ToString("0,0.00 ") + werte.Currency,
                     Absolut = werte.RegularMarketChange.ToString("0.00"),
                     Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")
@@ -35,6 +36,7 @@ namespace mystocks.provider
                 return new Wertpapier {
                     Name = werte.Currency,
                     Symbol = werte.Symbol,
+                    Börse = werte.FullExchangeName,
                     Kurs = werte.RegularMarketPrice.ToString("0,0.00 ") + werte.Currency,
                     Absolut = werte.RegularMarketChange.ToString("0.00"),
                     Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")
@@ -44,6 +46,7 @@ namespace mystocks.provider
                 return new Wertpapier {
                     Name = werte.Symbol,
                     Symbol = werte.Symbol,
+                    Börse = werte.FullExchangeName,
                     Kurs = werte.RegularMarketPrice.ToString("0,0.00 ") + werte.Currency,
                     Absolut = werte.RegularMarketChange.ToString("0.00"),
                     Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")
@@ -52,6 +55,7 @@ namespace mystocks.provider
             return new Wertpapier {
                 Name = werte.LongName,
                 Symbol = werte.Symbol,
+                Börse = werte.FullExchangeName,
                 Kurs = werte.RegularMarketPrice.ToString("0,0.00 ") + werte.Currency,
                 Absolut = werte.RegularMarketChange.ToString("0.00"),
                 Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")

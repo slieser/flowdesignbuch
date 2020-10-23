@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         
         <TextBox Grid.Row="0" x:Name="txtSuchbegriff"/>
-        <ComboBox Grid.Row="1" x:Name="cmbTitelauswahl" >
+        <ComboBox Grid.Row="1" x:Name="cmbTitelauswahl">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="1">
@@ -27,13 +27,14 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <ListBox Grid.Row="2" x:Name="lstWertpapiere" >
+        <ListBox Grid.Row="2" x:Name="lstWertpapiere">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="1">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="{Binding Name}" Margin="3"/>
                             <TextBlock Text="{Binding Symbol}" Margin="3"/>
+                            <TextBlock Text="{Binding Börse}" Margin="3" />
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="{Binding Kurs}" Margin="3"/>
