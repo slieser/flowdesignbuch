@@ -30,7 +30,6 @@ namespace mystocks.provider
                     Absolut = werte.RegularMarketChange.ToString("0.00"),
                     Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")
                 };
-                
             }
             if (werte.QuoteType == "CURRENCY") {
                 return new Wertpapier {
@@ -40,7 +39,15 @@ namespace mystocks.provider
                     Absolut = werte.RegularMarketChange.ToString("0.00"),
                     Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")
                 };
-                
+            }
+            if (werte.QuoteType == "FUTURE") {
+                return new Wertpapier {
+                    Name = werte.Symbol,
+                    Symbol = werte.Symbol,
+                    Kurs = werte.RegularMarketPrice.ToString("0,0.00 ") + werte.Currency,
+                    Absolut = werte.RegularMarketChange.ToString("0.00"),
+                    Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")
+                };
             }
             return new Wertpapier {
                 Name = werte.LongName,

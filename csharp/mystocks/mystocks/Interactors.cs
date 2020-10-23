@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using mystocks.data;
 using mystocks.provider;
 
@@ -13,7 +14,7 @@ namespace mystocks
         public void Start(Action<IEnumerable<Wertpapier>> onUpdate) {
             new TimerProvider().ExecutePeriodic(30*1000, () => {
                 var symbole = _favoritenProvider.FavoritenLaden();
-                var wertpapiere = _kursProvider.KurseErmitteln(symbole);
+                var wertpapiere = _kursProvider.KurseErmitteln(symbole).ToList();
                 onUpdate(wertpapiere);
             });
         }
