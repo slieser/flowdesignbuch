@@ -42,10 +42,19 @@ namespace csvviewer
         }
 
         public void Display(IEnumerable<Record> records) {
+            var lines = CreateLines(records);
+            WriteLines(lines);
+        }
+
+        internal IEnumerable<string> CreateLines(IEnumerable<Record> records) {
             var columnWidths = CalculateMaxColumnWidths(records);
             var paddedRecords = PadRecords(records, columnWidths);
-            var lines = FormatRecords(paddedRecords);
-            WriteLines(lines);
+            var lines = FormatValues(paddedRecords);
+            return lines;
+        }
+
+        private void WriteLines(IEnumerable<string> lines) {
+            lines.ToList().ForEach(Console.WriteLine);
         }
 
         private int[] CalculateMaxColumnWidths(IEnumerable<Record> records) {
@@ -69,12 +78,8 @@ namespace csvviewer
             return result;
         }
 
-        private IEnumerable<string> FormatRecords(IEnumerable<Record> paddedRecords) {
+        private IEnumerable<string> FormatValues(IEnumerable<Record> paddedRecords) {
             return paddedRecords.Select(record => string.Join("|", record.Values));
-        }
-
-        private void WriteLines(IEnumerable<string> lines) {
-            lines.ToList().ForEach(Console.WriteLine);
         }
     }
 }

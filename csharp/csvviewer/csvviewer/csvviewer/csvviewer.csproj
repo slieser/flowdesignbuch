@@ -6,4 +6,8 @@
         <LangVersion>8</LangVersion>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="CleanCodeDeveloper.Analyzers" Version="0.0.5" />
+    </ItemGroup>
+
 </Project>

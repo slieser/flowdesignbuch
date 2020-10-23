@@ -19,18 +19,23 @@ namespace csvviewer
         }
 
         public IEnumerable<string> ExtractNextPage(IEnumerable<string> lines, int pageLength) {
-            IncrementPageNo(pageLength, lines.Count());
+            IncrementPageNo(lines, pageLength);
             var linesToSkip = CalculateLinesToSkip(pageLength);
             return ExtractLinesForPage(lines, pageLength, linesToSkip);
         }
 
         public IEnumerable<string> ExtractLastPage(IEnumerable<string> lines, int pageLength) {
-            _pageNo = lines.Count() / pageLength + 1;
+            _pageNo = CalculateLastPageNo(lines, pageLength);
             var linesToSkip = CalculateLinesToSkip(pageLength);
             return ExtractLinesForPage(lines, pageLength, linesToSkip);
         }
 
-        private void IncrementPageNo(int pageLength, int numberOfLines) {
+        private static int CalculateLastPageNo(IEnumerable<string> lines, int pageLength) {
+            return lines.Count() / pageLength + 1;
+        }
+
+        private void IncrementPageNo(IEnumerable<string> lines, int pageLength) {
+            var numberOfLines = lines.Count();
             if (_pageNo * pageLength + 1 < numberOfLines) {
                 _pageNo++;
             }
