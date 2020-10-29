@@ -6,17 +6,17 @@ namespace loccount
 {
     public class CodefileProvider
     {
-        public static void GetSourcecodeFiles(string directory, Action<string> onFilename, Action onFinished) {
+        public static IEnumerable<string> FindSourceFilenames(string directory) {
+            var filenames = Directory.EnumerateFiles(directory, "*.cs", SearchOption.AllDirectories);
+            return filenames;
+        }
+
+        public static void FindSourceFilenames(string directory, Action<string> onFilename, Action onFinished) {
             var filenames = Directory.EnumerateFiles(directory, "*.cs", SearchOption.AllDirectories);
             foreach (var filename in filenames) {
                 onFilename(filename);
             }
             onFinished();
-        }
-
-        public static IEnumerable<string> GetSourcecodeFiles(string directory) {
-            var filenames = Directory.EnumerateFiles(directory, "*.cs", SearchOption.AllDirectories);
-            return filenames;
         }
     }
 }

@@ -4,16 +4,9 @@ using System.IO;
 
 namespace loccount
 {
-    public class FileProvider
+    public static class FileProvider
     {
-        public void Readfile(string filename, Action<string> onLine) {
-            var lines = File.ReadLines(filename);
-            foreach (var line in lines) {
-                onLine(line);
-            }
-        }
-
-        public IEnumerable<string> Readfile(string filename) {
+        public static IEnumerable<string> ReadFile(string filename) {
             var lines = File.ReadLines(filename);
             return lines;
         }
