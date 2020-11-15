@@ -3,15 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="4500e4d4-6294-4d39-bd2e-d9a3954bcde5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beispiele/Zwischensumme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele/Zwischensumme.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/wecker/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/ConsoleUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/ConsoleUi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/Interactors.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/Interactors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/TimerProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/TimerProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/Wecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/wecker/src/main/java/org/example/Wecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beispiele/Entscheidung.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/CodefileProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/CodefileProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/CommandLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/CommandLine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/FileProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/FileProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/loccount.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/loccount.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mystocks/mystocks/mystocks.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../mystocks/mystocks/mystocks.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mystocks/mystocks/nuget.config" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,26 +25,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Beispiele/Zwischensumme.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele/Simple.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele/Kreditwürdigkeit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Beispiele/Entscheidung.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Beispiele/Zwischensumme.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Beispiele/Kreditwürdigkeit.cs" />
-        <option value="$PROJECT_DIR$/Beispiele/Simple.cs" />
-        <option value="$PROJECT_DIR$/Beispiele.Tests/Tests.cs" />
-        <option value="$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" />
-        <option value="$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs" />
-        <option value="$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" />
-        <option value="$PROJECT_DIR$/Beispiele/Zwischensumme.cs" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
@@ -67,6 +56,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
@@ -88,6 +78,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -103,11 +94,12 @@
       <workItem from="1538049765177" duration="1311000" />
       <workItem from="1538741574857" duration="1260000" />
       <workItem from="1585995840003" duration="853000" />
+      <workItem from="1603644788044" duration="1234000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

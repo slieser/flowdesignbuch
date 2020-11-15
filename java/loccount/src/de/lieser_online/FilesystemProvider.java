@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.function.Consumer;
 
 public class FilesystemProvider {
-    public static void GetSourcecodeFiles(String directory, Consumer<String> onFilename, Runnable onFinished) {
+    public static void FindSourceFilenames(String directory, Consumer<String> onFilename, Runnable onFinished) {
         Walk(directory, onFilename);
         onFinished.run();
     }

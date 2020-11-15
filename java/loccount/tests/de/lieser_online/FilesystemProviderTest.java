@@ -12,7 +12,7 @@ public class FilesystemProviderTest {
     @Test
     public void Test() {
         List<String> result = new ArrayList<String>();
-        FilesystemProvider.GetSourcecodeFiles(
+        FilesystemProvider.FindSourceFilenames(
                 "./tests/de/lieser_online/testdata",
                 filename -> { result.add(filename); },
                 () -> { result.add("finished");});

@@ -3,7 +3,7 @@ package de.lieser_online;
 import java.util.List;
 
 public class Loc {
-    public static LocStat CountLocStat(String filename, List<String> lines) {
+    public static LocStat CountLines(String filename, List<String> lines) {
         LocStat result = new LocStat();
 
         result.Filename = filename;

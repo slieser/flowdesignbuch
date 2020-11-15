@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="639212c0-589b-4371-a161-bd49c3282059" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../csvviewer/csvviewer/csvviewer/Ui.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csvviewer/csvviewer/csvviewer/Ui.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/Beispiele/Entscheidung.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.loccount/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.loccount/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.loccount/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.loccount/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.loccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.loccount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mystocks/mystocks/mystocks.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../mystocks/mystocks/mystocks.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mystocks/mystocks/nuget.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wecker_console/wecker/wecker/Interactor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../wecker_console/wecker/wecker/Interactor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +97,13 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
+      <option value="$PROJECT_DIR$/loccount/Interactors.cs" />
+      <option value="$PROJECT_DIR$/loccount/Analyzer.cs" />
+      <option value="$PROJECT_DIR$/loccount/Ui.cs" />
+      <option value="$PROJECT_DIR$/loccount/FileProvider.cs" />
       <option value="$PROJECT_DIR$/loccount/Program.cs" />
+      <option value="$PROJECT_DIR$/loccount/LinesOfCode.cs" />
+      <option value="$PROJECT_DIR$/loccount/CodefileProvider.cs" />
     </changedPaths>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -107,6 +118,9 @@
     <option name="height" value="877" />
   </component>
   <component name="ProjectId" id="1idm5TFviRdBTIru7A2r8FSRur8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -182,6 +196,8 @@
       <updated>1520260109385</updated>
       <workItem from="1520260111536" duration="3465000" />
       <workItem from="1602245672812" duration="1001000" />
+      <workItem from="1603974135303" duration="3072000" />
+      <workItem from="1604043064084" duration="4248000" />
     </task>
     <servers />
   </component>

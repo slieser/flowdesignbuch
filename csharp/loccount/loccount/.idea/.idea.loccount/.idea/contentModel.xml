@@ -3,16 +3,22 @@
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="loccount" t="IncludeRecursive">
+        <e p="Analyzer.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="CodefileProvider.cs" t="Include" />
         <e p="CommandLine.cs" t="Include" />
         <e p="FileProvider.cs" t="Include" />
+        <e p="Interactors.cs" t="Include" />
+        <e p="LinesOfCode.cs" t="Include" />
         <e p="loccount.csproj" t="IncludeRecursive" />
+        <e p="LOCstat.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="Ui.cs" t="Include" />
       </e>
       <e p="loccount.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

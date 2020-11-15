@@ -15,6 +15,7 @@
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.9.12" />
     <PackageReference Include="Avalonia.Desktop" Version="0.9.12" />
+    <PackageReference Include="CleanCodeDeveloper.Analyzers" Version="0.0.6" />
     <PackageReference Include="Flurl.Http" Version="2.4.2" />
   </ItemGroup>
   <ItemGroup>
