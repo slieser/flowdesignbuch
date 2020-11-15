@@ -1,0 +1,39 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="192" Height="256"
+        x:Class="tictactoe.ui.MainWindow"
+        Title="TicTacToe">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="64"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64"/>
+            <ColumnDefinition Width="64"/>
+            <ColumnDefinition Width="64"/>
+        </Grid.ColumnDefinitions>
+        
+        <Button x:Name="btn0" Grid.Row="0" Grid.Column="0"/>
+        <Button x:Name="btn1" Grid.Row="0" Grid.Column="1"/>
+        <Button x:Name="btn2" Grid.Row="0" Grid.Column="2"/>
+
+        <Button x:Name="btn3" Grid.Row="1" Grid.Column="0"/>
+        <Button x:Name="btn4" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="btn5" Grid.Row="1" Grid.Column="2"/>
+
+        <Button x:Name="btn6" Grid.Row="2" Grid.Column="0"/>
+        <Button x:Name="btn7" Grid.Row="2" Grid.Column="1"/>
+        <Button x:Name="btn8" Grid.Row="2" Grid.Column="2"/>
+        
+        <TextBlock x:Name="txtMeldung" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="10"/>
+    </Grid>
+</Window>
+
+
