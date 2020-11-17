@@ -1,13 +1,13 @@
 const expect = require("chai").expect;
-const integration = require("../integration");
+const interactors = require("../interactors");
 
-describe('integration.WordWrap', () => {
+describe('interactors.Start', () => {
     it('should wrap the text', () => {
-        expect(integration.WordWrap(["", "", "test/testdaten.txt", 20]))
+        expect(interactors.Start(["", "", "test/testdaten.txt", 20]))
             .to.deep.equal(["first second"])
     });
     it('should retain the paragraphs', () => {
-        expect(integration.WordWrap(["", "", "test/multipleparagraphs.txt", 20]))
+        expect(interactors.Start(["", "", "test/multipleparagraphs.txt", 20]))
             .to.deep.equal([
                 "This is the first",
                 "paragraph.",

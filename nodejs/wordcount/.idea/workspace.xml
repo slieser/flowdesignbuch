@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca668131-c72b-47a9-9958-41c455e148e5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.domain/Interactors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.domain/Interactors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.domain/TicTacToe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.domain/TicTacToe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactors.js" beforeDir="false" afterPath="$PROJECT_DIR$/interactors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/interactorstests.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/interactorstests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordwrap/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordwrap/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordwrap/integration.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordwrap/interactors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordwrap/test/integrationtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordwrap/test/interactorstests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +179,7 @@
       <workItem from="1538211483866" duration="3315000" />
       <workItem from="1575030708223" duration="1000" />
       <workItem from="1605599009423" duration="194000" />
+      <workItem from="1605599242111" duration="386000" />
     </task>
     <servers />
   </component>

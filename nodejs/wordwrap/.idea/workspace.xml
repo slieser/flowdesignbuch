@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbf06ba2-9505-4614-b951-bb96a6647ee8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Zwischensumme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Zwischensumme.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../loccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../loccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordcount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration.js" beforeDir="false" afterPath="$PROJECT_DIR$/interactors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/integrationtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/interactorstests.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,6 +130,7 @@
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectId" id="1kPPfMBszFgFsdc87cTMmFvsWrI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -178,26 +171,22 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Mocha.integration.WordWrap">
+  <component name="RunManager" selected="Mocha.test/wordwraptests.js">
     <configuration name="integration.WordWrap" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -213,63 +202,72 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="wordwrap.CreateLines" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="test/commandlinetests.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
       <ui>bdd</ui>
       <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/wordwraptests.js</test-file>
-      <test-names>
-        <name value="wordwrap.CreateLines" />
-      </test-names>
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/commandlinetests.js</test-file>
       <method v="2" />
     </configuration>
-    <configuration name="wordwrap.SplitParagraphsIntoWords" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="test/interactorstests.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
       <ui>bdd</ui>
       <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/wordwraptests.js</test-file>
-      <test-names>
-        <name value="wordwrap.SplitParagraphsIntoWords" />
-      </test-names>
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/interactorstests.js</test-file>
       <method v="2" />
     </configuration>
-    <configuration name="wordwrap.SplitTextIntoParagraphs" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="test/textfileprovidertests.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
       <ui>bdd</ui>
       <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/textfileprovidertests.js</test-file>
+      <method v="2" />
+    </configuration>
+    <configuration name="test/wordwraptests.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
       <test-file>$PROJECT_DIR$/test/wordwraptests.js</test-file>
-      <test-names>
-        <name value="wordwrap.SplitTextIntoParagraphs" />
-      </test-names>
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Mocha.integration.WordWrap" />
-      <item itemvalue="Mocha.wordwrap.CreateLines" />
-      <item itemvalue="Mocha.wordwrap.SplitParagraphsIntoWords" />
-      <item itemvalue="Mocha.wordwrap.SplitTextIntoParagraphs" />
+      <item itemvalue="Mocha.test/commandlinetests.js" />
+      <item itemvalue="Mocha.test/interactorstests.js" />
+      <item itemvalue="Mocha.test/textfileprovidertests.js" />
+      <item itemvalue="Mocha.test/wordwraptests.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.test/wordwraptests.js" />
+        <item itemvalue="Mocha.test/textfileprovidertests.js" />
+        <item itemvalue="Mocha.test/interactorstests.js" />
+        <item itemvalue="Mocha.test/commandlinetests.js" />
         <item itemvalue="Mocha.integration.WordWrap" />
-        <item itemvalue="Mocha.wordwrap.SplitTextIntoParagraphs" />
-        <item itemvalue="Mocha.wordwrap.CreateLines" />
-        <item itemvalue="Mocha.wordwrap.SplitParagraphsIntoWords" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -289,6 +287,7 @@
       <workItem from="1520589268917" duration="520000" />
       <workItem from="1530189464019" duration="537000" />
       <workItem from="1538210542662" duration="460000" />
+      <workItem from="1605599356659" duration="272000" />
     </task>
     <servers />
   </component>
@@ -353,7 +352,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gedicht.txt">

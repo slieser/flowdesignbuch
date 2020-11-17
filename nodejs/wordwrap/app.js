@@ -1,7 +1,7 @@
-const integration = require("./integration.js");
+const interactors = require("./interactors.js");
 const ui = require("./consoleui.js");
 
 var args = process.argv;
 
-var lines = integration.WordWrap(args);
+var lines = interactors.Start(args);
 ui.ShowResult(lines);
