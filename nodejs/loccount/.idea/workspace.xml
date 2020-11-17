@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b36d8397-2ab3-4a9c-9994-71a7a0c8709f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Zwischensumme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Zwischensumme.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.domain/Interactors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.domain/Interactors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.domain/TicTacToe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.domain/TicTacToe.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wordcount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordwrap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordwrap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordcount/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordcount/interactors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/interactors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordcount/test/interactorstests.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/test/interactorstests.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,6 +116,7 @@
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectId" id="1kPOu9HuTLN9zuFMfO2w7zDrNbh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -142,27 +139,23 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="9.4.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.2" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.4" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Node.js.app.js">
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" application-parameters="./" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
@@ -182,6 +175,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -202,6 +196,7 @@
       <workItem from="1520589269210" duration="520000" />
       <workItem from="1530189469827" duration="814000" />
       <workItem from="1538210549397" duration="1221000" />
+      <workItem from="1605598984850" duration="219000" />
     </task>
     <servers />
   </component>
@@ -233,7 +228,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/182.3341.1/WebStorm 2018.2 EAP.app.vmoptions" />
