@@ -27,7 +27,7 @@
                     meldung = Meldungen.Ungültig_Meldung_erzeugen();
                 },
                 onGültig: () => {
-                    spielbrett = TicTacToe.Stein_setzen(spielbrett, spieler, feld);
+                    spielbrett = TicTacToe.Spielstein_setzen(spielbrett, spieler, feld);
                     spieler = TicTacToe.Spieler_wechseln(spieler);
                     _spielbrett = spielbrett;
                     _spieler = spieler;

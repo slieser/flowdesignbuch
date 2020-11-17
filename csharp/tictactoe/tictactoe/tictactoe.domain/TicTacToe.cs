@@ -27,7 +27,7 @@ namespace tictactoe.domain
             }
         }
 
-        public static char[] Stein_setzen(char[] spielbrett, char spieler, int feld) {
+        public static char[] Spielstein_setzen(char[] spielbrett, char spieler, int feld) {
             spielbrett[feld] = spieler;
             return spielbrett;
         }

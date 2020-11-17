@@ -24,45 +24,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30e19516-6e35-4e84-b8ce-7693553cfc27" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/Beispiele/Entscheidung.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mystocks/mystocks/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../mystocks/mystocks/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mystocks/mystocks/mystocks.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../mystocks/mystocks/mystocks.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mystocks/mystocks/nuget.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.console/tictactoe.console.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.console/tictactoe.console.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.domain/tictactoe.domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.domain/tictactoe.domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.ui/Ui.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.ui/packages.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.ui/tictactoe.ui.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.ui/tictactoe.ui.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Mac/MyApp.app/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Mac/MyApp.app/Contents/MacOS/Launcher.exec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Mac/MyApp.app/Contents/MonoBundle/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Mac/MyApp.app/Contents/Resources/Icon.icns" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Mac/MyApp.app/MacAppTemplate.app/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Mac/MyApp.app/MacAppTemplate.app/Contents/MacOS/Launcher.exec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Mac/MyApp.app/MacAppTemplate.app/Contents/MonoBundle/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Mac/MyApp.app/MacAppTemplate.app/Contents/Resources/Icon.icns" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Mac/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/packages.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe/tictactoe.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe/tictactoe.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wecker_console/wecker/wecker/Interactor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../wecker_console/wecker/wecker/Interactor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/loccount/out/production/loccount/de/lieser_online/CommandLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/loccount/out/production/loccount/de/lieser_online/CommandLine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/loccount/out/production/loccount/de/lieser_online/FilesystemProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/loccount/out/production/loccount/de/lieser_online/FilesystemProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/loccount/out/production/loccount/de/lieser_online/Loc.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/loccount/out/production/loccount/de/lieser_online/Loc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/loccount/out/production/loccount/de/lieser_online/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/loccount/out/production/loccount/de/lieser_online/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/loccount/src/de/lieser_online/FilesystemProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/loccount/src/de/lieser_online/FilesystemProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/loccount/src/de/lieser_online/Interactors.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/loccount/src/de/lieser_online/Interactors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/loccount/src/de/lieser_online/Loc.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/loccount/src/de/lieser_online/Loc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/loccount/tests/de/lieser_online/FilesystemProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/loccount/tests/de/lieser_online/FilesystemProviderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../java/loccount/tests/de/lieser_online/LocTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/loccount/tests/de/lieser_online/LocTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tictactoe.domain/Interactors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.domain/Interactors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +52,7 @@
       <option value="$PROJECT_DIR$/tictactoe/App.xaml" />
       <option value="$PROJECT_DIR$/tictactoe/Program.cs" />
       <option value="$PROJECT_DIR$/tictactoe.ui/MainWindow.xaml" />
+      <option value="$PROJECT_DIR$/tictactoe.domain/Interactors.cs" />
     </changedPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -115,7 +80,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="iOSSettingsPageId" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Project.tictactoe">
@@ -211,10 +176,10 @@
     </configuration>
     <list>
       <item itemvalue=".NET Project.Default" />
-      <item itemvalue=".NET Project.tictactoe" />
-      <item itemvalue=".NET Project.tictactoe.console" />
       <item itemvalue=".NET Project.avalonia.ui2" />
       <item itemvalue=".NET Project.Avalonia.NETCoreApp" />
+      <item itemvalue=".NET Project.tictactoe" />
+      <item itemvalue=".NET Project.tictactoe.console" />
     </list>
     <recent_temporary>
       <list>
@@ -241,7 +206,8 @@
       <workItem from="1585496303457" duration="4000" />
       <workItem from="1586074978073" duration="2412000" />
       <workItem from="1586078369921" duration="784000" />
-      <workItem from="1605458051375" duration="3203000" />
+      <workItem from="1605458051375" duration="3535000" />
+      <workItem from="1605461619393" duration="3311000" />
     </task>
     <servers />
   </component>
@@ -262,5 +228,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
