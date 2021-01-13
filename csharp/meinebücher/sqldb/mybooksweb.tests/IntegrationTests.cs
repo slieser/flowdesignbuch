@@ -1,5 +1,4 @@
 ﻿using System;
-using mybooks.contracts;
 using Nancy;
 using Nancy.Testing;
 using Newtonsoft.Json;

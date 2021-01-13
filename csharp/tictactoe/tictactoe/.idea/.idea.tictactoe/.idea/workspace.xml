@@ -25,8 +25,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30e19516-6e35-4e84-b8ce-7693553cfc27" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.domain/Interactors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.domain/Interactors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.domain/TicTacToe.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +205,7 @@
       <workItem from="1586074978073" duration="2412000" />
       <workItem from="1586078369921" duration="784000" />
       <workItem from="1605458051375" duration="3535000" />
-      <workItem from="1605461619393" duration="3311000" />
+      <workItem from="1605461619393" duration="3322000" />
     </task>
     <servers />
   </component>
