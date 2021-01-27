@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using mybooks.contracts;
 using mybooks.dbprovider;
 using mybooks.logic;
 
-namespace mybooks
+namespace mybooks.integration
 {
     public class Interactors
     {
         private readonly BooksRepository _booksRepository;
         private readonly Booklending _booklending = new Booklending();
 
-        public Interactors() : this(new BooksRepository()) {
-        }
-
-        internal Interactors(BooksRepository booksRepository) {
+        public Interactors(BooksRepository booksRepository) {
             _booksRepository = booksRepository;
         }
 

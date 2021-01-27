@@ -29,7 +29,7 @@
         <StackPanel Orientation="Horizontal" Grid.Row="1" >
             <Button x:Name="btnNew" Content="New book" Margin="10" Padding="5" />
             <Button x:Name="btnLend" Content="Lend" Margin="10" Padding="5" />
-            <Button x:Name="btnGetBack" Content="Get back" Margin="10" Padding="5" />
+            <Button x:Name="btnReturn" Content="Returned" Margin="10" Padding="5" />
             <Button x:Name="btnRemove" Content="Remove" Margin="10" Padding="5" />
         </StackPanel>
     </Grid>

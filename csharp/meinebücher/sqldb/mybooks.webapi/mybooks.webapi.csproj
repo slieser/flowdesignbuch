@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\mybooks.contracts\mybooks.contracts.csproj" />
+      <ProjectReference Include="..\mybooks.dbprovider\mybooks.dbprovider.csproj" />
+      <ProjectReference Include="..\mybooks.integration\mybooks.integration.csproj" />
+    </ItemGroup>
+
+
+</Project>

@@ -25,7 +25,7 @@ namespace mybooks
                 var books = interactors.Lend_book(id, name);
                 mainWindow.Update_books(books);
             };
-            mainWindow.Book_got_back += (id) => {
+            mainWindow.Return_book += (id) => {
                 var books = interactors.Return_book(id);
                 mainWindow.Update_books(books);
             };

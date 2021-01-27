@@ -26,12 +26,12 @@ namespace mybooks.ui
                     Lend_book(id.Value, name);
                 }
             };
-            btnGetBack.Click += (o, e) => {
+            btnReturn.Click += (o, e) => {
                 var id = Id_of_selected_book();
                 if (!id.HasValue) {
                     return;
                 }
-                Book_got_back(id.Value);
+                Return_book(id.Value);
             };
             btnRemove.Click += (o, e) => {
                 var id = Id_of_selected_book();
@@ -57,7 +57,7 @@ namespace mybooks.ui
 
         public event Action<long, string> Lend_book;
 
-        public event Action<long> Book_got_back;
+        public event Action<long> Return_book;
 
         public event Action<long> Remove_book;
     }

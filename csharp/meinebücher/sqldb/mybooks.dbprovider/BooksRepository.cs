@@ -11,10 +11,7 @@ namespace mybooks.dbprovider
     {
         private readonly MySqlConnection _connection;
 
-        public BooksRepository() : this("MyBooks") {
-        }
-
-        internal BooksRepository(string databaseName) {
+        public BooksRepository(string databaseName) {
             var connectionString = CreateConnectionString();
             _connection = new MySqlConnection(connectionString);
             _connection.Execute($"USE {databaseName};");
