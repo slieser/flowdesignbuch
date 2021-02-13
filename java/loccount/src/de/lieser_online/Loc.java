@@ -10,14 +10,14 @@ public class Loc {
         result.Total = lines.size();
         result.Loc = lines
                 .stream()
-                .filter(line -> !isLoc(line))
+                .filter(line -> isNotACodeLine(line))
                 .count();
 
         return result;
     }
 
-    private static boolean isLoc(String line) {
+    private static boolean isNotACodeLine(String line) {
         String trimmedLine = line.trim();
-        return trimmedLine.isEmpty() || trimmedLine.startsWith("//");
+        return !(trimmedLine.isEmpty() || trimmedLine.startsWith("//"));
     }
 }
