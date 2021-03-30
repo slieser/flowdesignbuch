@@ -57,11 +57,11 @@ namespace wecker.gui
             lblRestzeit.Content = restzeit.ToString(@"hh\:mm\:ss");
         }
 
-        public void Neuer_Zustand(bool startable, bool stoppable) {
-            btnStart.IsEnabled = startable;
-            btnStopp.IsEnabled = stoppable;
+        public void Neuer_Zustand(bool istGestartet) {
+            btnStart.IsEnabled = !istGestartet;
+            btnStopp.IsEnabled = istGestartet;
 
-            lblRestzeit.Visibility = stoppable ? Visibility.Visible : Visibility.Hidden;
+            lblRestzeit.Visibility = istGestartet ? Visibility.Visible : Visibility.Hidden;
         }
 
         public void Neue_Uhrzeit(DateTime uhrzeit) {

@@ -4,12 +4,12 @@ namespace wecker.logik
 {
     public static class Wecker
     {
-        public static (bool startbar, bool stoppbar) Wecker_gestartet() {
-            return (false, true);
+        public static bool Wecker_gestartet() {
+            return true;
         }
 
-        public static (bool startbar, bool stoppbar) Wecker_gestoppt() {
-            return (true, false);
+        public static bool Wecker_gestoppt() {
+            return false;
         }
 
         public static DateTime Weckzeit_berechnen(TimeSpan restzeit, DateTime uhrzeit) {
