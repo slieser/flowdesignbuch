@@ -4,12 +4,12 @@ namespace fallunterscheidung
 {
     public class Abstrakt
     {
-        public void f(int z, Action<int> onX, Action<string> onY) {
+        public void f(int z, Action<int> onY, Action<string> onZ) {
             if (z == 42) {
-                onX(42);
+                onY(42);
             }
             else {
-                onY("?");
+                onZ("?");
             }
         }
 
@@ -25,11 +25,11 @@ namespace fallunterscheidung
             Console.WriteLine(k);
         }
 
-        public void Integration(int z) {
+        public void Integration(int x) {
             var k = 0;
-            f(z,
-                onX: x => k = A(x),
-                onY: y => k = B(y));
+            f(x,
+                onY: y => k = A(y),
+                onZ: z => k = B(z));
             C(k);
         }
     }
