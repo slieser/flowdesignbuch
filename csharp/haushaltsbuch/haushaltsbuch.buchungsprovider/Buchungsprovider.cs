@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using haushaltsbuch.contracts;
@@ -11,9 +12,9 @@ namespace haushaltsbuch.buchungsprovider
         private const string Filename = "buchungen.csv";
 
         public static void Save(Buchung buchung) {
-            var csv_data = string.Format("{0};{1:d};{2:F};'{3}';'{4}'",
+            var csv_data = string.Format("{0};{1};{2:F};'{3}';'{4}'",
                 BuchungstypenConverter.AsString(buchung.Buchungstyp),
-                buchung.Buchungsdatum,
+                buchung.Buchungsdatum.ToString(CultureInfo.InvariantCulture),
                 buchung.Betrag,
                 buchung.Kategorie,
                 buchung.Memo);
@@ -31,7 +32,7 @@ namespace haushaltsbuch.buchungsprovider
 
             return new Buchung {
                 Buchungstyp = BuchungstypenConverter.FromString(values[0]),
-                Buchungsdatum = DateTime.Parse(values[1]),
+                Buchungsdatum = DateTime.Parse(values[1], CultureInfo.InvariantCulture),
                 Betrag = double.Parse(values[2]),
                 Kategorie = values[3].Trim(new[] { '\'' }),
                 Memo = values[4].Trim(new[] { '\'' })
