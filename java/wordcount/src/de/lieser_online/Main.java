@@ -7,7 +7,7 @@ public class Main {
 	  var interactors = new Interactors();
 
 	  var text = consoleUi.getText();
-	  var numberOfWords = interactors.CountWords(text);
+	  var numberOfWords = interactors.countWords(text);
 	  consoleUi.showResult(numberOfWords);
     }
 }
