@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wordwrap", "wordwrap\wordwrap.csproj", "{D0EFB3EA-3077-4547-89FE-22A053BFC548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wordwrap.tests", "wordwrap.tests\wordwrap.tests.csproj", "{8592953D-6613-4BBD-9FCA-1D89D478E402}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0EFB3EA-3077-4547-89FE-22A053BFC548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EFB3EA-3077-4547-89FE-22A053BFC548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EFB3EA-3077-4547-89FE-22A053BFC548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EFB3EA-3077-4547-89FE-22A053BFC548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8592953D-6613-4BBD-9FCA-1D89D478E402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8592953D-6613-4BBD-9FCA-1D89D478E402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8592953D-6613-4BBD-9FCA-1D89D478E402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8592953D-6613-4BBD-9FCA-1D89D478E402}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
