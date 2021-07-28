@@ -1,15 +1,16 @@
 package de.lieser_online;
 
 import java.util.List;
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 public class Interactors {
-    public static void Start(String[] args, Consumer<LocStat> onLocStat, Runnable onFinished) {
-        String path = CommandLine.GetPath(args);
-        FilesystemProvider.FindSourceFilenames(path,
+    public static void start(String[] args, Consumer<LocStat> onLocStat, Runnable onFinished) {
+        String path = CommandLine.getDirectory(args);
+        FilesystemProvider.findSourceFilenames(path,
             filename -> {
-                List<String> lines = CodefileProvider.ReadFile(filename);
-                LocStat locstat = Loc.CountLines(filename, lines);
+                List<String> lines = CodefileProvider.readFile(filename);
+                LocStat locstat = Loc.countLines(filename, lines);
                 onLocStat.accept(locstat);
             },
             () -> {

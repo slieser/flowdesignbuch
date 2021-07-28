@@ -9,7 +9,7 @@ public class Wecker {
     }
 
     public WeckerZustand IstGestartet() {
-        return WeckerZustand.Geatartet;
+        return WeckerZustand.Gestartet;
     }
 
     public Duration RestzeitBerechnen(ZonedDateTime weckzeit, ZonedDateTime uhrzeit) {

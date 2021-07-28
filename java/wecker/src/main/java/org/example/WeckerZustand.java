@@ -1,3 +1,3 @@
 package org.example;
 
-public enum WeckerZustand { Geatartet, Gestoppt }
+public enum WeckerZustand {Gestartet, Gestoppt }

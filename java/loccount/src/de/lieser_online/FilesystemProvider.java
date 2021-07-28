@@ -7,12 +7,12 @@ import java.nio.file.Paths;
 import java.util.function.Consumer;
 
 public class FilesystemProvider {
-    public static void FindSourceFilenames(String directory, Consumer<String> onFilename, Runnable onFinished) {
-        Walk(directory, onFilename);
+    public static void findSourceFilenames(String directory, Consumer<String> onFilename, Runnable onFinished) {
+        walk(directory, onFilename);
         onFinished.run();
     }
 
-    private static void Walk(String directory, Consumer<String> onFilename) {
+    private static void walk(String directory, Consumer<String> onFilename) {
         File root = new File(directory);
         File[] list = root.listFiles();
 
@@ -20,7 +20,7 @@ public class FilesystemProvider {
 
         for (File file : list) {
             if (file.isDirectory()) {
-                Walk(file.getAbsolutePath(), onFilename);
+                walk(file.getAbsolutePath(), onFilename);
             } else if (file.getAbsolutePath().endsWith(".java")){
                 try {
                     onFilename.accept(file.getCanonicalPath());
@@ -31,7 +31,7 @@ public class FilesystemProvider {
         }
     }
 
-    public static void GetSourcecodeFiles2(String directory, Consumer<String> onFilename, Runnable onFinished) {
+    public static void findSourcecodeFiles(String directory, Consumer<String> onFilename, Runnable onFinished) {
         try {
             Files.walk(Paths.get(directory))
                 .filter(path -> Files.isRegularFile(path) && path.toString().endsWith(".java"))

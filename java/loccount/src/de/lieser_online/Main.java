@@ -5,10 +5,10 @@ public class Main {
     public static void main(String[] args) {
         ConsoleUi ui = new ConsoleUi();
 
-        Interactors.Start(
+        Interactors.start(
                 args,
-                locstat -> ui.ShowLoc(locstat),
-                () -> ui.ShowSum());
+                (locstat) -> ui.showLoc(locstat),
+                () -> ui.showSum());
     }
 
 }

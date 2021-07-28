@@ -6,12 +6,12 @@ import static org.junit.Assert.assertEquals;
 
 public class CommandLineTests {
     @Test
-    public void First_argument_is_given_as_path() {
-        assertEquals("1", CommandLine.GetPath(new String[] {"1", "2"}));
+    public void first_argument_is_returned_as_directory() {
+        assertEquals("1", CommandLine.getDirectory(new String[] {"1", "2"}));
     }
 
     @Test
-    public void This_parth_is_given_if_args_is_empty() {
-        assertEquals("./", CommandLine.GetPath(new String[] {}));
+    public void current_directory_is_returned_if_args_is_empty() {
+        assertEquals("./", CommandLine.getDirectory(new String[] {}));
     }
 }

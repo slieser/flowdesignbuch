@@ -10,9 +10,9 @@ import static org.junit.Assert.assertTrue;
 
 public class FilesystemProviderTest {
     @Test
-    public void Test() {
+    public void example_files_are_found() {
         List<String> result = new ArrayList<String>();
-        FilesystemProvider.FindSourceFilenames(
+        FilesystemProvider.findSourceFilenames(
                 "./tests/de/lieser_online/testdata",
                 filename -> { result.add(filename); },
                 () -> { result.add("finished");});
