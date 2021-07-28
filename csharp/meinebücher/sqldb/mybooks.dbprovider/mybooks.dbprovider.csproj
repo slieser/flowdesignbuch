@@ -2,15 +2,14 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <UseWindowsForms>true</UseWindowsForms>
     <LangVersion>default</LangVersion>
-    <TargetFrameworks>netcoreapp3.1;netstandard2.0</TargetFrameworks>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\mybooks.contracts\mybooks.contracts.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="Dapper" Version="2.0.90" />
     <PackageReference Include="MySql.Data" Version="8.0.21" />
   </ItemGroup>
 </Project>
