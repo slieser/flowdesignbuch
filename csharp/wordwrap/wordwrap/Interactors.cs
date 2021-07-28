@@ -23,16 +23,16 @@ namespace wordwrap
 
         private string WrapParagraph(string paragraph, int width) {
             var words = SplitIntoWords(paragraph);
-            return CreateParagraph(words, width);
+            var lines = CreateLines(words, width);
+            return CreateParagraph(lines);
+        }
+
+        private string CreateParagraph(IEnumerable<string> lines) {
+            return string.Join(Environment.NewLine, lines);
         }
 
         private IEnumerable<string> SplitIntoWords(string paragraph) {
             return paragraph.Split(new []{ " ", "\t", Environment.NewLine}, StringSplitOptions.RemoveEmptyEntries);
-        }
-
-        private string CreateParagraph(IEnumerable<string> words, int width) {
-            var lines = CreateLines(words, width);
-            return string.Join(Environment.NewLine, lines);
         }
 
         private IEnumerable<string> CreateLines(IEnumerable<string> words, int width) {

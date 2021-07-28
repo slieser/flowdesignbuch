@@ -15,13 +15,14 @@ namespace wecker.app
             _timer = new TimerProvider();
             _timer.Tick += () => {
                 var uhrzeit = UhrzeitProvider.Aktuelle_Uhrzeit();
-                _sync.Process(() => {
-                    onTimer(uhrzeit);
-                });
+                _sync.Process(() => onTimer(uhrzeit));
             };
         }
 
-        public void Start_mit_Weckzeit(DateTime weckzeit, Action<bool> onZustand, Action<TimeSpan> onRestzeit) {
+        public void Start_mit_Weckzeit(
+                DateTime weckzeit, 
+                Action<bool> onZustand, 
+                Action<TimeSpan> onRestzeit) {
             var istGestartet = Wecker.Wecker_gestartet();
             onZustand(istGestartet);
 
@@ -41,9 +42,9 @@ namespace wecker.app
             });
         }
 
-        public void Start_mit_Restzeit(TimeSpan restzeit, Action<bool> onZustand, Action<TimeSpan> onRestzeit) {
+        public void Start_mit_Dauer(TimeSpan dauer, Action<bool> onZustand, Action<TimeSpan> onRestzeit) {
             var uhrzeit = UhrzeitProvider.Aktuelle_Uhrzeit();
-            var weckzeit = Wecker.Weckzeit_berechnen(restzeit, uhrzeit);
+            var weckzeit = Wecker.Weckzeit_berechnen(dauer, uhrzeit);
             Start_mit_Weckzeit(weckzeit, onZustand, onRestzeit);
         }
 

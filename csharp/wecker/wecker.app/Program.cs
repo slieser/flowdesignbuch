@@ -23,7 +23,7 @@ namespace wecker.app
             };
 
             mainWindow.Start_mit_Restzeit += restzeit => {
-                interactors.Start_mit_Restzeit(restzeit,
+                interactors.Start_mit_Dauer(restzeit,
                     istGestartet => mainWindow.Neuer_Zustand(istGestartet),
                     restzeit2 => mainWindow.Neue_Restzeit(restzeit2));
             };

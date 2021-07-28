@@ -61,7 +61,8 @@ namespace wecker.gui
             btnStart.IsEnabled = !istGestartet;
             btnStopp.IsEnabled = istGestartet;
 
-            lblRestzeit.Visibility = istGestartet ? Visibility.Visible : Visibility.Hidden;
+            lblRestzeit.Visibility = istGestartet ? 
+                Visibility.Visible : Visibility.Hidden;
         }
 
         public void Neue_Uhrzeit(DateTime uhrzeit) {

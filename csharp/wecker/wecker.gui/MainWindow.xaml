@@ -17,18 +17,24 @@
 
         <DockPanel  Grid.Column="0" Grid.Row="0"  >
             <RadioButton x:Name="radioWeckzeit" Content="Weckzeit" Margin="10" FontSize="12"/>
-            <TextBox x:Name="txtWeckzeit" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Width="60"/>
+            <TextBox x:Name="txtWeckzeit" VerticalAlignment="Top" HorizontalAlignment="Right" 
+                Margin="10" Width="60"/>
         </DockPanel>
 
         <DockPanel  Grid.Column="0" Grid.Row="1"  >
             <RadioButton x:Name="radioRestzeit" Content="Restzeit" Margin="10" FontSize="12"/>
-            <TextBox x:Name="txtRestzeit" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Width="60"/>
+            <TextBox x:Name="txtRestzeit" VerticalAlignment="Top" HorizontalAlignment="Right" 
+                Margin="10" Width="60"/>
         </DockPanel>
         
-        <Button x:Name="btnStart" Grid.Column="1" Grid.Row="0" Content="Start" Margin="5" Padding="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button x:Name="btnStopp" Grid.Column="1" Grid.Row="1" Content="Stopp" Margin="5" Padding="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="btnStart" Grid.Column="1" Grid.Row="0" Content="Start" Margin="5" 
+            Padding="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="btnStopp" Grid.Column="1" Grid.Row="1" Content="Stopp" Margin="5" 
+            Padding="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-    <Label x:Name="lblUhrzeit" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Content="Uhrzeit" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-    <Label x:Name="lblRestzeit" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Content="Restzeit" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Label x:Name="lblUhrzeit" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" 
+        Content="Uhrzeit" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Label x:Name="lblRestzeit" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" 
+        Content="Restzeit" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Window>
