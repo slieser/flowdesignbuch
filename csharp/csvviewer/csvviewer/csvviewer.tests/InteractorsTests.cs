@@ -16,17 +16,22 @@ namespace csvviewer.tests
         }
 
         [Test]
-        public void Start() {
+        public void Start_mit_notwendigen_Parametern() {
             var result = _sut.Start(new[] {_filename}).ToArray();
             Assert.That(result.Length, Is.EqualTo(11));
             Assert.That(result[0].Values, Is.EqualTo(new[]{"Name", "Age", "City"}));
         }
 
         [Test]
-        public void Start_mit_zwei_Parametern() {
+        public void Start_mit_optionalem_PageLength_Parameter() {
             var result = _sut.Start(new[] {_filename, "3"}).ToArray();
             Assert.That(result.Length, Is.EqualTo(4));
             Assert.That(result[0].Values, Is.EqualTo(new[]{"Name", "Age", "City"}));
+        }
+
+        [Test]
+        public void Start_WithOptionalPageLengthParameter_ReturnsRecordsForFirstPage() {
+            
         }
     }
 }
