@@ -2,93 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d98cb41-d1d8-45b5-890a-0c25e30bd724" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../meinebücher/mybooks.integration/Interactors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../meinebücher/mybooks.integration/Interactors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../meinebücher/mybooks/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../meinebücher/mybooks/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../meinebücher/mybooks/mybooks.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../meinebücher/mybooks/mybooks.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.wordcount/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.wordcount/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.wordcount/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.wordcount/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.wordcount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.wordcount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.wordcount/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.wordcount/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.wordcount/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../python/wordcount/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../python/wordcount/main.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wordcount/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-              <folding>
-                <marker date="1516809189722" expanded="true" signature="19:357" ph="{...}" />
-                <marker date="1516809189722" expanded="true" signature="55:355" ph="{...}" />
-                <marker date="1516809189722" expanded="true" signature="109:349" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordcount.tests/WordCounterTests.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-              <folding>
-                <marker date="1517303629705" expanded="true" signature="49:306" ph="{...}" />
-                <marker date="1517303629705" expanded="true" signature="103:304" ph="{...}" />
-                <marker date="1517303629705" expanded="true" signature="163:298" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordcount/WordCounter.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-              <folding>
-                <marker date="1516809189716" expanded="false" signature="6:66" ph="..." />
-                <marker date="1516809189716" expanded="true" signature="87:607" ph="{...}" />
-                <marker date="1516809189716" expanded="true" signature="118:605" ph="{...}" />
-                <marker date="1516809189716" expanded="true" signature="168:322" ph="{...}" />
-                <marker date="1516809189716" expanded="true" signature="392:486" ph="{...}" />
-                <marker date="1516809189716" expanded="true" signature="554:599" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordcount/Ui.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding>
-                <marker date="1516809189725" expanded="true" signature="34:403" ph="{...}" />
-                <marker date="1516809189725" expanded="true" signature="56:401" ph="{...}" />
-                <marker date="1516809189725" expanded="true" signature="95:222" ph="{...}" />
-                <marker date="1516809189725" expanded="true" signature="281:395" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/wordcount/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/wordcount/Ui.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50F279FA-6861-4BA4-946C-89A9BF9340AB/ed/bbe3e506/Assert.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/.config/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/wordcount/WordCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/wordcount.tests/WordCounterTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/wordcount/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -106,6 +37,7 @@
     <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
+  <component name="ProjectId" id="1vwhWtNjPLuIdjgq41UWetQRioA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -140,6 +72,10 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
@@ -149,18 +85,7 @@
     <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Project.wordcount">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
@@ -178,7 +103,7 @@
       <option name="PROJECT_KIND" value="None" />
       <option name="PROJECT_TFM" value="" />
       <method v="2">
-        <option name="Build" enabled="true" />
+        <option name="Build" />
       </method>
     </configuration>
     <configuration name="wordcount" type="DotNetProject" factoryName=".NET Project" temporary="true">
@@ -196,7 +121,7 @@
       <option name="PROJECT_KIND" value="Console" />
       <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7" />
       <method v="2">
-        <option name="Build" enabled="true" />
+        <option name="Build" />
       </method>
     </configuration>
     <list>
@@ -209,6 +134,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -223,6 +149,7 @@
       <workItem from="1517303582525" duration="287000" />
       <workItem from="1517303889044" duration="500000" />
       <workItem from="1543497005807" duration="1998000" />
+      <workItem from="1627479104662" duration="4000" />
     </task>
     <servers />
   </component>
@@ -272,6 +199,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
