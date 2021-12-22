@@ -1,5 +1,6 @@
 from record import Record
 
+
 def create_records(lines):
     result = []
     for line in lines:

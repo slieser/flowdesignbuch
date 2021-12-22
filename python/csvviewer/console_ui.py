@@ -4,13 +4,14 @@ def show(records):
         print(line)
     print("F)irst P)rev N)ext L)ast E)xit")
 
+
 def run():
     exit = False
     while not exit:
         ch = input()
-        if(ch == "e"):
+        if ch == "e":
             exit = True
-        elif(ch == "n"):
+        elif ch == "n":
             print("next")
 
 
