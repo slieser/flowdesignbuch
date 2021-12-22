@@ -7,7 +7,7 @@ from ui import get_text, show_count
 
 if __name__ == '__main__':
     filename = get_filename(sys.argv)
-    if(filename == ""):
+    if filename == "":
         text = get_text()
     else:
         text = read_file(filename)

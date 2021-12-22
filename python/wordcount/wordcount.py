@@ -3,4 +3,4 @@ def split_into_words(text):
 
 
 def filter_stopwords(words, stopwords):
-    return [word for word in words if not word in stopwords]
+    return [word for word in words if word not in stopwords]
