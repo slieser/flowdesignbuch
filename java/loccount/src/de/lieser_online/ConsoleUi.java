@@ -6,7 +6,8 @@ public class ConsoleUi {
     public void showLoc(LocStat locstat) {
         sum.Loc += locstat.Loc;
         sum.Total += locstat.Total;
-        System.out.println(locstat.Filename + ", " + locstat.Loc + ", " + locstat.Total);
+        System.out.println(locstat.Filename + ", " + 
+            locstat.Loc + ", " + locstat.Total);
     }
 
     public void showSum() {

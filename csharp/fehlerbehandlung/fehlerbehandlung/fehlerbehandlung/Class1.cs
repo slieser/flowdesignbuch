@@ -79,4 +79,27 @@ namespace fehlerbehandlung
             }
         }
     }
+
+
+    public class Class5
+    {
+        public (bool hasResult, string filename) GetFilename(string[] args) {
+            if (args.Length > 0) {
+                var filename = args[0];
+                return (true, filename);
+            }
+            return (false, "");
+        }
+
+        public void Usage() {
+            var args = new[]{""};
+            var (hasResult, filename) = GetFilename(args);
+            if (hasResult) {
+                Console.WriteLine(filename);
+            }
+            else {
+                // ...
+            }
+        }
+    }
 }

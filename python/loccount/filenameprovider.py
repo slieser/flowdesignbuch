@@ -1,17 +1,19 @@
 import os
 
-def FindSourcefiles(path, onSourcefile, onFinished):
-    path = os.path.abspath(path)
-    _FindSourceFiles(path, onSourcefile)
-    onFinished()
 
-def _FindSourceFiles(path, onSourcefile):
+def find_source_filenames(path, on_sourcefile, on_finished):
+    path = os.path.abspath(path)
+    _find_source_filenames(path, on_sourcefile)
+    on_finished()
+
+
+def _find_source_filenames(path, on_sourcefile):
     for root, dirs, files in os.walk(path):
         if root.endswith("venv"):
             return
         for name in files:
             if name.endswith(".py"):
-                qualifiedName = os.path.join(root, name)
-                onSourcefile(qualifiedName)
+                qualified_name = os.path.join(root, name)
+                on_sourcefile(qualified_name)
         for dir in dirs:
-            _FindSourceFiles(dir, onSourcefile)
+            _find_source_filenames(dir, on_sourcefile)

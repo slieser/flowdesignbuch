@@ -1,7 +1,8 @@
 import unittest
 
-from commandline import GetPath
+from commandline import get_path
 
-class commandlineTests(unittest.TestCase):
+
+class CommandlineTests(unittest.TestCase):
     def test_first_argument(self):
-        self.assertEqual(GetPath(["_", "a", "_"]), "a")
+        self.assertEqual(get_path(["_", "a", "_"]), "a")

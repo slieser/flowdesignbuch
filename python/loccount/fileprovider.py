@@ -1,4 +1,2 @@
-def ReadFile(filename):
-    file = open(filename, "r")
-    content = file.read()
-    return content.split("\n")
+def read_file(filename):
+    return [line.rstrip() for line in open(filename)]

@@ -1,40 +1,40 @@
 import unittest
 
-from linesofcode import isLoc, CreateLOCstat
+from linesofcode import is_loc, create_locstat
 
 
-class isLoc_Tests(unittest.TestCase):
+class IslocTests(unittest.TestCase):
     def test_empty_line(self):
-        self.assertEqual(isLoc(""), False)
+        self.assertEqual(is_loc(""), False)
 
     def test_blank(self):
-        self.assertEqual(isLoc(" "), False)
+        self.assertEqual(is_loc(" "), False)
 
     def test_multiple_blanks(self):
-        self.assertEqual(isLoc("   "), False)
+        self.assertEqual(is_loc("   "), False)
 
     def test_tab(self):
-        self.assertEqual(isLoc("\t"), False)
+        self.assertEqual(is_loc("\t"), False)
 
     def test_multiple_tabs(self):
-        self.assertEqual(isLoc("\t\t\t"), False)
+        self.assertEqual(is_loc("\t\t\t"), False)
 
     def test_whitespace(self):
-        self.assertEqual(isLoc(" \t \t"), False)
+        self.assertEqual(is_loc(" \t \t"), False)
 
     def test_comment(self):
-        self.assertEqual(isLoc("#"), False)
+        self.assertEqual(is_loc("#"), False)
 
     def test_whitespace_comment(self):
-        self.assertEqual(isLoc("  \t  #"), False)
+        self.assertEqual(is_loc("  \t  #"), False)
 
     def test_code(self):
-        self.assertEqual(isLoc("a"), True)
+        self.assertEqual(is_loc("a"), True)
 
 
-class CreateLOCstat_Tests(unittest.TestCase):
+class CreateLocStatTests(unittest.TestCase):
     def test_example(self):
-        (filename, total, loc) = CreateLOCstat("fn.py", ["", "a", "#"])
+        (filename, total, loc) = create_locstat("fn.py", ["", "a", "#"])
         self.assertEqual(filename, "fn.py")
         self.assertEqual(3, total)
         self.assertEqual(1, loc)

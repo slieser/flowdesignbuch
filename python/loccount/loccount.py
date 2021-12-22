@@ -1,12 +1,13 @@
 import sys
 
-from consoleui import ShowLocStat, ShowTotal
+from consoleui import ConsoleUi
 from interactors import start
 
 
 def main():
-    start(sys.argv, ShowLocStat, ShowTotal)
+    ui = ConsoleUi()
+    start(sys.argv, ui.show_loc, ui.show_sum)
+
 
 if __name__ == "__main__":
     main()
-
