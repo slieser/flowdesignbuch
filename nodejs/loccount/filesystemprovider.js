@@ -1,7 +1,7 @@
 const walk = require("walk");
 const path = require("path");
 
-exports.GetSourcecodeFiles = function(directory, onFilename, onFinished) {
+exports.FindSourceFilenames = function(directory, onFilename, onFinished) {
     let options = {
         followLinks: false
     };

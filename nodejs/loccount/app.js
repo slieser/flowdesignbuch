@@ -6,7 +6,7 @@ const ui = require("./ui");
 
 const path = commandline.GetPath(process.argv);
 
-filesystemprovider.GetSourcecodeFiles(path,
+filesystemprovider.FindSourceFilenames(path,
     filename => {
         let lines = codefileprovider.ReadFile(filename);
         let locstat = loc.CountLoc(filename, lines);
@@ -14,5 +14,14 @@ filesystemprovider.GetSourcecodeFiles(path,
     },
     () => {
         ui.ShowSum();
+    }
+);
+
+filesystemprovider.FindSourceFilenames(path,
+    filename => {
+        console.log(filename)
+    },
+    () => {
+        console.log("Finished!")
     }
 );
