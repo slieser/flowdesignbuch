@@ -1,7 +1,7 @@
 #include <iostream>
 #include <filesystem>
 
-void GetSourceCodeFiles(
+void findSourceFilenames(
         std::string directory,
         std::function<void(std::string filename)> onFilename,
         std::function<void()> onFinished) {
@@ -11,9 +11,11 @@ void GetSourceCodeFiles(
 
     while (iter != end)
     {
-        onFilename(iter->path().string());
+        if(iter->path().extension() == ".cpp") {
+            onFilename(iter->path().string());
+        }
 
-        error_code ec;
+        std::error_code ec;
         iter.increment(ec);
         if (ec) {
             std::cerr << "Error While Accessing : " << iter->path().string() << " :: " << ec.message() << '\n';
@@ -23,12 +25,12 @@ void GetSourceCodeFiles(
 }
 
 int main() {
-    GetSourceCodeFiles("./*.cpp",
-            [](std::string filename) {
-                std::cout << filename << std::endl;
-            },
-            [](){
-                std::cout << "Finished!" << std::endl;
-            });
+    findSourceFilenames("../",
+        [](std::string filename) {
+            std::cout << filename << std::endl;
+        },
+        []() {
+            std::cout << "Finished!" << std::endl;
+        });
     return 0;
 }
