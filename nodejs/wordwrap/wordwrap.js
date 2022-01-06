@@ -41,10 +41,11 @@ exports.CreateLines = function(paragraphs, length) {
             lines.push("");
         }
         paragraph.forEach(word => {
+            let newline = line + " " + word;
             if(line === "")
                 line = word;
-            else if((line + word).length + 1 <= length)
-                line += " " + word;
+            else if(newline.length <= length)
+                line = newline
             else {
                 lines.push(line);
                 line = word;
