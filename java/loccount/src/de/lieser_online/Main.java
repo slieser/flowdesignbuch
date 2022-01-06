@@ -11,4 +11,10 @@ public class Main {
                 () -> ui.showSum());
     }
 
+    public static void demo(String[] args) {
+        FilesystemProvider.findSourceFilenames("./",
+                filename -> System.out.println(filename),
+                () -> System.out.println("Finished!"));
+    }
+
 }

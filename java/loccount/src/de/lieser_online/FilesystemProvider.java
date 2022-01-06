@@ -31,7 +31,7 @@ public class FilesystemProvider {
         }
     }
 
-    public static void findSourcecodeFiles(String directory, Consumer<String> onFilename, Runnable onFinished) {
+    public static void findSourceFilenames2(String directory, Consumer<String> onFilename, Runnable onFinished) {
         try {
             Files.walk(Paths.get(directory))
                 .filter(path -> Files.isRegularFile(path) && path.toString().endsWith(".java"))
