@@ -10,7 +10,7 @@ namespace fehlerbehandlung
             if (args.Length > 0) {
                 return args[0];
             }
-            return "";
+            return "";     // !!! FALSCH !!!
         }
     }
 
