@@ -17,7 +17,7 @@
         }
     }
 
-    public class Zwischensumme3
+    public class Zwischensumme
     {
         internal readonly State<int> _state = new State<int>();
     
@@ -36,7 +36,7 @@
     public class Verwender
     {
         public void Summiere() {
-            var zwischensumme = new Zwischensumme3();
+            var zwischensumme = new Zwischensumme();
             var summe = zwischensumme.Aktuelle_Zwischensumme_berechnen(1);
         }
 
@@ -61,7 +61,7 @@
         }
     }
 
-    public class Zwischensumme
+    public class Zwischensumme42
     {
         private int _summe;
         

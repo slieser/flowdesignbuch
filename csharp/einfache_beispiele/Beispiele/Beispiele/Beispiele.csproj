@@ -41,11 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abhängigkeiten.cs" />
-    <Compile Include="Entscheidung.cs" />
+    <Compile Include="Fallunterscheidung.cs" />
     <Compile Include="Kreditwürdigkeit.cs" />
     <Compile Include="Simple.cs" />
     <Compile Include="TicTacToe.cs" />
-    <Compile Include="Zwischensumme.cs" />
+    <Compile Include="Zwischensumme42.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

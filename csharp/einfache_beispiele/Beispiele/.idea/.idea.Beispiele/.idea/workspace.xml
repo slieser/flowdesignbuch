@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4500e4d4-6294-4d39-bd2e-d9a3954bcde5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beispiele/Entscheidung.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/.idea/.idea.loccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/CodefileProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/CodefileProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/CommandLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/CommandLine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/FileProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/FileProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/loccount.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/loccount.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mystocks/mystocks/mystocks.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../mystocks/mystocks/mystocks.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mystocks/mystocks/nuget.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Beispiele/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beispiele/Beispiele.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele/Beispiele.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beispiele/Zwischensumme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Beispiele/Zwischensumme42.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tictactoe/tictactoe/tictactoe.ui/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tictactoe/tictactoe/tictactoe.ui/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nodejs/loccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/loccount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nodejs/wordcount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/wordcount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nodejs/wordcount/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/wordcount/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nodejs/wordcount/interactors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/wordcount/interactors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nodejs/wordcount/test/interactorstests.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/wordcount/test/interactorstests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +28,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Beispiele/Zwischensumme.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele/Simple.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Beispiele/Zwischensumme42.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Beispiele/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Beispiele.Tests/ZwischensummeTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele/Kreditwürdigkeit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Beispiele/Abhängigkeiten.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
@@ -49,6 +55,8 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -95,11 +103,24 @@
       <workItem from="1538741574857" duration="1260000" />
       <workItem from="1585995840003" duration="853000" />
       <workItem from="1603644788044" duration="1234000" />
+      <workItem from="1642073555109" duration="1452000" />
+      <workItem from="1642075783167" duration="1075000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

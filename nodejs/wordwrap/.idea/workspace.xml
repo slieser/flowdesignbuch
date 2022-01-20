@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbf06ba2-9505-4614-b951-bb96a6647ee8" name="Default" comment="" />
+    <list default="true" id="dbf06ba2-9505-4614-b951-bb96a6647ee8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele.Tests/ZwischensummeTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele.Tests/ZwischensummeTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Beispiele.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Beispiele.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Zwischensumme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Zwischensumme42.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.ui/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.ui/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../loccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../loccount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordcount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordcount/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordcount/interactors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/interactors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordcount/test/interactorstests.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordcount/test/interactorstests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +42,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -211,6 +241,7 @@
       <workItem from="1605599356659" duration="272000" />
       <workItem from="1641458323102" duration="1107000" />
       <workItem from="1641460821537" duration="45000" />
+      <workItem from="1642669298027" duration="256000" />
     </task>
     <servers />
   </component>

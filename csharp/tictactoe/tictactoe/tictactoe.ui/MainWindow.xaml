@@ -32,7 +32,8 @@
         <Button x:Name="btn7" Grid.Row="2" Grid.Column="1"/>
         <Button x:Name="btn8" Grid.Row="2" Grid.Column="2"/>
         
-        <TextBlock x:Name="txtMeldung" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="10"/>
+        <TextBlock x:Name="txtMeldung" Grid.Row="3"
+            Grid.Column="0" Grid.ColumnSpan="3" Margin="10"/>
     </Grid>
 </Window>
 

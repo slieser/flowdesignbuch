@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca668131-c72b-47a9-9958-41c455e148e5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/.idea/.idea.Beispiele/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele.Tests/ZwischensummeTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele.Tests/ZwischensummeTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Beispiele.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Beispiele.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Zwischensumme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/einfache_beispiele/Beispiele/Beispiele/Zwischensumme42.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/.idea/.idea.tictactoe/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.ui/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/tictactoe/tictactoe/tictactoe.ui/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../loccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../loccount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactors.js" beforeDir="false" afterPath="$PROJECT_DIR$/interactors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/interactorstests.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/interactorstests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordwrap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordwrap/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wordwrap/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordwrap/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordwrap/integration.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordwrap/interactors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordwrap/test/integrationtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/../wordwrap/test/interactorstests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +44,9 @@
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -61,11 +82,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Mocha.test/wordcounttests.js">
@@ -180,6 +203,8 @@
       <workItem from="1575030708223" duration="1000" />
       <workItem from="1605599009423" duration="194000" />
       <workItem from="1605599242111" duration="386000" />
+      <workItem from="1642075109263" duration="629000" />
+      <workItem from="1642669286787" duration="266000" />
     </task>
     <servers />
   </component>
