@@ -45,6 +45,7 @@
     <Compile Include="Media_Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimerProvider.cs" />
+    <Compile Include="TimerProviderSimple.cs" />
     <Compile Include="UhrzeitProvider.cs" />
     <Compile Include="Wecker.cs" />
   </ItemGroup>

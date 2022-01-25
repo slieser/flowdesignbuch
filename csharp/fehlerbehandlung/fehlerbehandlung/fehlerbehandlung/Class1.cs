@@ -16,7 +16,10 @@ namespace fehlerbehandlung
 
     public class Class2
     {
-        public void GetFilename(string[] args, Action<string> onFilename, Action onNoFilename) {
+        public void GetFilename(
+                string[] args, 
+                Action<string> onFilename, 
+                Action onNoFilename) {
             if (args.Length > 0) {
                 onFilename(args[0]);
             }

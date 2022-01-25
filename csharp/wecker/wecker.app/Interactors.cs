@@ -42,7 +42,7 @@ namespace wecker.app
             });
         }
 
-        public void Start_mit_Dauer(TimeSpan dauer, Action<bool> onZustand, Action<TimeSpan> onRestzeit) {
+        public void Start_mit_Restzeit(TimeSpan dauer, Action<bool> onZustand, Action<TimeSpan> onRestzeit) {
             var uhrzeit = UhrzeitProvider.Aktuelle_Uhrzeit();
             var weckzeit = Wecker.Weckzeit_berechnen(dauer, uhrzeit);
             Start_mit_Weckzeit(weckzeit, onZustand, onRestzeit);

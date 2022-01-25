@@ -4,11 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         ConsoleUi ui = new ConsoleUi();
-
-        Interactors.start(
-                args,
-                (locstat) -> ui.showLoc(locstat),
-                () -> ui.showSum());
+        Interactors.start(args, ui::showLoc, ui::showSum);
     }
 
     public static void demo(String[] args) {

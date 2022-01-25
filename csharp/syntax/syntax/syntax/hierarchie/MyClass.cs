@@ -38,6 +38,7 @@ namespace syntax.hierarchie.noX
         private int F2(int q) {
             return q * 2;
         }
+
         private int F3(int r) {
             return r - 3;
         }
@@ -66,24 +67,28 @@ namespace syntax.hierarchie.noY
         }
     }
 
-    public class MyClass1 {
+    public class MyClass1
+    {
         public int F1(int x) {
             return x + 1;
         }
     }
 
-    public class MyClass2 {
+    public class MyClass2
+    {
         public int F2(int q) {
             return q * 2;
         }
     }
 
-    public class MyClass3 {
+    public class MyClass3
+    {
         public int F3(int r) {
             return r - 3;
         }
     }
 }
+
 namespace syntax.hierarchie.no2
 {
     public class MyClass
@@ -91,12 +96,12 @@ namespace syntax.hierarchie.no2
         public void H(int x, Action<int> continueWith) {
             F(x, y => G(y, continueWith));
         }
-    
+
         private void F(int x, Action<int> continueWith) {
             var y = x + 1;
             continueWith(y);
         }
-    
+
         private void G(int y, Action<int> continueWith) {
             var z = y * 2;
             continueWith(z);
@@ -104,35 +109,37 @@ namespace syntax.hierarchie.no2
     }
 }
 
-namespace syntax.hierarchie.no3 {
-public class Integration
+namespace syntax.hierarchie.no3
 {
-	public void H(int x) {
-		var operations = new Operations();
- 
-		operations.Result_of_F += operations.G;
-		operations.Result_of_G += z => Result_of_H(z);
- 
-		operations.F(x);
-	}
- 
-	public event Action<int> Result_of_H;
-}
- 
- 
-public class Operations {
-	public void F(int x) {
-		var y = x + 1;
-		Result_of_F(y);
-	}
- 
-	public event Action<int> Result_of_F;
- 
-	public void G(int y) {
-		var z = y * 2;
-		Result_of_G(z);
-	}
- 
-	public event Action<int> Result_of_G;
-}
+    public class Integration
+    {
+        public void H(int x) {
+            var operations = new Operations();
+
+            operations.Result_of_F += operations.G;
+            operations.Result_of_G += z => Result_of_H(z);
+
+            operations.F(x);
+        }
+
+        public event Action<int> Result_of_H;
+    }
+
+
+    public class Operations
+    {
+        public void F(int x) {
+            var y = x + 1;
+            Result_of_F(y);
+        }
+
+        public event Action<int> Result_of_F;
+
+        public void G(int y) {
+            var z = y * 2;
+            Result_of_G(z);
+        }
+
+        public event Action<int> Result_of_G;
+    }
 }

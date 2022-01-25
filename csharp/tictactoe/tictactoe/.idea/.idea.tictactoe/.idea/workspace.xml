@@ -24,25 +24,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30e19516-6e35-4e84-b8ce-7693553cfc27" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asynchronous/asynchronous/demoapp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../asynchronous/asynchronous/demoapp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/.idea/.idea.Beispiele/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/Beispiele.Tests/ZwischensummeTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/Beispiele.Tests/ZwischensummeTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/Beispiele/Beispiele.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/Beispiele/Beispiele.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/Beispiele/Zwischensumme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/Beispiele/Zwischensumme42.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/Beispiele/Zwischensumme42.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../einfache_beispiele/Beispiele/Beispiele/Zwischensumme42.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fehlerbehandlung/fehlerbehandlung/fehlerbehandlung/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../fehlerbehandlung/fehlerbehandlung/fehlerbehandlung/Class1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../haushaltsbuch/haushaltsbuch/Interactors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../haushaltsbuch/haushaltsbuch/Interactors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../haushaltsbuch/haushaltsbuch/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../haushaltsbuch/haushaltsbuch/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../loccount/loccount/loccount/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../loccount/loccount/loccount/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../questionnaire/questionnaire/questionnaire/Fragebogen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../questionnaire/questionnaire/questionnaire/Fragebogen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../syntax/syntax/syntax/fallunterscheidung/CheckoutProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../syntax/syntax/syntax/fallunterscheidung/CheckoutProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../syntax/syntax/syntax/hierarchie/MyClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../syntax/syntax/syntax/hierarchie/MyClass.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tictactoe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tictactoe/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.ui/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.ui/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../nodejs/loccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/loccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../nodejs/wordcount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/wordcount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../nodejs/wordcount/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/wordcount/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../nodejs/wordcount/interactors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/wordcount/interactors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../nodejs/wordcount/test/interactorstests.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../nodejs/wordcount/test/interactorstests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wecker/wecker.app/Interactors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../wecker/wecker.app/Interactors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wecker/wecker.app/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../wecker/wecker.app/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wecker/wecker.logik/wecker.logik.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../wecker/wecker.logik/wecker.logik.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zustand/zustand/zustand/Zwischensumme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../zustand/zustand/zustand/Zwischensumme.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/loccount/src/de/lieser_online/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/loccount/src/de/lieser_online/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/ui/MyUi/MyUi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/ui/MyUi/MyUi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/ui/MyUi/src/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/ui/MyUi/src/Ui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,6 +238,8 @@
       <workItem from="1605458051375" duration="3535000" />
       <workItem from="1605461619393" duration="3322000" />
       <workItem from="1642076416107" duration="451000" />
+      <workItem from="1643097172205" duration="142000" />
+      <workItem from="1643097337935" duration="51000" />
     </task>
     <servers />
   </component>
