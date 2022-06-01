@@ -7,7 +7,7 @@ namespace mystocks.provider
 {
     public class FavoritenProvider
     {
-        private const string Filename = "favoriten.config";
+        internal const string Filename = "favoriten.config";
 
         public IEnumerable<string> FavoritenLaden() {
             if (!File.Exists(Filename)) {
@@ -21,7 +21,7 @@ namespace mystocks.provider
             File.WriteAllLines(Filename, symbole);
         }
 
-        public IEnumerable<string> FavoritHinzufügen(IEnumerable<string> symbole, string symbol, Action<IEnumerable<string>> onChange) {
+        public IEnumerable<string> FavoritHinzufügen(IEnumerable<string> symbole, string symbol) {
             if (symbole.Any(s => s.Equals(symbol, StringComparison.CurrentCultureIgnoreCase))) {
                 return symbole;
             }
@@ -29,18 +29,18 @@ namespace mystocks.provider
             var alleSymbole = new List<string>(symbole) {
                 symbol
             };
-            onChange(alleSymbole);
+            FavoritenSpeichern(alleSymbole);
             return alleSymbole;
         }
 
-        public IEnumerable<string> FavoritEntfernen(IEnumerable<string> symbole, string symbol, Action<IEnumerable<string>> onChange) {
+        public IEnumerable<string> FavoritEntfernen(IEnumerable<string> symbole, string symbol) {
             if (!symbole.Any(s => s.Equals(symbol, StringComparison.CurrentCultureIgnoreCase))) {
                 return symbole;
             }
 
             var alleSymbole = symbole.ToList();
             alleSymbole.Remove(symbol);
-            onChange(alleSymbole);
+            FavoritenSpeichern(alleSymbole);
             return alleSymbole;
         }
     }

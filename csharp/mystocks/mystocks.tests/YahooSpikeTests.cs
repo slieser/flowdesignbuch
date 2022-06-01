@@ -7,11 +7,7 @@ namespace Tests
 {
     public class YahooSpikeTests
     {
-        [SetUp]
-        public void Setup() {
-        }
-
-        [Test]
+        [Test, Explicit]
         public async Task Wertpapier_Infos_ermmitteln() {
             var securities = await Yahoo
                 .Symbols("AAPL", "GOOG")
@@ -22,7 +18,7 @@ namespace Tests
             Console.WriteLine(price);
         }
 
-        [Test]
+        [Test, Explicit]
         public async Task Titel_suchen() {
             var autoCompletes = await Yahoo
                 .AutoComplete("tesla")

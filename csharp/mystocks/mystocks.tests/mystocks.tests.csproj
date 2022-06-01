@@ -1,24 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
 
         <IsPackable>false</IsPackable>
 
-        <LangVersion>9</LangVersion>
+        <LangVersion>default</LangVersion>
+
+        <OutputType>Library</OutputType>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Flurl.Http" Version="2.4.2" />
-        <PackageReference Include="nunit" Version="3.12.0" />
+        <PackageReference Include="Moq" Version="4.14.7" />
+        <PackageReference Include="NUnit" Version="3.12.0" />
         <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
     </ItemGroup>
 
     <ItemGroup>
-      <Reference Include="YahooFinanceApi, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\lib\netstandard2.0\YahooFinanceApi.dll</HintPath>
-      </Reference>
+      <ProjectReference Include="..\mystocks\mystocks.csproj" />
     </ItemGroup>
 
 </Project>

@@ -5,7 +5,7 @@ using YahooFinanceApi;
 
 namespace mystocks.provider
 {
-    public class KursProvider
+    public class KursProvider : IKursProvider
     {
         public IEnumerable<Wertpapier> KurseErmitteln(IEnumerable<string> symbole) {
             foreach (var symbol in symbole) {

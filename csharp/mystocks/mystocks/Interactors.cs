@@ -9,7 +9,14 @@ namespace mystocks
     public class Interactors
     {
         private readonly FavoritenProvider _favoritenProvider = new FavoritenProvider();
-        private readonly KursProvider _kursProvider = new KursProvider();
+        private readonly IKursProvider _kursProvider;
+
+        public Interactors() : this(new KursProvider()) {
+        }
+
+        internal Interactors(IKursProvider kursProvider) {
+            _kursProvider = kursProvider;
+        }
 
         public void Start(Action<IEnumerable<Wertpapier>> onUpdate) {
             new TimerProvider().ExecutePeriodic(30*1000, () => {
@@ -25,16 +32,14 @@ namespace mystocks
         
         public IEnumerable<Wertpapier> TitelHinzufügen(string symbol) {
             var symbole = _favoritenProvider.FavoritenLaden();
-            var alleSymbole = _favoritenProvider.FavoritHinzufügen(
-                symbole, symbol, s => _favoritenProvider.FavoritenSpeichern(s));
+            var alleSymbole = _favoritenProvider.FavoritHinzufügen(symbole, symbol);
             var wertpapiere = _kursProvider.KurseErmitteln(alleSymbole);
             return wertpapiere;
         }
 
         public IEnumerable<Wertpapier> TitelEntfernen(string symbol) {
             var symbole = _favoritenProvider.FavoritenLaden();
-            var alleSymbole = _favoritenProvider.FavoritEntfernen(
-                symbole, symbol, s => _favoritenProvider.FavoritenSpeichern(s));
+            var alleSymbole = _favoritenProvider.FavoritEntfernen(symbole, symbol);
             var wertpapiere = _kursProvider.KurseErmitteln(alleSymbole);
             return wertpapiere;
         }

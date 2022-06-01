@@ -13,8 +13,13 @@ namespace mystocks
         }
         
         public void ExecutePeriodic(int interval, Action action) {
-            _timer = new Timer(o => {
-                _synchronizationContext.Send(x => action(), null);
+            _timer = new Timer(_ => {
+                if (_synchronizationContext != null) {
+                    _synchronizationContext.Send(_ => action(), null);
+                }
+                else {
+                    action();
+                }
             }, null, 0, interval);
         }
     }
