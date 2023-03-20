@@ -1,7 +1,7 @@
 package de.lieser_online;
 
 public class ConsoleUi {
-    private LocStat sum = new LocStat();
+    private final LocStat sum = new LocStat();
 
     public void showLoc(LocStat locstat) {
         sum.Loc += locstat.Loc;

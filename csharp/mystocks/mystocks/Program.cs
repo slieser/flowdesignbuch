@@ -3,14 +3,14 @@ using Avalonia.Controls;
 
 namespace mystocks
 {
-    class Program
+    public static class Program
     {
         public static void Main(string[] args) => BuildAvaloniaApp().Start(AppMain, args);
 
-        public static AppBuilder BuildAvaloniaApp()
+        private static AppBuilder BuildAvaloniaApp()
             => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
-                .LogToDebug();
+                .LogToTrace();
 
         private static void AppMain(Application app, string[] args) {
             var interactors = new Interactors();

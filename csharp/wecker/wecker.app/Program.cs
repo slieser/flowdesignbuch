@@ -9,7 +9,6 @@ namespace wecker.app
         [STAThread]
         public static void Main() {
             var mainWindow = new MainWindow();
-            var app = new Application { MainWindow = mainWindow };
             var interactors = new Interactors();
 
             interactors.Start(
@@ -33,6 +32,7 @@ namespace wecker.app
                     istGestartet => mainWindow.Neuer_Zustand(istGestartet));
             };
             
+            var app = new Application { MainWindow = mainWindow };
             app.Run(mainWindow);
         }
     }
