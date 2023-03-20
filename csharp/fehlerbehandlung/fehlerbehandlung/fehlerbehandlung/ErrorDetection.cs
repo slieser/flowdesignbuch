@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 namespace fehlerbehandlung
@@ -12,6 +13,12 @@ namespace fehlerbehandlung
             catch {
                 fileContent = new string[0];
                 return false;
+            }
+        }
+
+        public void Usage() {
+            if (TryReadFile("example.txt", out var fileContent)) {
+                Console.WriteLine(fileContent);
             }
         }
     }

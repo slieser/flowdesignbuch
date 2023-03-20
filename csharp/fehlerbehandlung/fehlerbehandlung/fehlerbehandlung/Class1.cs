@@ -12,6 +12,12 @@ namespace fehlerbehandlung
             }
             return "";     // !!! FALSCH !!!
         }
+
+        public void Usage() {
+            var filename = GetFilename(new[] { "x" });
+            // Woran erkenne ich, dass zwei Fälle
+            // zu berücksichtigen sind?
+        }
     }
 
     public class Class2
