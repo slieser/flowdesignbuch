@@ -4,9 +4,9 @@ namespace csvviewer
 {
     public class Interactors
     {
-        private readonly Paging _paging = new Paging();
-        private readonly CommandLine _commandLine = new CommandLine();
-        private readonly FileProvider _fileProvider = new FileProvider();
+        private readonly Paging _paging = new();
+        private readonly CommandLine _commandLine = new();
+        private readonly FileProvider _fileProvider = new();
 
         public IEnumerable<Record> Start(string[] args) {
             var filename = _commandLine.GetFilename(args);
@@ -47,11 +47,6 @@ namespace csvviewer
             var nextPage = _paging.ExtractLastPage(lines, pageLength);
             var records = Csv.CreateRecords(nextPage);
             return records;
-        }
-
-        internal string GetFilename(string[] args) {
-            // InternalsVisibleTo
-            return args[0];
         }
     }
 }
