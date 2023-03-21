@@ -7,22 +7,22 @@ public class Bookings2
 {
     public Option<IEnumerable<Booking>> Create(string[] args) {
         var filename = GetFilename(args);
-        if (HasFilename(filename)) {
+        if (HasNoFilename(filename)) {
             return EmptyBookings();
         }
         var content = ReadFile(GetValue(filename));
-        if (HasContent(content)) {
+        if (HasNoContent(content)) {
             return EmptyBookings();
         }
 
         return CreateBookings(GetValue(content));
     }
 
-    private static bool HasFilename(Option<string> filename) {
+    private static bool HasNoFilename(Option<string> filename) {
         return !filename.HasValue;
     }
 
-    private static bool HasContent(Option<IEnumerable<string>> content) {
+    private static bool HasNoContent(Option<IEnumerable<string>> content) {
         return !content.HasValue;
     }
 
