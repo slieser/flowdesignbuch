@@ -20,20 +20,29 @@
             <ColumnDefinition Width="64"/>
         </Grid.ColumnDefinitions>
         
-        <Button x:Name="btn0" Grid.Row="0" Grid.Column="0"/>
-        <Button x:Name="btn1" Grid.Row="0" Grid.Column="1"/>
-        <Button x:Name="btn2" Grid.Row="0" Grid.Column="2"/>
+        <Button x:Name="btn0" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btn1" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btn2" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
-        <Button x:Name="btn3" Grid.Row="1" Grid.Column="0"/>
-        <Button x:Name="btn4" Grid.Row="1" Grid.Column="1"/>
-        <Button x:Name="btn5" Grid.Row="1" Grid.Column="2"/>
+        <Button x:Name="btn3" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btn4" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btn5" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
-        <Button x:Name="btn6" Grid.Row="2" Grid.Column="0"/>
-        <Button x:Name="btn7" Grid.Row="2" Grid.Column="1"/>
-        <Button x:Name="btn8" Grid.Row="2" Grid.Column="2"/>
+        <Button x:Name="btn6" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btn7" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btn8" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         
         <TextBlock x:Name="txtMeldung" Grid.Row="3"
-            Grid.Column="0" Grid.ColumnSpan="3" Margin="10"/>
+            Grid.Column="0" Grid.ColumnSpan="3" Margin="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>
 </Window>
 

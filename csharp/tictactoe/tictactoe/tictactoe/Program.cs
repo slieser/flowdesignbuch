@@ -1,7 +1,6 @@
 ﻿using System;
 using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Logging.Serilog;
 using tictactoe.domain;
 using tictactoe.ui;
 
@@ -13,8 +12,7 @@ namespace tictactoe
 
         public static AppBuilder BuildAvaloniaApp()
             => AppBuilder.Configure<App>()
-                .UsePlatformDetect()
-                .LogToDebug();
+                .UsePlatformDetect();
 
         private static void AppMain(Application app, string[] args) {
             var interactors = new Interactors();
