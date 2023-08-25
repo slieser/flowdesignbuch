@@ -18,17 +18,17 @@ namespace tictactoe
             var interactors = new Interactors();
             var ui = new MainWindow();
 
-            var start = new Action(() => {
+            void Start() {
                 var result = interactors.Start();
                 ui.Show_score(result.Spielbrett, result.Meldung);
-            });            
+            }
  
             ui.Token_set += feld => {
                 var result = interactors.Spielstein_setzen(feld);
                 ui.Show_score(result.Spielbrett, result.Meldung);
             };
 
-            start();
+            Start();
             app.Run(ui);
         }
     }

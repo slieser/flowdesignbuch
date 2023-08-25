@@ -1,5 +1,4 @@
-﻿using System;
-using tictactoe.domain;
+﻿using tictactoe.domain;
 using tictactoe.ui;
 
 namespace tictactoe.console
@@ -10,17 +9,17 @@ namespace tictactoe.console
             var interactors = new Interactors();
             var consoleUi = new ConsoleUi();
 
-            var start = new Action(() => {
+            void Start() {
                 var result = interactors.Start();
                 consoleUi.Spielbrett_anzeigen(result.Spielbrett, result.Meldung);
-            });            
+            }
  
             consoleUi.Spielstein_setzen += feld => {
                 var result = interactors.Spielstein_setzen(feld);
                 consoleUi.Spielbrett_anzeigen(result.Spielbrett, result.Meldung);
             };
 
-            start();
+            Start();
             consoleUi.Run();
         }
     }
