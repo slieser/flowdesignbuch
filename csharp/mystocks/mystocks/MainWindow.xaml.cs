@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-using Avalonia;
+using System.Linq;
+using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using mystocks.data;
@@ -48,17 +49,17 @@ namespace mystocks
             };
         }
 
-        public void WertpapiereAktualisieren(IEnumerable<Wertpapier> wertpapiere) {
+        public async Task WertpapiereAktualisieren(IAsyncEnumerable<Wertpapier> wertpapiere) {
             var lstWertpapiere = this.FindControl<ListBox>("lstWertpapiere");
             var items = new List<Wertpapier>();
-            items.AddRange(wertpapiere);
+            items.AddRange(await wertpapiere.ToListAsync());
             lstWertpapiere.ItemsSource = items;
         }
 
-        public void TitelAktualisieren(IEnumerable<Titel> titel) {
+        public async Task TitelAktualisieren(IAsyncEnumerable<Titel> titel) {
             var cmbTitel = this.FindControl<ComboBox>("cmbTitelauswahl");
             var items = new List<Titel>();
-            items.AddRange(titel);
+            items.AddRange(await titel.ToListAsync());
             cmbTitel.ItemsSource = items;
             cmbTitel.IsDropDownOpen = true;
         }

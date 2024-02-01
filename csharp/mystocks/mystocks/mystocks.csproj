@@ -13,14 +13,13 @@
     </AvaloniaResource>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="AlphaVantage.Net.Stocks" Version="2.0.2" />
     <PackageReference Include="Avalonia" Version="11.0.7" />
     <PackageReference Include="Avalonia.Desktop" Version="11.0.7" />
     <PackageReference Include="Avalonia.ThemeManager" Version="11.0.0" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.7" />
     <PackageReference Include="CleanCodeDeveloper.Analyzers" Version="0.0.6" />
     <PackageReference Include="Flurl.Http" Version="4.0.2" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\YahooFinanceApi\YahooFinanceApi.csproj" />
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
   </ItemGroup>
 </Project>

@@ -14,14 +14,17 @@ namespace mystocks.provider
             _wertpapiere.Add(new Wertpapier { Symbol="AMZN", Name="Amazon"});
         }
 
-        public IEnumerable<Wertpapier> KurseErmitteln(IEnumerable<string> symbole) {
-            return _wertpapiere.Where(w => symbole.Contains(w.Symbol.ToUpper()));
+        public IAsyncEnumerable<Wertpapier> KurseErmitteln(IEnumerable<string> symbole) {
+            return _wertpapiere
+                .Where(w => symbole.Contains(w.Symbol.ToUpper()))
+                .ToAsyncEnumerable();
         }
 
-        public IEnumerable<Titel> TitelSuchen(string suchbegriff) {
+        public IAsyncEnumerable<Titel> TitelSuchen(string suchbegriff) {
             return _wertpapiere
                 .Where(w => w.Symbol.ToLower().StartsWith(suchbegriff.ToLower()))
-                .Select(t => new Titel { Name = t.Name, Symbol = t.Symbol });
+                .Select(t => new Titel { Name = t.Name, Symbol = t.Symbol })
+                .ToAsyncEnumerable();
         }
     }
 }

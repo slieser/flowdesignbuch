@@ -1,77 +1,46 @@
 using System.Collections.Generic;
-using System.Linq;
+using System.Threading.Tasks;
+using AlphaVantage.Net.Core.Client;
+using AlphaVantage.Net.Stocks.Client;
 using mystocks.data;
-using YahooFinanceApi;
 
 namespace mystocks.provider
 {
     public class KursProvider : IKursProvider
     {
-        public IEnumerable<Wertpapier> KurseErmitteln(IEnumerable<string> symbole) {
+        public async IAsyncEnumerable<Wertpapier> KurseErmitteln(IEnumerable<string> symbole) {
             foreach (var symbol in symbole) {
-                yield return KursErmitteln(symbol);
+                yield return await KursErmitteln(symbol);
             }
         }
 
-        private Wertpapier KursErmitteln(string symbol) {
-            var securities = Yahoo
-                .Symbols(symbol)
-                .Fields(Field.LongName, Field.Symbol, Field.RegularMarketPrice, 
-                    Field.RegularMarketChange, Field.RegularMarketChangePercent,
-                    Field.Currency)
-                .QueryAsync()
-                .Result;
-            var werte = securities[symbol];
-            if (werte.QuoteType == "INDEX") {
-                return new Wertpapier {
-                    Name = werte.FullExchangeName,
-                    Symbol = werte.Symbol,
-                    Börse = werte.FullExchangeName,
-                    Kurs = werte.RegularMarketPrice.ToString("0,0.00 ") + werte.Currency,
-                    Absolut = werte.RegularMarketChange.ToString("0.00"),
-                    Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")
-                };
-            }
-            if (werte.QuoteType == "CURRENCY") {
-                return new Wertpapier {
-                    Name = werte.Currency,
-                    Symbol = werte.Symbol,
-                    Börse = werte.FullExchangeName,
-                    Kurs = werte.RegularMarketPrice.ToString("0,0.00 ") + werte.Currency,
-                    Absolut = werte.RegularMarketChange.ToString("0.00"),
-                    Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")
-                };
-            }
-            if (werte.QuoteType == "FUTURE") {
-                return new Wertpapier {
-                    Name = werte.Symbol,
-                    Symbol = werte.Symbol,
-                    Börse = werte.FullExchangeName,
-                    Kurs = werte.RegularMarketPrice.ToString("0,0.00 ") + werte.Currency,
-                    Absolut = werte.RegularMarketChange.ToString("0.00"),
-                    Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")
-                };
-            }
+        private async Task<Wertpapier> KursErmitteln(string symbol) {
+            var apiKey = "1";
+            using var client = new AlphaVantageClient(apiKey);
+            using var stocksClient = client.Stocks();        
+            var globalQuote = await stocksClient.GetGlobalQuoteAsync(symbol);
             return new Wertpapier {
-                Name = werte.LongName,
-                Symbol = werte.Symbol,
-                Börse = werte.FullExchangeName,
-                Kurs = werte.RegularMarketPrice.ToString("0,0.00 ") + werte.Currency,
-                Absolut = werte.RegularMarketChange.ToString("0.00"),
-                Relativ = (werte.RegularMarketChangePercent / 100.0).ToString("0.0%")
+                Symbol = globalQuote.Symbol,
+                Name = "???",
+                Börse = "???",
+                Kurs = globalQuote.Price.ToString(),
+                Absolut = globalQuote.Change.ToString(),
+                Relativ = globalQuote.ChangePercent.ToString()
             };
         }
 
-        public IEnumerable<Titel> TitelSuchen(string suchbegriff) {
-            var autoCompletes = Yahoo
-                .AutoComplete(suchbegriff)
-                .SearchAsync()
-                .Result;
-            return autoCompletes.Select(ac => new Titel {
-                Symbol = ac.Symbol,
-                Name = ac.Name,
-                Börse = ac.ExchangeLong
-            });
+        public async IAsyncEnumerable<Titel> TitelSuchen(string suchbegriff) {
+            var apiKey = "1";
+            using var client = new AlphaVantageClient(apiKey);
+            using var stocksClient = client.Stocks();
+            var searchResult = await stocksClient.SearchSymbolAsync(suchbegriff);
+            foreach (var match in searchResult) {
+                yield return new Titel {
+                    Symbol = match.Symbol,
+                    Name = match.Name,
+                    Börse = match.Region
+                };
+            }
         }
     }
 }

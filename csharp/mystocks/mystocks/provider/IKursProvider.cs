@@ -1,11 +1,13 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using mystocks.data;
 
 namespace mystocks.provider
 {
     public interface IKursProvider
     {
-        IEnumerable<Wertpapier> KurseErmitteln(IEnumerable<string> symbole);
-        IEnumerable<Titel> TitelSuchen(string suchbegriff);
+        IAsyncEnumerable<Wertpapier> KurseErmitteln(IEnumerable<string> symbole);
+
+        IAsyncEnumerable<Titel> TitelSuchen(string suchbegriff);
     }
 }
