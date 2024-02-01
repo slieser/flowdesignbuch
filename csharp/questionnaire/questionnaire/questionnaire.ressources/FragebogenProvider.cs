@@ -37,6 +37,7 @@ namespace questionnaire.ressources
             }
         }
 
+        // TODO: rename to Aufgabe_erstellen
         private static Aufgabe Aufgaben_erstellen(IEnumerable<string> zeilenEinerAufgabe) {
             var result = new Aufgabe();
             result.Frage = zeilenEinerAufgabe.First();

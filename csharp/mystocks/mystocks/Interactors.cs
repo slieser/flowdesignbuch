@@ -8,10 +8,10 @@ namespace mystocks
 {
     public class Interactors
     {
-        private readonly FavoritenProvider _favoritenProvider = new FavoritenProvider();
+        private readonly FavoritenProvider _favoritenProvider = new();
         private readonly IKursProvider _kursProvider;
 
-        public Interactors() : this(new KursProvider()) {
+        public Interactors() : this(new KursProviderDummy()) {
         }
 
         internal Interactors(IKursProvider kursProvider) {

@@ -8,7 +8,7 @@ namespace mybooks.integration
     public class Interactors
     {
         private readonly BooksRepository _booksRepository;
-        private readonly Booklending _booklending = new Booklending();
+        private readonly Booklending _booklending = new();
 
         public Interactors(BooksRepository booksRepository) {
             _booksRepository = booksRepository;

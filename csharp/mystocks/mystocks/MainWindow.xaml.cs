@@ -21,15 +21,13 @@ namespace mystocks
 
             var throttle = new Throttle();
             var txtSuchbegriff = this.FindControl<TextBox>("txtSuchbegriff");
-            txtSuchbegriff    // Workaround because TextInput event is not implemented in AvaloniaUi yet!!
-                .GetObservable(TextBox.TextProperty)
-                .Subscribe(text => {
-                    if (string.IsNullOrWhiteSpace(text)) {
-                        return;
-                    }
-                    throttle.ExecuteThrottled(500, () => SuchbegriffGeändert?.Invoke(text));
-                });
-
+            txtSuchbegriff.TextChanged += (_, _) => {
+                if (string.IsNullOrWhiteSpace(txtSuchbegriff.Text)) {
+                    return;
+                }
+                throttle.ExecuteThrottled(500, () => SuchbegriffGeändert?.Invoke(txtSuchbegriff.Text));
+            };
+  
             var cmbTitel = this.FindControl<ComboBox>("cmbTitelauswahl");
             cmbTitel.SelectionChanged += (o, e) => {
                 if (cmbTitel.SelectedItem == null) {
@@ -54,14 +52,14 @@ namespace mystocks
             var lstWertpapiere = this.FindControl<ListBox>("lstWertpapiere");
             var items = new List<Wertpapier>();
             items.AddRange(wertpapiere);
-            lstWertpapiere.Items = items;
+            lstWertpapiere.ItemsSource = items;
         }
 
         public void TitelAktualisieren(IEnumerable<Titel> titel) {
             var cmbTitel = this.FindControl<ComboBox>("cmbTitelauswahl");
             var items = new List<Titel>();
             items.AddRange(titel);
-            cmbTitel.Items = items;
+            cmbTitel.ItemsSource = items;
             cmbTitel.IsDropDownOpen = true;
         }
 

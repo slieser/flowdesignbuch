@@ -4,7 +4,7 @@ using mystocks.data;
 
 namespace mystocks.provider
 {
-    public class KursProviderDummy
+    public class KursProviderDummy : IKursProvider
     {
         private readonly List<Wertpapier> _wertpapiere = new List<Wertpapier>();
 
