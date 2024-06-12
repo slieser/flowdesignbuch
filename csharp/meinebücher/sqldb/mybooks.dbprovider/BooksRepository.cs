@@ -14,7 +14,8 @@ namespace mybooks.dbprovider
         public BooksRepository(string databaseName) {
             var connectionString = CreateConnectionString();
             _connection = new MySqlConnection(connectionString);
-            _connection.Execute($"USE {databaseName};");
+            _connection.Open();
+            _connection.ChangeDatabase(databaseName);
         }
 
         internal static string CreateConnectionString() {

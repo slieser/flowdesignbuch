@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
 using mybooks.contracts;
@@ -18,21 +18,17 @@ namespace mybooks.webapi.tests
     [TestFixture]
     public class BooksControllerTests : DatabaseTests
     {
-        private TestServer _server;
         private HttpClient _client;
         
         [SetUp]
-        public override void Setup() {
-            base.Setup();
-            _server = new TestServer(
-                new WebHostBuilder()
-                    .UseStartup<Startup>()
-                    .ConfigureServices(services => {
-                        services.AddSingleton(typeof(BooksRepository), _booksRepository);
-                        services.AddSingleton(typeof(Interactors), new Interactors(_booksRepository));
-                    })
-            );
-            _client = _server.CreateClient();
+        public void Setup() {
+            var factory = new WebApplicationFactory<Startup>().WithWebHostBuilder(builder => {
+                builder.ConfigureTestServices(services => {
+                    services.AddSingleton(typeof(BooksRepository), _booksRepository);
+                    services.AddSingleton(typeof(Interactors), new Interactors(_booksRepository));
+                });
+            });
+            _client = factory.CreateClient();
         }
 
         [Test]

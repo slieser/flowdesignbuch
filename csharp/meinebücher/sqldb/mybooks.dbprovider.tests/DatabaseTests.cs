@@ -12,7 +12,7 @@ namespace mybooks.dbprovider.tests
         protected BooksRepository _booksRepository;
 
         [SetUp]
-        public virtual void Setup() {
+        public void BaseSetup() {
             CreateDatabase($"tmp_{DateTime.Now:dd_MM_yyyy__hh_mm_ss}");
             _booksRepository = new BooksRepository(_databaseName);
         }
@@ -22,7 +22,9 @@ namespace mybooks.dbprovider.tests
             _connection = new MySqlConnection(connectionString);
 
             _databaseName = databaseName;
-            _connection.Execute($"CREATE DATABASE {_databaseName}; USE {_databaseName};");
+            _connection.Execute($"CREATE DATABASE {_databaseName};");
+            _connection.Open();
+            _connection.ChangeDatabase(_databaseName);
 
             BooksRepository.CreateTables(_connection);
         }
