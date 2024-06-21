@@ -7,7 +7,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\mybooks.contracts\mybooks.contracts.csproj" />
-    <ProjectReference Include="..\mybooks.dbprovider\mybooks.dbprovider.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />

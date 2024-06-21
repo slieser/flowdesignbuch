@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using mybooks.contracts;
 using mybooks.dbprovider;
 using mybooks.integration;
 using mybooks.logic;

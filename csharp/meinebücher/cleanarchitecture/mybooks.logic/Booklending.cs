@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using mybooks.contracts;
-using mybooks.dbprovider;
 
 namespace mybooks.logic
 {

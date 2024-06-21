@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using mybooks.contracts;
 
-namespace mybooks.dbprovider;
+namespace mybooks.contracts;
 
 public interface IBooksRepository
 {
