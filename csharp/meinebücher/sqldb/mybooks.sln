@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
@@ -7,15 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks", "mybooks\mybooks.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.ui", "mybooks.ui\mybooks.ui.csproj", "{04FD50DC-4908-4C5B-878C-CA6E1161FEFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.contracts", "mybooks.contracts\mybooks.contracts.csproj", "{715F7D43-7461-42D2-9A4D-C26DE563DA48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mybooks.contracts", "mybooks.contracts\mybooks.contracts.csproj", "{715F7D43-7461-42D2-9A4D-C26DE563DA48}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.dbprovider", "mybooks.eventstoreprovider\mybooks.dbprovider.csproj", "{4DB1D12A-6D8F-4050-84C7-008C6E2AA70C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.logic", "mybooks.logic\mybooks.logic.csproj", "{3E94A834-CE45-4709-B773-FD254242201A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mybooks.logic", "mybooks.logic\mybooks.logic.csproj", "{3E94A834-CE45-4709-B773-FD254242201A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.integration", "mybooks.integration\mybooks.integration.csproj", "{6C409C47-F894-4682-A058-5CD2B9E2605E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mybooks.integration", "mybooks.integration\mybooks.integration.csproj", "{6C409C47-F894-4682-A058-5CD2B9E2605E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.dbprovider.tests", "mybooks.dbprovider.tests\mybooks.dbprovider.tests.csproj", "{69065F44-33F5-482F-9183-0C5FD83BF8A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mybooks.dbprovider.tests", "mybooks.dbprovider.tests\mybooks.dbprovider.tests.csproj", "{69065F44-33F5-482F-9183-0C5FD83BF8A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

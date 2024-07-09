@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.contracts", "mybooks.contracts\mybooks.contracts.csproj", "{715F7D43-7461-42D2-9A4D-C26DE563DA48}"
 EndProject
@@ -6,17 +6,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.logic", "mybooks.lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.integration", "mybooks.integration\mybooks.integration.csproj", "{6C409C47-F894-4682-A058-5CD2B9E2605E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.dbprovider", "mybooks.dbprovider\mybooks.dbprovider.csproj", "{4DB1D12A-6D8F-4050-84C7-008C6E2AA70C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mybooks.dbprovider", "mybooks.dbprovider\mybooks.dbprovider.csproj", "{4DB1D12A-6D8F-4050-84C7-008C6E2AA70C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.dbprovider.tests", "mybooks.dbprovider.tests\mybooks.dbprovider.tests.csproj", "{DF212859-8704-45CA-9FE7-56D71CB9D9A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.webapi", "mybooks.webapi\mybooks.webapi.csproj", "{EDC8CFBB-61C7-4179-9F40-6CA2BEAB766F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mybooks.webapi", "mybooks.webapi\mybooks.webapi.csproj", "{EDC8CFBB-61C7-4179-9F40-6CA2BEAB766F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.webapi.tests", "mybooks.webapi.tests\mybooks.webapi.tests.csproj", "{E65FD96D-6F60-4A43-846E-05E1CFFA5483}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mybooks.webapi.tests", "mybooks.webapi.tests\mybooks.webapi.tests.csproj", "{E65FD96D-6F60-4A43-846E-05E1CFFA5483}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.logic.tests", "mybooks.logic.tests\mybooks.logic.tests.csproj", "{9179DA16-8FE8-471E-B66F-5E4E57EA5978}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mybooks.logic.tests", "mybooks.logic.tests\mybooks.logic.tests.csproj", "{9179DA16-8FE8-471E-B66F-5E4E57EA5978}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mybooks.integration.tests", "mybooks.integration.tests\mybooks.integration.tests.csproj", "{9AA8F157-F788-49F2-AE20-439ACB8DF084}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mybooks.integration.tests", "mybooks.integration.tests\mybooks.integration.tests.csproj", "{9AA8F157-F788-49F2-AE20-439ACB8DF084}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

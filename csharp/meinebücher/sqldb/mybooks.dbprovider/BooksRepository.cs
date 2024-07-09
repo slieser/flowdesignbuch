@@ -15,7 +15,18 @@ namespace mybooks.dbprovider
             var connectionString = CreateConnectionString();
             _connection = new MySqlConnection(connectionString);
             _connection.Open();
-            _connection.ChangeDatabase(databaseName);
+            try {
+                _connection.ChangeDatabase(databaseName);
+            }
+            catch (MySqlException e) {
+                if (e.Number == 1049) {
+                    CreateDatabase(_connection, databaseName);
+                    _connection.ChangeDatabase(databaseName);
+                }
+                else {
+                    throw;
+                }
+            }
         }
 
         internal static string CreateConnectionString() {
@@ -80,6 +91,13 @@ namespace mybooks.dbprovider
             const string select = "SELECT Id, Title, Lender, LendingDate, CanBeLended FROM Books";
             var result = _connection.Query<Book>(select).ToList();
             return result;
+        }
+
+        public static void CreateDatabase(MySqlConnection connection, string databaseName) {
+            connection.Execute($"CREATE DATABASE {databaseName};");
+            connection.ChangeDatabase(databaseName);
+
+            CreateTables(connection);
         }
     }
 }

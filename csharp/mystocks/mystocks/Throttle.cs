@@ -7,6 +7,7 @@ namespace mystocks
     {
         private readonly SynchronizationContext _synchronizationContext;
         private Timer _timer;
+        
         public Throttle() {
             _synchronizationContext = SynchronizationContext.Current;
         }

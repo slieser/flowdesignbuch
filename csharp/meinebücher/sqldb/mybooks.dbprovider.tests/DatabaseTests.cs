@@ -20,13 +20,10 @@ namespace mybooks.dbprovider.tests
         protected void CreateDatabase(string databaseName) {
             var connectionString = BooksRepository.CreateConnectionString();
             _connection = new MySqlConnection(connectionString);
+            _connection.Open();
 
             _databaseName = databaseName;
-            _connection.Execute($"CREATE DATABASE {_databaseName};");
-            _connection.Open();
-            _connection.ChangeDatabase(_databaseName);
-
-            BooksRepository.CreateTables(_connection);
+            BooksRepository.CreateDatabase(_connection, _databaseName);
         }
 
         [TearDown]
