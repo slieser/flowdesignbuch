@@ -6,7 +6,7 @@ namespace csvviewer.tests
     public class UiTests
     {
         [Test]
-        public void Formatting_very_simpel() {
+        public void Formatting_very_simple() {
             var sut = new Ui();
             var result = sut.CreateLines(new[] {
                 new Record { Values = new[]{"a", "b", "c"}},

@@ -1,6 +1,8 @@
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using NUnit.Framework;
+using static VerifyNUnit.Verifier;
 
 namespace csvviewer.tests
 {
@@ -23,10 +25,11 @@ namespace csvviewer.tests
         }
 
         [Test]
-        public void Start_with_optional_PageLength_parameter() {
+        public async Task Start_with_optional_PageLength_parameter() {
             var result = _sut.Start(new[] {_filename, "3"}).ToArray();
             Assert.That(result.Length, Is.EqualTo(4));
             Assert.That(result[0].Values, Is.EqualTo(new[]{"Name", "Age", "City"}));
+            await Verify(result);
         }
     }
 }
