@@ -5,46 +5,39 @@ using mybooks.logic;
 
 namespace mybooks.integration
 {
-    public class Interactors
+    public class Interactors(BooksRepository booksRepository, Booklending booklending)
     {
-        private readonly BooksRepository _booksRepository;
-        private readonly Booklending _booklending = new();
-
-        public Interactors(BooksRepository booksRepository) {
-            _booksRepository = booksRepository;
-        }
-
         public IEnumerable<Book> Start() {
-            var books = _booksRepository.LoadAll();
+            var books = booksRepository.LoadAll();
             return books;
         }
 
         public IEnumerable<Book> New_book(string title) {
-            var book = _booklending.Create_book(title);
-            _booksRepository.TryAdd(book);
-            var books = _booksRepository.LoadAll();
+            var book = booklending.Create_book(title);
+            booksRepository.TryAdd(book);
+            var books = booksRepository.LoadAll();
             return books;
         }
 
         public IEnumerable<Book> Lend_book(long id, string name) {
-            var book = _booksRepository.GetById(id);
-            book = _booklending.Lend_book(book, name);
-            _booksRepository.TryUpdate(book);
-            var books = _booksRepository.LoadAll();
+            var book = booksRepository.GetById(id);
+            book = booklending.Lend_book(book, name);
+            booksRepository.TryUpdate(book);
+            var books = booksRepository.LoadAll();
             return books;
         }
 
         public IEnumerable<Book> Return_book(long id) {
-            var book = _booksRepository.GetById(id);
-            book = _booklending.Return_book(book);
-            _booksRepository.TryUpdate(book);
-            var books = _booksRepository.LoadAll();
+            var book = booksRepository.GetById(id);
+            book = booklending.Return_book(book);
+            booksRepository.TryUpdate(book);
+            var books = booksRepository.LoadAll();
             return books;
         }
 
         public IEnumerable<Book> Remove_book(long id) {
-            _booksRepository.TryDeleteById(id);
-            var books = _booksRepository.LoadAll();
+            booksRepository.TryDeleteById(id);
+            var books = booksRepository.LoadAll();
             return books;
         }
     }

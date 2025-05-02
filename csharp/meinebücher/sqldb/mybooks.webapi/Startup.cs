@@ -1,23 +1,18 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using mybooks.dbprovider;
 using mybooks.integration;
+using mybooks.logic;
 
 namespace mybooks.webapi
 {
-    public class Startup
+    public class Startup()
     {
-        public Startup(IConfiguration configuration) {
-            Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
-
-        public void ConfigureServices(IServiceCollection services) { 
+        public void ConfigureServices(IServiceCollection services) {
             services.AddSingleton(sp => new BooksRepository("MyBooks"));
+            services.AddSingleton<Booklending>();
             services.AddSingleton<Interactors>();
             services.AddControllers();
         }

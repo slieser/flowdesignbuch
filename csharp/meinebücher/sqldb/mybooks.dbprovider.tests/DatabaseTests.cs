@@ -7,9 +7,9 @@ namespace mybooks.dbprovider.tests
 {
     public class DatabaseTests
     {
-        private MySqlConnection _connection;
-        private string _databaseName;
-        protected BooksRepository _booksRepository;
+        private MySqlConnection _connection = null!;
+        private string _databaseName = null!;
+        protected BooksRepository _booksRepository = null!;
 
         [SetUp]
         public void BaseSetup() {

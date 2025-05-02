@@ -1,5 +1,6 @@
 using mybooks.dbprovider;
 using mybooks.dbprovider.tests;
+using mybooks.logic;
 
 namespace mybooks.integration.tests;
 
@@ -10,7 +11,7 @@ public class InteractorsTests : DatabaseTests
 
     [SetUp]
     public void Setup2() {
-        _sut = new Interactors(_booksRepository);
+        _sut = new Interactors(_booksRepository, new Booklending());
     }
 
     [Test]

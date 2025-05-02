@@ -60,7 +60,7 @@ namespace mybooks.dbprovider
                 if (e.Number == 1062) // Duplicate entry error
                     return false;
 
-                throw e;
+                throw;
             }
 
             return true;
