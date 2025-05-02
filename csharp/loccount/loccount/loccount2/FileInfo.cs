@@ -1,6 +1,6 @@
 namespace loccount
 {
-    public class LOCstat
+    public class FileInfo
     {
         public string Filename { get; set; }
 

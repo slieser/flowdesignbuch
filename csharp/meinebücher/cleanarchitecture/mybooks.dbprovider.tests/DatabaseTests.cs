@@ -7,9 +7,9 @@ namespace mybooks.dbprovider.tests
 {
     public class DatabaseTests
     {
-        private MySqlConnection _connection;
-        private string _databaseName;
-        protected BooksRepository _booksRepository;
+        private MySqlConnection _connection = null!;
+        private string _databaseName = null!;
+        protected BooksRepository _booksRepository = null!;
 
         [SetUp]
         public void BaseSetup() {
@@ -22,9 +22,17 @@ namespace mybooks.dbprovider.tests
             _connection = new MySqlConnection(connectionString);
 
             _databaseName = databaseName;
-            _connection.Execute($"CREATE DATABASE {_databaseName};");
-            _connection.Open();
-            _connection.ChangeDatabase(_databaseName);
+            try {
+                _connection.Execute($"CREATE DATABASE {_databaseName};");
+                _connection.Open();
+                _connection.ChangeDatabase(_databaseName);
+            }
+            catch (MySqlException e) {
+                if (e.Number != 1007) {
+                    // Database already exists
+                    throw;
+                }
+            }
 
             BooksRepository.CreateTables(_connection);
         }

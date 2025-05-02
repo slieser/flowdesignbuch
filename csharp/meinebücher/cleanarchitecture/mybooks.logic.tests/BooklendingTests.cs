@@ -1,6 +1,5 @@
 using Moq;
 using mybooks.contracts;
-using mybooks.dbprovider;
 
 namespace mybooks.logic.tests;
 

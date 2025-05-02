@@ -6,7 +6,7 @@ namespace mybooks.dbprovider.tests
     public class Integrationstests : DatabaseTests
     {
         [Test, Explicit]
-        public void CreateProductiveDatabase() {
+        public void Create_Database_and_Tables() {
             CreateDatabase("MyBooks");
         }
     }

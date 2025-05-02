@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
 using mybooks.contracts;
-using mybooks.dbprovider;
 using mybooks.dbprovider.tests;
 using Newtonsoft.Json;
 using NUnit.Framework;
@@ -17,7 +16,7 @@ namespace mybooks.webapi.tests
     [TestFixture]
     public class BooksControllerTests : DatabaseTests
     {
-        private HttpClient _client;
+        private HttpClient _client = null!;
         
         [SetUp]
         public void Setup() {
@@ -45,7 +44,7 @@ namespace mybooks.webapi.tests
 
             var responseString = await response.Content.ReadAsStringAsync();
             var books = JsonConvert.DeserializeObject<List<Book>>(responseString);
-            Assert.That(books.Count, Is.EqualTo(1));
+            Assert.That(books!.Count, Is.EqualTo(1));
             Assert.That(books[0].Id, Is.Not.EqualTo(0));
             Assert.That(books[0].Title, Is.EqualTo("Flow Design"));
             Assert.That(books[0].Lender, Is.EqualTo(""));
@@ -60,13 +59,13 @@ namespace mybooks.webapi.tests
 
             var responseString = await response.Content.ReadAsStringAsync();
             var books = JsonConvert.DeserializeObject<List<Book>>(responseString);
-            var id = books.First().Id;
+            var id = books!.First().Id;
             
             response = await _client.DeleteAsync($"/books?id={id}");
             response.EnsureSuccessStatusCode();
             responseString = await response.Content.ReadAsStringAsync();
             books = JsonConvert.DeserializeObject<List<Book>>(responseString);
-            Assert.That(books.Count, Is.EqualTo(0));
+            Assert.That(books!.Count, Is.EqualTo(0));
         }
     }
 }
