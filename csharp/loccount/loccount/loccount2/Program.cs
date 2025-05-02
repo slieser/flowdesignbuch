@@ -5,8 +5,12 @@ namespace loccount
     internal class Program
     {
         public static void Main(string[] args) {
-            var locStats = Interactors.Start(args);
-            Ui.Show(locStats);
+            var fileInfos = Interactors.Start(args);
+            if(!fileInfos.HasValue) {
+                Console.WriteLine("No path provided.");
+                return;
+            }
+            Ui.Show(fileInfos.ValueOr(Array.Empty<FileInfo>()));
         }
     
         /*

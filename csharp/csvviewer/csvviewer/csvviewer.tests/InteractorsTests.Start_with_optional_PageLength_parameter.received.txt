@@ -1,0 +1,37 @@
+﻿[
+  {
+    Values: [
+      Name,
+      Age,
+      City
+    ]
+  },
+  {
+    Values: [
+      Peter,
+      42,
+      New York
+    ]
+  },
+  {
+    Values: [
+      Paul,
+      57,
+      London
+    ]
+  },
+  {
+    Values: [
+      Mary,
+      35,
+      München
+    ]
+  },
+  {
+    Values: [
+      Jaques,
+      66,
+      Paris
+    ]
+  }
+]

@@ -1,9 +1,14 @@
-﻿namespace loccount
+﻿using Optional;
+
+namespace loccount
 {
     public class CommandLine
     {
-        public static string GetPath(string[] args) {
-            return args[0];
+        public static Option<string> GetPath(string[] args) {
+            if(args.Length >= 1) {
+                return Option.Some(args[0]);
+            }
+            return Option.None<string>();
         }
     }
 }
