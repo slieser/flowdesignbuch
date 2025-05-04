@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.1.2",
-    "npm": "^6.4.1",
+    "npm": "^9.6.2",
     "readline-sync": "^1.4.9",
     "rewire": "^3.0.2"
   },
