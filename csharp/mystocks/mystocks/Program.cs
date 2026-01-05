@@ -16,8 +16,8 @@ namespace mystocks
             var interactors = new Interactors();
             var mainWindow = new MainWindow();
 
-            mainWindow.SuchbegriffGeändert += suchbegriff => {
-                var titel = interactors.TitelSuchen(suchbegriff);
+            mainWindow.SearchStock += searchTerm => {
+                var titel = interactors.TitelSuchen(searchTerm);
                 mainWindow.TitelAktualisieren(titel);
             };
             mainWindow.TitelAusgewählt += symbol => {

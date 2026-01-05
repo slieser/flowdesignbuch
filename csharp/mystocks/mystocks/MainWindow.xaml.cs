@@ -10,7 +10,7 @@ namespace mystocks
 {
     public class MainWindow : Window
     {
-        public event Action<string> SuchbegriffGeändert;
+        public event Action<string> SearchStock;
         
         public event Action<string> TitelAusgewählt;
 
@@ -26,7 +26,7 @@ namespace mystocks
                 if (string.IsNullOrWhiteSpace(txtSuchbegriff.Text)) {
                     return;
                 }
-                throttle.ExecuteThrottled(500, () => SuchbegriffGeändert?.Invoke(txtSuchbegriff.Text));
+                throttle.ExecuteThrottled(500, () => SearchStock?.Invoke(txtSuchbegriff.Text));
             };
   
             var cmbTitel = this.FindControl<ComboBox>("cmbTitelauswahl");

@@ -125,3 +125,4 @@ docs/_build/
 # PyBuilder
 target/
 csharp/meinebücher/cleanarchitecture/mysql
+csharp/mystocks/CoverageReport
