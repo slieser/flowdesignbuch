@@ -1,16 +1,25 @@
-﻿namespace mybooks.ui
+using System.Threading.Tasks;
+using Avalonia.Controls;
+
+namespace mybooks.ui
 {
     public static class InputBox
     {
-        public static string Show(string prompt) {
+        public static async Task<string> Show(Window owner, string prompt) {
             var inputBoxDialog = new InputBoxDialog();
-            inputBoxDialog.label.Content = prompt;
-            var result = inputBoxDialog.ShowDialog();
+            var label = inputBoxDialog.FindControl<TextBlock>("label");
+            var textbox = inputBoxDialog.FindControl<TextBox>("textbox");
 
-            if (!result.HasValue || !result.Value) {
+            if (label != null) {
+                label.Text = prompt;
+            }
+
+            var result = await inputBoxDialog.ShowDialog<bool>(owner);
+
+            if (!result) {
                 return "";
             }
-            return inputBoxDialog.textbox.Text;
+            return textbox?.Text ?? "";
         }
     }
 }

@@ -1,16 +1,22 @@
-﻿using System;
-using System.Windows;
+using Avalonia;
+using Avalonia.Controls;
 using mybooks.ui;
 
 namespace mybooks
 {
     public static class Program
     {
-        [STAThread]
-        public static void Main() {
+        public static void Main(string[] args) => BuildAvaloniaApp().Start(AppMain, args);
+
+        private static AppBuilder BuildAvaloniaApp()
+            => AppBuilder.Configure<App>()
+                .UsePlatformDetect()
+                .LogToTrace();
+
+        private static void AppMain(Application app, string[] args)
+        {
             var mainWindow = new MainWindow();
             var interactors = new Interactors();
-            var app = new Application { MainWindow = mainWindow };
 
             void Start() {
                 var books = interactors.Start();

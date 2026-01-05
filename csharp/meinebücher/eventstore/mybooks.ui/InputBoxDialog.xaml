@@ -1,18 +1,18 @@
-﻿<Window x:Class="mybooks.ui.InputBoxDialog"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:mybooks.ui"
+        xmlns:ui="clr-namespace:mybooks.ui"
         mc:Ignorable="d"
-        Title="" Height="110" Width="300" WindowStyle="None">
+        x:Class="mybooks.ui.InputBoxDialog"
+        Title="" Height="110" Width="300" SystemDecorations="None">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <DockPanel Grid.Row="0">
-            <Label x:Name="label" Content="Label" Padding="5" Margin="10"/>    
+            <TextBlock x:Name="label" Text="Label" Padding="5" Margin="10"/>
             <TextBox x:Name="textbox" Padding="5" Margin="10" />
         </DockPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">

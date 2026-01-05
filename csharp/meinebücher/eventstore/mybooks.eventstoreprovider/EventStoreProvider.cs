@@ -12,7 +12,6 @@ namespace mybooks.eventstoreprovider
         public EventStoreProvider() {
             store = Wireup.Init()
                 .UsingInMemoryPersistence()
-                .UsingJsonSerialization()
                 .Build();
         }
 
