@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using mybooks.contracts;
 using NEventStore;
+using NEventStore.Serialization.Json;
 
 namespace mybooks.eventstoreprovider
 {
@@ -12,6 +13,7 @@ namespace mybooks.eventstoreprovider
         public EventStoreProvider() {
             store = Wireup.Init()
                 .UsingInMemoryPersistence()
+                .UsingJsonSerialization()
                 .Build();
         }
 

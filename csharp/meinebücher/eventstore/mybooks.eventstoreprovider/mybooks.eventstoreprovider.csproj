@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="NEventStore" Version="6.0.0" />
+    <PackageReference Include="NEventStore.Serialization.Json" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
