@@ -4,7 +4,7 @@ using mybooks.contracts;
 using mybooks.eventstoreprovider;
 using mybooks.logic;
 
-namespace mybooks
+namespace mybooks.integration
 {
     public class Interactors
     {

@@ -1,5 +1,6 @@
 using Avalonia;
 using Avalonia.Controls;
+using mybooks.integration;
 using mybooks.ui;
 
 namespace mybooks
@@ -31,7 +32,7 @@ namespace mybooks
                 var books = interactors.Lend_book(id, name);
                 mainWindow.Update_books(books);
             };
-            mainWindow.Book_got_back += (id) => {
+            mainWindow.Return_book += (id) => {
                 var books = interactors.Book_got_back(id);
                 mainWindow.Update_books(books);
             };

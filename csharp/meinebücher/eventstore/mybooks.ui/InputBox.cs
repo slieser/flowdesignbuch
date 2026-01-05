@@ -5,7 +5,7 @@ namespace mybooks.ui
 {
     public static class InputBox
     {
-        public static async Task<string> Show(Window owner, string prompt) {
+        public async static Task<string> Show(Window owner, string prompt) {
             var inputBoxDialog = new InputBoxDialog();
             var label = inputBoxDialog.FindControl<TextBlock>("label");
             var textbox = inputBoxDialog.FindControl<TextBox>("textbox");

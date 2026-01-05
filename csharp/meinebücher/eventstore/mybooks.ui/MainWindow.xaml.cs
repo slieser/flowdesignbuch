@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using Avalonia.Interactivity;
 using mybooks.contracts;
 
 namespace mybooks.ui
@@ -13,7 +11,7 @@ namespace mybooks.ui
         private readonly DataGrid? _dataGrid;
         private readonly Button? _btnNew;
         private readonly Button? _btnLend;
-        private readonly Button? _btnGetBack;
+        private readonly Button? _btnReturn;
         private readonly Button? _btnRemove;
 
         public MainWindow() {
@@ -23,12 +21,12 @@ namespace mybooks.ui
             _dataGrid = this.FindControl<DataGrid>("dataGrid");
             _btnNew = this.FindControl<Button>("btnNew");
             _btnLend = this.FindControl<Button>("btnLend");
-            _btnGetBack = this.FindControl<Button>("btnGetBack");
+            _btnReturn = this.FindControl<Button>("btnReturn");
             _btnRemove = this.FindControl<Button>("btnRemove");
 
             // Async event handlers for dialog calls
             if (_btnNew != null) {
-                _btnNew.Click += async (o, e) => {
+                _btnNew.Click += async (_, _) => {
                     var title = await InputBox.Show(this, "Title:");
                     if (!string.IsNullOrEmpty(title)) {
                         New_book(title);
@@ -37,7 +35,7 @@ namespace mybooks.ui
             }
 
             if (_btnLend != null) {
-                _btnLend.Click += async (o, e) => {
+                _btnLend.Click += async (_, _) => {
                     var id = Id_of_selected_book();
                     if (!id.HasValue) {
                         return;
@@ -49,18 +47,18 @@ namespace mybooks.ui
                 };
             }
 
-            if (_btnGetBack != null) {
-                _btnGetBack.Click += (o, e) => {
+            if (_btnReturn != null) {
+                _btnReturn.Click += (_, _) => {
                     var id = Id_of_selected_book();
                     if (!id.HasValue) {
                         return;
                     }
-                    Book_got_back(id.Value);
+                    Return_book(id.Value);
                 };
             }
 
             if (_btnRemove != null) {
-                _btnRemove.Click += (o, e) => {
+                _btnRemove.Click += (_, _) => {
                     var id = Id_of_selected_book();
                     if (!id.HasValue) {
                         return;
@@ -93,7 +91,7 @@ namespace mybooks.ui
 
         public event Action<Guid, string>? Lend_book;
 
-        public event Action<Guid>? Book_got_back;
+        public event Action<Guid>? Return_book;
 
         public event Action<Guid>? Remove_book;
     }
