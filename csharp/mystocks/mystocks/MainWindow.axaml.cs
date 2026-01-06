@@ -8,7 +8,7 @@ using mystocks.data;
 
 namespace mystocks
 {
-    public class MainWindow : Window
+    public partial class MainWindow : Window
     {
         public event Action<string> SearchStock;
         
@@ -21,7 +21,6 @@ namespace mystocks
             InitializeComponent();
 
             var throttle = new Throttle();
-            var txtSuchbegriff = this.FindControl<TextBox>("txtSuchbegriff");
             txtSuchbegriff.TextChanged += (_, _) => {
                 if (string.IsNullOrWhiteSpace(txtSuchbegriff.Text)) {
                     return;
@@ -29,17 +28,14 @@ namespace mystocks
                 throttle.ExecuteThrottled(500, () => SearchStock?.Invoke(txtSuchbegriff.Text));
             };
   
-            var cmbTitel = this.FindControl<ComboBox>("cmbTitelauswahl");
-            cmbTitel.SelectionChanged += (o, e) => {
-                if (cmbTitel.SelectedItem == null) {
+            cmbTitelauswahl.SelectionChanged += (o, e) => {
+                if (cmbTitelauswahl.SelectedItem == null) {
                     return;
                 }
-                var symbol = ((Titel) cmbTitel.SelectedItem).Symbol;
+                var symbol = ((Titel) cmbTitelauswahl.SelectedItem).Symbol;
                 TitelAusgewählt?.Invoke(symbol);
             };
 
-            var lstWertpapiere = this.FindControl<ListBox>("lstWertpapiere");
-            var btnRemove = this.FindControl<Button>("btnRemove");
             btnRemove.Click += (o, e) => {
                 if (lstWertpapiere.SelectedItem == null) {
                     return;
@@ -50,23 +46,16 @@ namespace mystocks
         }
 
         public async Task WertpapiereAktualisieren(IAsyncEnumerable<Wertpapier> wertpapiere) {
-            var lstWertpapiere = this.FindControl<ListBox>("lstWertpapiere");
             var items = new List<Wertpapier>();
             items.AddRange(await wertpapiere.ToListAsync());
             lstWertpapiere.ItemsSource = items;
         }
 
         public async Task TitelAktualisieren(IAsyncEnumerable<Titel> titel) {
-            var cmbTitel = this.FindControl<ComboBox>("cmbTitelauswahl");
             var items = new List<Titel>();
             items.AddRange(await titel.ToListAsync());
-            cmbTitel.ItemsSource = items;
-            cmbTitel.IsDropDownOpen = true;
-        }
-
-        private void InitializeComponent()
-        {
-            AvaloniaXamlLoader.Load(this);
+            cmbTitelauswahl.ItemsSource = items;
+            cmbTitelauswahl.IsDropDownOpen = true;
         }
     }
 }

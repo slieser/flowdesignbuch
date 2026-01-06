@@ -2,6 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:data="clr-namespace:mystocks.data"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         Width="400" Height="600"
         x:Class="mystocks.MainWindow"
@@ -15,9 +16,9 @@
         </Grid.RowDefinitions>
         
         <TextBox Grid.Row="0" x:Name="txtSuchbegriff"/>
-        <ComboBox Grid.Row="1" x:Name="cmbTitelauswahl">
+        <ComboBox Grid.Row="1" x:Name="cmbTitelauswahl" >
             <ComboBox.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="data:Titel">
                     <StackPanel Margin="1">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="{Binding Name}" Margin="3" />
@@ -30,7 +31,7 @@
         </ComboBox>
         <ListBox Grid.Row="2" x:Name="lstWertpapiere">
             <ListBox.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="data:Wertpapier">
                     <StackPanel Margin="1">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="{Binding Name}" Margin="3"/>
